@@ -4,6 +4,17 @@ This is the human-maintained work and recovery record requested by the user. The
 
 
 
+
+## October 8 public GitHub delivery verified
+
+Created and pushed the explicitly authorized PUBLIC repository: https://github.com/shashankskagnihotri/Lorena_Contrastive_Representation_Arch . GitHub API independently confirmed `private=false`, visibility `public`, and branch `main`. The first remote commit exactly matched local `ebd34a43ac07333407d3f4c4f357028c48b4d88d`. The untruncated remote tree contained all three main PDFs; their Git blob hashes match the local files. Verification is saved in `provenance/github_publication.json`.
+
+A final navigation review checked 1,535 public plot-index links. Removed links to local-only redundant PNG/SVG previews from the older overview README, retained their PDF/CSV links, and clarified the diagnostic preview boundary. Original `SOURCE_REPORT.md` files remain byte-preserved historical reports with original runtime paths, as documented. This final addendum and its navigation receipt are included in a small follow-up commit. Source code, plotted data, and PDFs are unchanged.
+
+Completed: detailed method/performance explanations, organized public source and experiment specifications, saved result/diagnostic evidence, exact three main PDFs, portable verified figure reconstruction, package build, integrity checks, public repository creation and initial push. Kept local: approximately 908 GB of raw output trees, including checkpoint blobs. Outstanding scientific work: remaining dense-to-sparse timing workers, then complete follow-up timing aggregation/figures. No experiment was canceled for publication.
+
+Latest observed controller status at 2026-10-08T13:11:09.102606+00:00: {'completed': 985, 'pending': 111, 'running': 17, 'unsubmitted': 1311}. Controller 361093 remains authoritative, with all 612 accuracy cases complete. Existing repair-agent allowance remains exhausted at 8/8; no additional autonomous code-repair capacity is claimed.
+
 ## October 8 publication validation complete, 15:05 CEST
 
 Publication verifier 361228 failed visibly on two links from results.md to local-only exporter scripts. Both links now target the committed archived exporters. Final verifier 361229 ran from frozen source SHA-256 `7989335a3c474d792327f7ad239838bdde18d9fcf189734edf2950c584c9596d` and completed 0:0 in 2m54s. It verified 1,330 initial export records, 259 supplemental record checks, staged public files totaling about 418 MB, all current-document links, exact three main PDF hashes, scoped credential patterns, public-source syntax, and imports from a relocated source tree. No forbidden runtime root or checkpoint blob is staged. Largest public file is about 35.8 MB. Detailed record: `provenance/publication_verification.json`.

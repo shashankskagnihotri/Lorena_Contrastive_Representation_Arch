@@ -1,0 +1,43 @@
+{
+  "repository": {
+    "default_branch": "main",
+    "full_name": "shashankskagnihotri/Lorena_Contrastive_Representation_Arch",
+    "html_url": "https://github.com/shashankskagnihotri/Lorena_Contrastive_Representation_Arch",
+    "private": false,
+    "visibility": "public"
+  },
+  "initial_verified_commit": "ebd34a43ac07333407d3f4c4f357028c48b4d88d",
+  "remote_tree": {
+    "entries": 4497,
+    "main_pdfs": [
+      {
+        "mode": "100644",
+        "path": "plots/CIFAR10_error_by_corruption.pdf",
+        "sha": "42533e24fdabb3b0f049455a21130fb12b3fc46b",
+        "size": 128002,
+        "type": "blob",
+        "url": "https://api.github.com/repos/shashankskagnihotri/Lorena_Contrastive_Representation_Arch/git/blobs/42533e24fdabb3b0f049455a21130fb12b3fc46b"
+      },
+      {
+        "mode": "100644",
+        "path": "plots/MNIST_error_by_corruption.pdf",
+        "sha": "153c62a583fff9e92cbde50c7aa0b49d8958c85e",
+        "size": 58280,
+        "type": "blob",
+        "url": "https://api.github.com/repos/shashankskagnihotri/Lorena_Contrastive_Representation_Arch/git/blobs/153c62a583fff9e92cbde50c7aa0b49d8958c85e"
+      },
+      {
+        "mode": "100644",
+        "path": "plots/latency_vs_sparsity.pdf",
+        "sha": "f6a26c1af86eb7463dd87e3c87ac53af0ab5dce9",
+        "size": 39518,
+        "type": "blob",
+        "url": "https://api.github.com/repos/shashankskagnihotri/Lorena_Contrastive_Representation_Arch/git/blobs/f6a26c1af86eb7463dd87e3c87ac53af0ab5dce9"
+      }
+    ],
+    "tree_sha": "ebd34a43ac07333407d3f4c4f357028c48b4d88d",
+    "truncated": false
+  },
+  "verified_utc": "2026-10-08T13:11:12.068437+00:00",
+  "note": "This receipt verifies the initial public commit. Its own addition and plot-navigation corrections are a subsequent commit; the final local/remote HEAD is checked again after push."
+}

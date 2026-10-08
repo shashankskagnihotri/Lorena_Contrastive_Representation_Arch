@@ -1,0 +1,6 @@
+{
+  "public_plot_navigation_links_checked": 1535,
+  "missing": [],
+  "excluded": "SOURCE_REPORT.md files are byte-preserved archival reports with original runtime paths, explicitly documented in docs/repository_layout.md",
+  "overview_fix": "Removed links to redundant local-only PNG/SVG exports; PDF and CSV links retained."
+}

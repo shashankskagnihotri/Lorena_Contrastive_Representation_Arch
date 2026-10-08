@@ -1,5 +1,7 @@
 # Saved preprocessing and fixed-example diagnostics
 
+Public artifact note: this directory publishes the PDF, numerical NPZ/CSV, and JSON evidence. PNG previews mentioned in the original export description below remain local; the public preview subset is under `plots/requested_comparisons/`. No diagnostic information in the PDF pages is omitted by excluding those redundant images.
+
 These figures are exported from the studies' saved tensors and fitted statistics. No model inference, image preprocessing, normalization fitting, checkpoint changes, or metric recomputation is performed.
 
 - `parent_fixed_train_val_examples/` contains byte-identical copies of the original 160 signed-panel PDFs, PNG previews, 40 tensor NPZ files, and their metadata for MNIST grayscale and all three CIFAR-10 contrast representations. They cover the original fixed clean training and held-out validation panels at 0, 20, 40, 60, and 80% imposed sparsity.
