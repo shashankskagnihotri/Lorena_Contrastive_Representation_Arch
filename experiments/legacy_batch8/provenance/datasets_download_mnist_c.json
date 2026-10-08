@@ -1,0 +1,22 @@
+{
+  "attempts": [
+    {
+      "ended": "2026-09-30T16:46:59.961908+00:00",
+      "number": 1,
+      "partial": "/ceph/sagnihot/datasets/.mnist_c.zip.attempt-1.00c83c2fffd54880a8ac92d9fc406eb4.partial",
+      "returncode": 0,
+      "started": "2026-09-30T16:46:35.476145+00:00",
+      "status": "verified"
+    }
+  ],
+  "destination": "/ceph/sagnihot/datasets/mnist_c.zip",
+  "url": "https://zenodo.org/records/3239543/files/mnist_c.zip?download=1",
+  "verified": {
+    "bytes": 246661575,
+    "expected_md5": "4b34b33045869ee6d424616cd3a65da3",
+    "md5": "4b34b33045869ee6d424616cd3a65da3",
+    "path": "/ceph/sagnihot/datasets/mnist_c.zip",
+    "publisher_md5_verified": true,
+    "sha256": "af9ee8c6a815870c7fdde5af84c7bf8db0bcfa1f41056db83871037fba70e493"
+  }
+}

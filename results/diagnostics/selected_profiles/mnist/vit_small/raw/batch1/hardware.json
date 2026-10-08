@@ -1,0 +1,62 @@
+{
+  "backend": "PyTorch_explicit_attention",
+  "benchmark_seed": 20260930,
+  "compilation": "eager_no_compile",
+  "compute_capability": [
+    8,
+    6
+  ],
+  "cpu_affinity": [
+    6,
+    7,
+    54,
+    55
+  ],
+  "cpu_model": "AMD EPYC 7413 24-Core Processor",
+  "cuda": "12.6",
+  "cudnn": 91002,
+  "deterministic_algorithms": true,
+  "device": "cuda",
+  "device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+  "driver_version": "610.57.04",
+  "gpu": "NVIDIA RTX A6000",
+  "hardware_identity": "4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687",
+  "host": "dws-17.informatik.uni-mannheim.de",
+  "input_layout": "contiguous_BCHW_uint8",
+  "job_id": "356114",
+  "measurement_session_id": "a5cec8a7d592fced6ca7f3d9",
+  "memory_bytes": 50896568320,
+  "mkl_num_threads": "4",
+  "nvidia_smi_state_fields": [
+    "uuid",
+    "name",
+    "driver_version",
+    "pstate",
+    "power_watts",
+    "power_limit_watts",
+    "sm_MHz",
+    "memory_MHz",
+    "temperature_C"
+  ],
+  "nvidia_smi_state_values": [
+    "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+    "NVIDIA RTX A6000",
+    "610.57.04",
+    "P2",
+    "27.46",
+    "300.00",
+    "1800",
+    "7601",
+    "60"
+  ],
+  "omp_num_threads": "4",
+  "precision": "float32",
+  "process_id": 3894589,
+  "session_started_unix_ns": 1791138387857910933,
+  "slurm_cpus_per_task": "4",
+  "tf32": false,
+  "torch": "2.9.1+cu126",
+  "torch_num_interop_threads": 48,
+  "torch_num_threads": 4,
+  "torch_reported_device_uuid": "ec8b6ae1-998f-7810-88fe-2982b7a7191d"
+}

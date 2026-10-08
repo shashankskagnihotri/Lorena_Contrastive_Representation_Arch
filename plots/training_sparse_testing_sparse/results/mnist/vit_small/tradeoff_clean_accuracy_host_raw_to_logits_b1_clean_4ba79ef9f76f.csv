@@ -1,0 +1,8 @@
+dataset,architecture,protocol,training_count,condition,mean_seed_median_ms,between_seed_sd_ms,clean_accuracy_percent
+mnist,vit_small,heldout_val,55000,Raw dense,10.138534333333332,0.01883156536465628,98.3
+mnist,vit_small,heldout_val,55000,"Grayscale, dense, 0%",10.288371333333334,0.013034374029210271,97.66
+mnist,vit_small,heldout_val,55000,"Grayscale, compact, 0%",10.788007333333333,0.0216809900623408,98.03666666666668
+mnist,vit_small,heldout_val,55000,"Grayscale, compact, 20%",10.874566333333334,0.06756628568734074,98.03666666666668
+mnist,vit_small,heldout_val,55000,"Grayscale, compact, 40%",10.920320166666665,0.052010239160989596,98.03666666666668
+mnist,vit_small,heldout_val,55000,"Grayscale, compact, 60%",10.925000000000002,0.03349398191839852,97.88333333333333
+mnist,vit_small,heldout_val,55000,"Grayscale, compact, 80%",10.933776166666666,0.03883812138973023,97.62333333333333

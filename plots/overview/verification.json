@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-10-08T11:40:21.600876+00:00",
+  "state": "verified",
+  "final_render_job": "361072",
+  "source_sha256": "cb5db91ec7f10d5bb7676300ef2e7db77db2fb6f5b69de8d0b6aeb6d85e50d36",
+  "provenance_sha256": "aa746cf265ad01899780fa5bc5612c0f17580a99b74b81f311e9ecaf5d958032",
+  "figure_bundles": 14,
+  "formats_per_figure": [
+    "PNG",
+    "PDF",
+    "SVG",
+    "CSV"
+  ],
+  "master_csvs": 6,
+  "total_hashed_exports": 62,
+  "total_export_bytes": 19778149,
+  "accuracy_coverage": {
+    "new_cases": 612,
+    "parent_runs": 156,
+    "new_cells": 35352,
+    "parent_cells": 9336,
+    "all_seeds": 3,
+    "condition_rows": 256
+  },
+  "latency_coverage": {
+    "snapshot_updated": "2026-10-08T11:24:55.014723+00:00",
+    "expected_workers": 2424,
+    "sealed_full_workers": 961,
+    "worker_states": {
+      "completed": 961,
+      "blocked": 6,
+      "running": 4,
+      "pending": 124,
+      "unsubmitted": 1329
+    },
+    "sealed_clean_cells": 961,
+    "hardware_sessions": 961,
+    "timing_raw_rehashed": false,
+    "primary_complete_three_seed_condition_batches": 161
+  },
+  "visually_inspected": [
+    "accuracy_mnist_vit_small_grayscale.png",
+    "accuracy_cifar10_swin_tiny_color_opponency.png",
+    "partial_clean_latency_batch8.png"
+  ],
+  "visual_result": "Readable legends/titles; original dense same-checkpoint baseline explicit; compact0 family separate; unavailable MNIST contrast and incomplete latency explicitly marked; no footer overlap.",
+  "scheduler_receipts": [
+    "361052|COMPLETED|0:0|00:05:17",
+    "361068|COMPLETED|0:0|00:01:00",
+    "361072|COMPLETED|0:0|00:02:25"
+  ]
+}

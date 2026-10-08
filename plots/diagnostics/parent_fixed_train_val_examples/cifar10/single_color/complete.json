@@ -1,0 +1,128 @@
+{
+  "channel_names": [
+    "red_contrast",
+    "green_contrast",
+    "blue_contrast"
+  ],
+  "dataset": "cifar10",
+  "display_only": true,
+  "display_scale_source": "max abs over fixed unaugmented training panel, with affine zero offset included for normalized scale",
+  "figures": {
+    "train/p0": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0_c2_g1.png"
+    ],
+    "train/p20": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20_c2_g1.png"
+    ],
+    "train/p40": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40_c2_g1.png"
+    ],
+    "train/p60": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60_c2_g1.png"
+    ],
+    "train/p80": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80_c2_g1.png"
+    ],
+    "val/p0": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0_c2_g1.png"
+    ],
+    "val/p20": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20_c2_g1.png"
+    ],
+    "val/p40": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40_c2_g1.png"
+    ],
+    "val/p60": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60_c2_g1.png"
+    ],
+    "val/p80": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80_c0_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80_c1_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80_c1_g1.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80_c2_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80_c2_g1.png"
+    ]
+  },
+  "mean": [
+    0.02077285200357437,
+    0.021002599969506264,
+    0.019608618691563606
+  ],
+  "native_scales": [
+    0.5742919445037842,
+    0.5747277140617371,
+    0.5725491046905518
+  ],
+  "normalization_hash": "566fa577f2da3e50d887e890148fb6bd20f667e8139d6a9b04ca4665f0cb39c3",
+  "normalized_scales": [
+    6.4692206382751465,
+    6.478267669677734,
+    6.6111531257629395
+  ],
+  "representation": "single_color",
+  "std": [
+    0.08556193858385086,
+    0.08547426015138626,
+    0.0836375281214714
+  ],
+  "tensor_artifacts": {
+    "train/p0": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0.npz",
+    "train/p20": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20.npz",
+    "train/p40": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40.npz",
+    "train/p60": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60.npz",
+    "train/p80": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80.npz",
+    "val/p0": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0.npz",
+    "val/p20": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20.npz",
+    "val/p40": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40.npz",
+    "val/p60": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60.npz",
+    "val/p80": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80.npz"
+  },
+  "train_panel_split_hash": "235eef81c7e392a13662991c533d94885f6433d807e19c52099ed9851b61faf2",
+  "version": 1
+}

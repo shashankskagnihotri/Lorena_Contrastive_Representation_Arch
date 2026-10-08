@@ -1,0 +1,209 @@
+{
+  "batch_size": 1,
+  "comparison_policy": "matched_hardware_class_and_backend; physical_GPU_UUIDs_and_sessions_may_differ_and_are_retained_per_measurement; never_pool_different_GPU_types",
+  "corruption": "clean",
+  "file_hashes": {
+    "batch_membership.json": "e93bb56e1080beaaba80d134d944324ca2a0f9d37dac6b65bf6a98c287cfff3c",
+    "profile.json": "e1539d89a49c9672e157422420d7e077d164e9134eba7e37a07482c4bc343bb9",
+    "timings.jsonl": "0a5459fe436c1362d10dcd2350882f64cdb5ed8d82ffc7c845a8c13c3ae27643",
+    "tokens.jsonl": "528f7279cec6d6fd7b187f4f78a6cd86d8ebdb81b5ec906cc8e2f74485865f87",
+    "trace.json": "0791fc535158dd74631c39024c9500b8759cf338cff6de2330e82b941f127a9b"
+  },
+  "identity": {
+    "architecture": "vit_small",
+    "batch_size": 1,
+    "benchmark_rng": 20260930,
+    "checkpoint_sha256": "8cf7cb4ed21e87a32ce66316a24626cbfc6d0f22ae0d89603806dac5f2f05b5a",
+    "config_hash": "4e457a136eb7808470549824ef62e9838b536697d530acd0f0ead5e6feb9bd8a",
+    "dataset": "cifar10",
+    "execution": "compact",
+    "hardware_identity": "4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687",
+    "latency_protocol_version": 2,
+    "measured_batches": 200,
+    "measurement_source_hash": "7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0",
+    "normalization_hash": "1047af87909095c2ee60f41793d839c504320f3b8ce40bf1751007d9ebe36dec",
+    "representation": "grayscale",
+    "seed": 0,
+    "sparsity_percent": 60,
+    "study_role": "primary",
+    "timing_cohort": "a6000-2026-10-04",
+    "trained_execution": "compact",
+    "training_source_hash": "9359e4f10c0c2184eef4af8885edc7076bded30188775cc14222f79819f648c4",
+    "warmup_batches": 50
+  },
+  "isolation_after": {
+    "device_uuid": "GPU-39cf9f8b-c3cb-5434-30c1-83f36bd48aac",
+    "observed_compute_pids": [
+      2350501
+    ],
+    "policy": "check each cell before/after; scheduler allocation must reserve GPU",
+    "scheduler_job_id": "356143",
+    "self_pid": 2350501,
+    "verified": true
+  },
+  "isolation_before": {
+    "device_uuid": "GPU-39cf9f8b-c3cb-5434-30c1-83f36bd48aac",
+    "observed_compute_pids": [
+      2350501
+    ],
+    "policy": "check each cell before/after; scheduler allocation must reserve GPU",
+    "scheduler_job_id": "356143",
+    "self_pid": 2350501,
+    "verified": true
+  },
+  "loader_policy": {
+    "cache": "warm_OS_and_dataset_cache",
+    "dataset_construction_and_archive_decode": "setup_excluded",
+    "measured": "next_loader_batch_collation_pinning_H2D_online_model_argmax_D2H",
+    "num_workers": 0,
+    "prefetch": false,
+    "storage": "validated_clean_arrays_in_RAM"
+  },
+  "measured_batches_per_scope": 200,
+  "measurement": {
+    "hardware_identity": "4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687",
+    "hardware_metadata_file": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/runs/heldout_val/cifar10/vit_small/grayscale/compact/p60/seed0/4e457a136eb7808470549824ef62e9838b536697d530acd0f0ead5e6feb9bd8a/benchmark/4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687/compact/batch1/sessions/b3caa709af639a3ed0fbdbc4/hardware.json",
+    "hardware_metadata_sha256": "a8cf8156969218f548463c5c6937049bf09a0f98e0832fa1c9565e6a10d597d8",
+    "host": "dws-14.informatik.uni-mannheim.de",
+    "measurement_device_uuid": "GPU-39cf9f8b-c3cb-5434-30c1-83f36bd48aac",
+    "measurement_session_id": "b3caa709af639a3ed0fbdbc4",
+    "scheduler_job_id": "356143"
+  },
+  "online_boundaries": {
+    "excluded_from_online": "disk_network_decode_model_load_context_setup_warmup_statistics_fitting_CPU_prediction_return",
+    "gpu_raw_to_logits": "decoded_uint8_raw_GPU_to_GPU_logits_includes_online_conversion_and_all_model_work",
+    "host_raw_to_logits": "decoded_uint8_raw_pinned_host_to_GPU_logits_includes_H2D_and_all_online_work",
+    "timer": "synchronized_perf_counter_ns_complete_call; CUDA_event_stream_interval_saved_separately"
+  },
+  "profile_overhead_ratio": 1.980261789562774,
+  "raw_GPU_panel_bytes": 768000,
+  "scopes": {
+    "cached_input_model_only_diagnostic": {
+      "amortized_mean_ms_per_image": 10.523554535,
+      "batch_size": 1,
+      "count": 200,
+      "cpu_diagnostic_only": false,
+      "latency_unit": "milliseconds_per_batch",
+      "mean_ms": 10.523554535,
+      "median_ms": 10.5056115,
+      "memory": {
+        "max_memory_allocated": 126756352,
+        "max_memory_reserved": 134217728
+      },
+      "memory_policy": {
+        "cache_or_peak_reset_inside_timing": false,
+        "fresh_process_per_checkpoint_execution_batch_size": true,
+        "live_allocations_included": "weights_raw_input_panel_and_required_model_state; cached_inputs_only_in_explicit_cached_diagnostic",
+        "measurement": "peak_allocated_and_reserved_over_serial_measured_calls_before_throughput_and_profiler",
+        "scope_setup": "synchronize_gc_empty_unreferenced_CUDA_cache_then_50_mode_specific_warmups_then_synchronize_reset_peak_counters"
+      },
+      "p95_ms": 10.59798595,
+      "serial_images_per_second": 95.02492686041846,
+      "sustained_throughput": {
+        "batches": 200,
+        "elapsed_seconds": 2.091249981,
+        "images": 200,
+        "images_per_second": 95.63658186113332,
+        "policy": "serial_Python_dispatch_no_per_batch_explicit_synchronization_except_required_model_or_D2H"
+      }
+    },
+    "gpu_raw_to_logits": {
+      "amortized_mean_ms_per_image": 10.945096835,
+      "batch_size": 1,
+      "count": 200,
+      "cpu_diagnostic_only": false,
+      "latency_unit": "milliseconds_per_batch",
+      "mean_ms": 10.945096835,
+      "median_ms": 10.9238015,
+      "memory": {
+        "max_memory_allocated": 125608960,
+        "max_memory_reserved": 134217728
+      },
+      "memory_policy": {
+        "cache_or_peak_reset_inside_timing": false,
+        "fresh_process_per_checkpoint_execution_batch_size": true,
+        "live_allocations_included": "weights_raw_input_panel_and_required_model_state; cached_inputs_only_in_explicit_cached_diagnostic",
+        "measurement": "peak_allocated_and_reserved_over_serial_measured_calls_before_throughput_and_profiler",
+        "scope_setup": "synchronize_gc_empty_unreferenced_CUDA_cache_then_50_mode_specific_warmups_then_synchronize_reset_peak_counters"
+      },
+      "p95_ms": 11.184808550000001,
+      "serial_images_per_second": 91.36511216622782,
+      "sustained_throughput": {
+        "batches": 200,
+        "elapsed_seconds": 2.17421154,
+        "images": 200,
+        "images_per_second": 91.98736936149277,
+        "policy": "serial_Python_dispatch_no_per_batch_explicit_synchronization_except_required_model_or_D2H"
+      }
+    },
+    "host_raw_to_logits": {
+      "amortized_mean_ms_per_image": 10.955528665,
+      "batch_size": 1,
+      "count": 200,
+      "cpu_diagnostic_only": false,
+      "latency_unit": "milliseconds_per_batch",
+      "mean_ms": 10.955528665,
+      "median_ms": 10.942686,
+      "memory": {
+        "max_memory_allocated": 125612032,
+        "max_memory_reserved": 134217728
+      },
+      "memory_policy": {
+        "cache_or_peak_reset_inside_timing": false,
+        "fresh_process_per_checkpoint_execution_batch_size": true,
+        "live_allocations_included": "weights_raw_input_panel_and_required_model_state; cached_inputs_only_in_explicit_cached_diagnostic",
+        "measurement": "peak_allocated_and_reserved_over_serial_measured_calls_before_throughput_and_profiler",
+        "scope_setup": "synchronize_gc_empty_unreferenced_CUDA_cache_then_50_mode_specific_warmups_then_synchronize_reset_peak_counters"
+      },
+      "p95_ms": 11.03583995,
+      "serial_images_per_second": 91.27811450986697,
+      "sustained_throughput": {
+        "batches": 200,
+        "elapsed_seconds": 2.181147558,
+        "images": 200,
+        "images_per_second": 91.69485084419951,
+        "policy": "serial_Python_dispatch_no_per_batch_explicit_synchronization_except_required_model_or_D2H"
+      }
+    },
+    "loader_to_cpu_prediction": {
+      "amortized_mean_ms_per_image": 11.121555279999997,
+      "batch_size": 1,
+      "count": 200,
+      "cpu_diagnostic_only": false,
+      "latency_unit": "milliseconds_per_batch",
+      "mean_ms": 11.121555279999997,
+      "median_ms": 11.1045585,
+      "memory": {
+        "max_memory_allocated": 125612032,
+        "max_memory_reserved": 134217728
+      },
+      "memory_policy": {
+        "cache_or_peak_reset_inside_timing": false,
+        "fresh_process_per_checkpoint_execution_batch_size": true,
+        "live_allocations_included": "weights_raw_input_panel_and_required_model_state; cached_inputs_only_in_explicit_cached_diagnostic",
+        "measurement": "peak_allocated_and_reserved_over_serial_measured_calls_before_throughput_and_profiler",
+        "scope_setup": "synchronize_gc_empty_unreferenced_CUDA_cache_then_50_mode_specific_warmups_then_synchronize_reset_peak_counters"
+      },
+      "p95_ms": 11.244933499999998,
+      "serial_images_per_second": 89.91548167712746,
+      "sustained_throughput": {
+        "batches": 200,
+        "elapsed_seconds": 2.216099448,
+        "images": 200,
+        "images_per_second": 90.24865746909387,
+        "policy": "serial_Python_dispatch_no_per_batch_explicit_synchronization_except_required_model_or_D2H"
+      }
+    }
+  },
+  "severity": "test",
+  "stage_applicability": {
+    "coefficient_ranking": "stable_native_abs_sort_and_zero",
+    "frontend": "source_matched_blur_then_fused_color_mapping_and_subtraction",
+    "normalization": "executed_fused_with_patch_layout",
+    "support_and_gather": "native_support_then_saved_mask_gather_or_dense_masked_reference",
+    "swin_merging": "NA_ViT"
+  },
+  "stage_intervals_additive": false,
+  "state": "complete",
+  "warmup_batches_per_scope": 50
+}

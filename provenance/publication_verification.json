@@ -1,0 +1,63 @@
+{
+  "verified_at_utc": "2026-10-08T13:04:25Z",
+  "verifier_source_sha256": "7989335a3c474d792327f7ad239838bdde18d9fcf189734edf2950c584c9596d",
+  "initial_export_files_verified": 1330,
+  "supplemental_files_verified": 259,
+  "staged_files": 4079,
+  "staged_logical_bytes": 418414691,
+  "largest_files": [
+    {
+      "bytes": 35755928,
+      "path": "results/training_dense_testing_sparse/token_support.csv"
+    },
+    {
+      "bytes": 26492979,
+      "path": "results/training_dense_testing_sparse/evaluation_cells.csv"
+    },
+    {
+      "bytes": 11055431,
+      "path": "results/legacy_batch8/tokens.csv"
+    },
+    {
+      "bytes": 9036669,
+      "path": "results/training_sparse_testing_sparse/curves.csv"
+    },
+    {
+      "bytes": 8041816,
+      "path": "plots/training_sparse_testing_sparse/results/cifar10/swin_tiny/stages_profiler_diagnostic_b1_clean_4ba79ef9f76f.csv"
+    },
+    {
+      "bytes": 8041075,
+      "path": "plots/training_sparse_testing_sparse/results/cifar10/swin_tiny/stages_profiler_diagnostic_b8_clean_4ba79ef9f76f.csv"
+    },
+    {
+      "bytes": 6897938,
+      "path": "plots/training_sparse_testing_sparse/results/cifar10/vit_small/stages_profiler_diagnostic_b1_clean_4ba79ef9f76f.csv"
+    },
+    {
+      "bytes": 6896968,
+      "path": "plots/training_sparse_testing_sparse/results/cifar10/vit_small/stages_profiler_diagnostic_b8_clean_4ba79ef9f76f.csv"
+    },
+    {
+      "bytes": 5490990,
+      "path": "results/training_dense_testing_sparse/corruption_seeds.csv"
+    },
+    {
+      "bytes": 4686641,
+      "path": "plots/training_sparse_testing_sparse/results/cifar10/swin_tiny/stages_profiler_diagnostic_b8_balanced_corruption_4ba79ef9f76f.csv"
+    }
+  ],
+  "main_pdf_sha256": {
+    "CIFAR10_error_by_corruption.pdf": "d380ba789da1227606435881d0390738745d8953f4718770e0906d12bea79231",
+    "MNIST_error_by_corruption.pdf": "0ebdab96b605bf196b1d9d3e64efa449816fda40a1e379438866cfa203a3290f",
+    "latency_vs_sparsity.pdf": "33a14810177db8876d10121a75e989974d7290ff86ebcd5218a3a67ad37504f4"
+  },
+  "current_document_links_valid": true,
+  "relocated_package_import": {
+    "source": "/tmp/lorena-public-import-5bhqua2j/checkout/src/sparse_contrast/models.py",
+    "root": "/tmp/lorena-public-import-5bhqua2j/checkout/experiments/training_sparse_testing_sparse",
+    "python": "/ceph/sagnihot/miniconda3/envs/sparse-contrast-bench/bin/python"
+  },
+  "credential_pattern_scan": "passed; scoped patterns, not an exhaustive guarantee",
+  "limits": "Does not claim raw artifact availability, completed follow-up timing, or portable archival scheduler replay."
+}

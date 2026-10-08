@@ -1,0 +1,509 @@
+Build and execute a new, self-contained sparse-contrast image-classification benchmark in a new `sparse_contrast_benchmark/` project directory. This is a new project, not a continuation of SHIV-SLAM. Preserve existing projects, files, datasets, environments, and running jobs. Do not delete anything to "start from scratch."
+
+The question is: can models trained from scratch on sparsified contrast representations retain or improve clean accuracy and corruption robustness, while actually running faster because empty image patches are removed from transformer computation? Inference latency, including the complete online frontend, is a primary endpoint, not an optional diagnostic. TensorBoard logging is required throughout.
+
+Implement the project, run its tests, train the models, evaluate them, measure efficiency, and generate the tables, plots, and final report. Start by writing PLAN.md and a machine-readable experiment manifest, then execute the plan. Do not stop at a proposal, scaffolding, placeholder functions, or smoke-test results. Distinguish completed, running, failed, and genuinely blocked work throughout.
+
+## 1. The method: follow this exactly
+
+The contrast-model pipeline is:
+
+raw image -> fixed contrast representation -> coefficient sparsification in native contrast units -> identify empty patches BEFORE normalization -> gather retained CONTRAST patches -> per-channel mean/std normalization using frozen 0%-sparsity training statistics -> patch embedding -> compact transformer execution -> supervised classification.
+
+Before any contrast-model training, first stream the entire permitted clean training partition through each of the three frontends at 0% thresholding, calculate that representation's per-channel population mean and standard deviation, validate the results, and freeze them. Do not substitute RMS-only scaling for mean/std standardization.
+
+The model must consume standardized signed contrast values, not magnitudes or clipped positive-only values. Ordinary mean subtraction may change a coefficient's numerical sign; do not discard the original contrast polarity before that standardization. Contrast is not a side channel for selecting original RGB embeddings. Do not concatenate RGB with contrast, reconstruct RGB, introduce an RGB residual branch, use a pretrained RGB backbone, or train on RGB and switch to contrast only at inference.
+
+Train separately at each requested coefficient-sparsity setting:
+
+    sparsity_percent = [0, 20, 40, 60, 80]
+    training_seeds = [0, 1, 2]
+
+There is NO independent token-drop budget, keep ratio, q parameter, top-K patch selector, coverage quota, learned router, or minimum-image-token quota. The number of retained patches follows from which patches still contain information after coefficient thresholding. Use the same representation, sparsity setting, and support rule during training and evaluation.
+
+Here, "contrast representation" means the fixed image transform, not contrastive learning. Use ordinary supervised cross-entropy, not a contrastive objective.
+
+## 2. Inspect and preserve the actual preprocessing implementation
+
+Authoritative source:
+https://github.com/shashankskagnihotri/semseg_using_VLMs_Lorena/blob/main/semseg/utils/blur_preprocessing.py
+
+Repository:
+https://github.com/shashankskagnihotri/semseg_using_VLMs_Lorena
+
+Read that file and the relevant call sites/configurations before implementing the frontend. Resolve the user's three representations, described as "single color," "grayscale," and "color opponency," to the actual code modes. The expected conceptual distinction is independent color-channel contrast, grayscale/luminance contrast, and opponent-color contrast; verify the exact mapping rather than guessing names or matrices.
+
+The source was not accessible through the assistant's GitHub connection. First look for an existing checkout in the current workspace and accessible user project directories; otherwise use the cluster's existing authorized GitHub access. Do not print credentials, modify repository permissions, or replace the requested code with an unrelated blur-pooling package.
+
+Record the source commit, file SHA-256, mode names, channel mappings, output channels, blur kernel, iteration count, padding, subtraction rule, input range, dtype, and existing threshold semantics in PREPROCESSING.md. Record whether any existing parameter called B is a percentage, a threshold, or something else; never assume B=70 means 70% zeros. Preserve the fixed contrast transform. The percentage sparsifier below is an explicit component of this new study, not a silent reinterpretation of a legacy parameter.
+
+Port only the small required frontend, retaining attribution/license information. Do not import the old segmentation or SLAM application and its dependencies. Make the frontend fixed and non-trainable, with buffers moved correctly between devices. Establish numerical parity with the original transform on synthetic and real inputs before running contrast experiments. Document differences needed for batching or device support.
+
+If the source cannot be found or read, continue independent environment, dataset, baseline, and infrastructure work, but mark contrast experiments blocked and request the exact missing source. Do not invent the three implementations or claim source parity without access.
+
+## 3. Dataset-specific normalization, coefficient sparsification, and empty-patch detection
+
+### 3.1 Raw-input baseline normalization
+
+Use fixed published dataset-specific normalization constants for raw input, on [0,1] image values:
+
+    MNIST_MEAN = (0.1307,)
+    MNIST_STD = (0.3081,)
+    CIFAR10_MEAN = (0.4914, 0.4822, 0.4465)
+    CIFAR10_STD = (0.2023, 0.1994, 0.2010)
+
+The MNIST values are used in the PyTorch MNIST example. The CIFAR-10 values are the fixed recipe used by kuangliu/pytorch-cifar; describe them as the chosen published recipe, not the only possible convention or an exact population-statistic calculation performed in this project. Record their provenance and input range in the config. Reuse them unchanged for validation, clean test, and corrupted test input. Do not copy these raw-input constants into any contrast frontend. Do not copy the reference scripts' test-set checkpoint selection, training recipes, or nondeterministic settings.
+
+References for these baseline constants:
+https://github.com/pytorch/examples/blob/main/mnist/main.py
+https://github.com/kuangliu/pytorch-cifar/blob/master/main.py
+
+### 3.2 Compute each contrast representation's own mean and standard deviation FIRST
+
+Implement a tested `compute_normalization_stats.py` entry point. For every dataset and each of the three VERIFIED contrast representations, visit EVERY image in the permitted clean training partition exactly once in a deterministic, unaugmented pass. For the primary held-out-validation protocol in section 5, this means all 55,000 MNIST training images or all 45,000 CIFAR-10 training images, not the 5,000 held-out validation images. For an explicitly enabled full-training-set refit, make a separate stats artifact using all 60,000 or 50,000 clean training images, respectively.
+
+Use the exact source-matched frontend at 0% coefficient thresholding. Disable random augmentations, coefficient thresholding, token dropping, model-input normalization, and learned layers while estimating statistics. Natural zeros in the frontend output remain valid observations and MUST be included. Compute statistics on native output channels/pixels before artificial model padding or post-frontend channel copies. This is one dataset-wide mean/std VECTOR per representation, not per-image, per-batch, per-patch, per-seed, or per-architecture normalization.
+
+For each native output channel c, over K actual image pixels:
+
+    mu[c] = sum(C0[n,c,h,w]) / K
+    variance[c] = sum((C0[n,c,h,w] - mu[c])**2) / K
+    sigma[c] = sqrt(variance[c])
+
+Use population variance (ddof/correction=0), not an average of batch or image standard deviations. Run the frontend in its verified float32 arithmetic, then accumulate moments in float64 using deterministic chunked Welford/Chan aggregation or a stable two-pass implementation. Test against a direct float64 computation on a manageable subset, including batches of unequal size. Keep the reduction order fixed and record it. Fail on NaNs, infinities, missing samples, or materially negative computed variance. Do not silently drop awkward images.
+
+This requires transforming all training images, not storing all transformed images simultaneously. Stream the data, optionally evaluating all three modes in one pass through the image loader. Avoid unnecessary large caches. Record the actual number of images and per-channel pixels visited. Never estimate normalization from validation/test images, MNIST-C, CIFAR-10-C, or augmented/corrupted images. It is permissible to log their distribution moments after evaluation as DIAGNOSTICS; they must never update the normalization used by a model.
+
+For constant or numerically degenerate channels, set a fixed guard `normalization_min_std=1e-6` in native frontend units. Save the measured sigma and use `sigma_effective[c]=1.0` when sigma[c] is below this guard; otherwise use the measured sigma[c]. Log every guarded channel and do not amplify numerical noise by dividing by a nearly zero standard deviation. Preserve channel count and do not silently delete opponent channels. Do not alter the frontend or token epsilon to conceal such degeneracy.
+
+Save one versioned JSON/NPZ artifact per dataset/representation/training-partition, containing mu, measured sigma, effective sigma, pixel counts, min/max, natural zero fractions, guard settings, split IDs/hash, source commit/file hash, frontend config, input range, accumulation method/dtype, and artifact SHA-256. Use atomic writes and a file lock so concurrent GPU jobs share a single verified result. Save/restore the normalization values as fixed model buffers and include their hash in checkpoints and the run ID.
+
+Freeze these 0%-sparsity statistics across ALL [0,20,40,60,80] settings, both architectures, all three training seeds, dense controls, validation, clean test, and corrupted test evaluation. Do not re-estimate after thresholding or for a different corruption/severity. A source/frontend/split change invalidates the statistics cache. At 0%, check that the full dense standardized training representation has approximately zero mean and unit population variance on non-guarded channels. This check is BEFORE token dropping. Do not expect retained-token distributions or sparsified/corrupted inputs to retain those same moments.
+
+### 3.3 Coefficient sparsification and support
+
+Use floating-point images in the range expected by the verified frontend. For the usual [0,1] input contract, convert uint8 to float32 by dividing by 255. Compute the frontend, coefficient ranking, support mask, and input standardization in float32 outside mixed-precision autocast. Do not apply raw RGB/grayscale mean/std normalization BEFORE the contrast frontend.
+
+Define the requested percentage as a target fraction of ALL native representation coefficients per image, before adding implementation padding or any post-transform channel copies for a model interface:
+
+    M = number of native representation coefficients
+    n_remove = floor(sparsity_percent * M / 100)
+
+Stable-sort coefficients by absolute NATIVE, UNNORMALIZED contrast magnitude, with native channel/raster order breaking ties. Set the first n_remove entries to exactly zero, preserving all other values and signs. At 0%, bypass percentile thresholding and sorting. Do not compute thresholds across a minibatch, dataset, class, or corruption category. An optimized implementation is allowed only after matching this deterministic reference. Per-channel standard deviations must NOT change the ranking rule by moving thresholding after normalization.
+
+Existing zeros count toward the target. Actual zero fraction may exceed the requested percentage, and adjacent requested settings can produce the same tensor on already-sparse inputs. Report this; do not replace the definition with "remove p% of currently nonzero values." Count every native output channel, including identically zero opponent channels. Exclude only artificial spatial padding and any extra channel copies added AFTER the frontend solely for a model interface; do not silently change the denominator for MNIST.
+
+For each non-overlapping patch j of the sparsified, UNNORMALIZED representation Cs:
+
+    activity_j = max(abs(all native Cs coefficients in patch j))
+    keep_j = activity_j > token_epsilon
+
+Use token_epsilon=0.0 for the primary study. A fixed numerical-tolerance option is permitted only for explicitly labelled follow-up diagnostics, not a primary epsilon sweep or a way to force a token budget. Preserve original raster coordinates. Save the Boolean support independently of the numerical values fed into the embedding.
+
+### 3.4 Standardize retained contrast without undoing token removal
+
+Ordinary per-channel normalization is:
+
+    Z[c] = (Cs[c] - mu[c]) / sigma_effective[c]
+
+A thresholded zero would therefore become -mu[c]/sigma_effective[c] when mu[c] is nonzero. This does NOT provide new image information and MUST NOT cause an empty patch to be retained. Decide patch support on Cs BEFORE this affine transform, patch-projection bias, LayerNorm, or positional embeddings. Then gather retained patches and apply the affine transform to all their native coefficients before projection. Normalizing densely and then gathering by the ORIGINAL mask is an equivalent reference, but never recompute support from Z.
+
+Inside a retained patch, apply the usual affine normalization even to coefficients that were zeroed; their resulting values may be -mu/sigma. Do not silently re-zero those coefficients after normalization, since that would be a different, masked-normalization method. Do not revert to RMS-only/division-only normalization, and do not center first then sparsify. Distinguish the fraction of zeros in native Cs from the numerical zero fraction after standardization and from physically absent tokens. The experiment's sparsity percentage refers to native Cs.
+
+Entirely empty patches remain absent throughout compact execution. Any implementation-only sequence padding is inserted as masked, zero feature padding and never treated as image data. Structural padding and absent children in Swin feature-space merging are not standardized raw pixels. Use the identical native support and the identical affine transform in sparse and dense-masked reference paths. Dense 0%-contrast controls apply ordinary affine normalization without removing image patches.
+
+Test explicitly with NONZERO channel means, partially zero patches, fully empty patches, and near-zero-variance channels. Verify that gathering then normalizing agrees with normalizing then gathering using the saved native mask, and that empty inputs still take the defined empty-image path. Never clip signed contrast or standardized values to [0,1] for training; display-only mappings must not enter the model.
+
+Apply training augmentations to the raw image BEFORE contrast extraction and sparsification. Evaluation receives each official clean or corrupted image and applies the same frozen pipeline; never compute its support from a clean counterpart.
+
+Use native representation channel counts in the patch stem and report parameter counts. MNIST is grayscale: its raw baseline is native grayscale, not RGB. For source modes requiring RGB, deterministically replicate the MNIST gray channel at the frontend input only. Do not fabricate color. Report duplicated contrast channels and zero/near-zero opponent channels, including their normalization guards. These MNIST encodings can be degenerate and must not be presented as independent evidence about color robustness. Retain all three requested configurations in the registry.
+
+Normalization API reference:
+https://docs.pytorch.org/vision/stable/generated/torchvision.transforms.Normalize.html
+
+## 4. Data discovery, official downloads, and integrity
+
+First inventory and validate existing datasets under:
+
+    /ceph/sagnihot/datasets/
+
+Recognize common layouts, including MNIST/raw, MNIST IDX gzip files, cifar-10-batches-py, CIFAR-10-C/*.npy, and mnist_c/<corruption>/{test_images,test_labels}.npy. Look for existing archives as well as extracted data. Reuse valid originals without modifying them. Do not repeatedly traverse the whole Ceph tree from every worker. Save resolved paths and validation results in datasets_manifest.json.
+
+Use these sources when a dataset is absent:
+
+MNIST, torchvision-supported mirror:
+https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz
+https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz
+https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz
+https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz
+
+MNIST loader/source documentation:
+https://docs.pytorch.org/vision/stable/_modules/torchvision/datasets/mnist.html
+
+CIFAR-10 dataset page:
+https://www.cs.toronto.edu/~kriz/cifar.html
+CIFAR-10 Python archive:
+https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+
+MNIST-C official repository:
+https://github.com/google-research/mnist-c
+MNIST-C dataset record:
+https://zenodo.org/records/3239543
+MNIST-C archive:
+https://zenodo.org/records/3239543/files/mnist_c.zip?download=1
+
+CIFAR-10-C official benchmark repository:
+https://github.com/hendrycks/robustness
+CIFAR-10-C dataset record:
+https://zenodo.org/records/2535967
+CIFAR-10-C archive:
+https://zenodo.org/records/2535967/files/CIFAR-10-C.tar?download=1
+
+Use publisher/torchvision checksums. Published archive MD5 values:
+- MNIST training images: f68b3c2dcbeaaa9fbdd348bbdeb94873
+- MNIST training labels: d53e105ee54ea40749a09fcbcd1e9432
+- MNIST test images: 9fb629c4189551a2d022fa330f9573f3
+- MNIST test labels: ec29112dd5afa0611ce80d1b7f02629c
+- CIFAR-10 Python: c58f30108f718f92721af3b95e74349a
+- mnist_c.zip: 4b34b33045869ee6d424616cd3a65da3
+- CIFAR-10-C.tar: 56bf5dcef84df0e2308c6dcbcbbd8499
+
+Follow legitimate redirects. Download atomically with locking and retries; verify before extraction. Check free space and extract safely against path traversal. Do not overwrite good data because a download failed. If existing extracted data lack their archive, record what integrity checks were possible rather than claiming an archive checksum was verified. Record SHA-256 hashes for reproducibility as practical.
+
+Validate image counts, image layout, pixel range, dtype, class labels, corruption names, and severity indexing. Convert HWC/CHW explicitly. Use mmap for corruption arrays and sensible worker counts. Prefer existing node-local scratch for temporary caches when available; do not generate millions of small files or duplicate huge float32 corruption caches for every model.
+
+## 5. Clean and corrupted evaluation protocols
+
+Report clean top-1 TEST accuracy and error on the official 10,000-image test set of each dataset. Never select a checkpoint, threshold, representation, or recipe using either clean test performance or corrupted test performance.
+
+Use fixed stratified training/validation splits, split_seed=2026:
+- MNIST: 55,000 training / 5,000 validation, from the official training set.
+- CIFAR-10: 45,000 training / 5,000 validation, from the official training set.
+
+The primary protocol is now `heldout_val`: use these splits for ALL primary/control runs, not only pilots, so every run has genuine held-out validation loss and accuracy curves. This is an explicit change from the earlier full-training-set main protocol to meet the requirement for training AND validation monitoring. Keep the official test sets independent. Use identical split IDs across representations, sparsity settings, architectures, and seeds; verify training/validation disjointness. Record the exact training-set size in every result table.
+
+Pilot runs may use these same partitions to check implementation and freeze a shared recipe/epoch budget. Main runs then restart from fresh random initializations. Evaluate the entire held-out clean validation set in eval/inference mode after EVERY epoch, without random augmentation, and log its loss, accuracy, and counts to TensorBoard. Restore training mode afterwards. Never train on the held-out validation images or fit contrast statistics to them.
+
+Keep the final epoch of the frozen schedule as the primary checkpoint, matching the original fixed-budget comparison. A best-validation checkpoint can be saved for diagnostics with a predetermined tie-break, but it must not replace final-epoch primary results selectively. Final clean-test and corruption evaluation happens only after the training recipe and primary checkpoints are fixed. Do not call an official test set "validation" to obtain a learning curve.
+
+Provide an optional, separately labelled `full_train_refit` mode, disabled by default to avoid doubling this small study. It retrains matched conditions from scratch on all 60,000 MNIST or 50,000 CIFAR-10 training images with the frozen recipe and separately recomputed 0%-contrast statistics. There is no independent validation curve in that mode; do not fabricate one or reuse an already-trained-on subset as validation. Keep full-data refits out of heldout_val aggregates and do not compare a full-data raw baseline against a heldout_val contrast model. Preserve any existing full-data runs under their original protocol rather than relabelling them.
+
+CIFAR-10-C primary corruption list, exactly 15:
+
+    gaussian_noise, shot_noise, impulse_noise,
+    defocus_blur, glass_blur, motion_blur, zoom_blur,
+    snow, frost, fog, brightness,
+    contrast, elastic_transform, pixelate, jpeg_compression
+
+Evaluate all five severities and all 10,000 examples per severity: 75 cells and 750,000 predictions per trained model. The severity-s block is [(s-1)*10000 : s*10000]. Validate labels.npy against the actual archive layout and clean test ordering; never blindly truncate or tile labels. Extra archive corruptions such as speckle_noise, gaussian_blur, spatter, and saturate are not part of the primary 15-corruption average. Do not download CIFAR-10-P by mistake.
+
+Standard MNIST-C has 15 corruptions at one released, fixed severity each, NOT five severities:
+
+    shot_noise, impulse_noise, glass_blur, motion_blur,
+    shear, scale, rotate, brightness, translate,
+    stripe, fog, spatter, dotted_line, zigzag, canny_edges
+
+Evaluate the full 10,000-image test split of each. Exclude identity and mnist_c_leftovers from the corruption average. Use severity="fixed" in saved results. Do not generate five ad hoc levels, duplicate the released data five times, or describe a custom extension as standard MNIST-C. Never use the corrupted training arrays for training or normalization in this study.
+
+Use the released benchmark arrays rather than regenerating stochastic corruptions. No test-time augmentation, adaptation, corruption-specific thresholds, clean-counterpart access, or tuning on corruption results. Every image must receive a prediction, including images whose contrast representation becomes entirely empty.
+
+## 6. Exactly two small-image architectures
+
+Use ViT-Small and Swin-Tiny, both with random initialization and 10 output classes. Do not resize these datasets to 224x224. Use native MNIST 28x28 and CIFAR-10 32x32 images.
+
+Fix patch size=2 for both architectures and all representations. A preprocessing-only pilot should also report empty-patch fractions for patch sizes 1, 2, and 4, to expose the coefficient-to-patch sparsity relationship, but do not add a patch-size training sweep or change the primary patch size to force a favorable result.
+
+ViT-Small configuration:
+- embedding width 384; depth 12; 6 attention heads; MLP ratio 4;
+- non-overlapping 2x2 linear patch projection; standard pre-norm blocks;
+- learned positional embeddings on the original patch grid and a class token;
+- native patch grids 14x14 for MNIST and 16x16 for CIFAR-10.
+
+Swin-Tiny configuration:
+- initial width 96; depths [2,2,6,2]; heads [3,6,12,24]; MLP ratio 4;
+- non-overlapping 2x2 patch embedding and hierarchical 2x2 patch merging;
+- stage grids 14,7,4,2 for MNIST and 16,8,4,2 for CIFAR-10;
+- stage window sizes [7,7,4,2] for MNIST and [4,4,4,2] for CIFAR-10;
+- alternate unshifted/shifted blocks, disabling shifts where the grid fits within one window;
+- retain the standard four-child concatenation, normalization, and reduction in patch merging.
+
+These are explicitly small-image-adapted ViT-Small and Swin-Tiny, not claims to reproduce ImageNet configurations. All comparisons within a dataset/architecture share dimensions, windows, patch size, parameterization, and training recipe apart from the documented input-channel difference and sparse support rules.
+
+Use a pinned timm/torchvision implementation as the architectural reference where appropriate. Instantiate configurable base classes rather than assuming a named ImageNet factory accepts every override. Record all adaptations and compare all-active outputs against the matched dense implementation.
+
+References:
+https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/vision_transformer.py
+https://docs.pytorch.org/vision/stable/_modules/torchvision/models/swin_transformer.html
+https://github.com/microsoft/Swin-Transformer
+
+## 7. Genuine compact execution, including Swin
+
+ViT:
+Gather retained native contrast patches using pre-normalization support, standardize them with the frozen representation-specific per-channel mean/std, project them, and gather their ORIGINAL positional embeddings. Never renumber spatial positions after compaction. Always preserve the class token. Run attention and MLPs on shortened sequences. Handle a completely empty image with a class-token-only sequence, not an arbitrary retained image patch.
+
+For batches with different retained lengths, begin with correct compact tensors padded only to the current batch's maximum retained length, with a valid padding mask. Instrument both useful tokens and actually executed padded lengths. Do not claim fully ragged computation when using padded batches. Packed variable-length execution or exact-length grouping is a permitted optimization after forward/backward parity tests. Packed sequences must never attend across images. Do not change minibatch membership or sample weighting merely to get convenient lengths.
+
+Swin:
+Do not flatten selected tokens and pass them to an unchanged dense Swin, resize the retained set into a new rectangular grid, or replace window attention with global attention.
+
+Keep original coordinates and grid extents at every stage. Form shifted/unshifted windows using those coordinates and the appropriate cyclic-shift boundary rules. Gather only active tokens in each window; skip empty windows and group nonempty windows by retained length where useful. Relative-position bias must use the original within-window coordinate offsets, not compact sequence indices. Preserve shifted-window attention restrictions so cyclic wrapping does not connect unrelated boundaries.
+
+Compute QKV projections, attention, output projections, and MLPs over active tokens, accounting explicitly for any execution padding. A dense full-window attention mask alone is not sparse attention. Avoid per-token Python loops; batch work over active tokens and length groups.
+
+At patch merging, a parent exists if ANY of its four original children is active. Gather each existing parent's four children in the reference order, inserting zero vectors for missing children, then apply the standard merge normalization and projection. Skip entirely absent parents. Padding required by an odd stage dimension is structural padding, not image evidence. Do not let biases or normalization resurrect absent locations. Do not introduce additional feature-based pruning after merging.
+
+At the end, pool active spatial features only. An image with no active features gets a defined zero pooled vector and finite classifier output. Do not add a fake spatial token. Keep stochastic-depth masks associated with original images, not with packed token or window indices.
+
+Build a dense-masked REFERENCE execution of the same sparse semantics for correctness tests and timing controls. It must exclude missing keys, suppress inactive states after residual blocks, reproduce merging support, and use the same pooling. Sparse and dense-masked logits should agree within declared dtype tolerances. Ordinary dense attention over affine-standardized sparse patches without the saved support restrictions is a DIFFERENT model and is not the parity reference.
+
+Later Swin stages may become effectively dense through merging. Measure this honestly. If the compact implementation is slower, report that. Do not substitute a different architecture, fabricate speedups, or label dense masking as physical token removal. A blocked Swin implementation must be identified as blocked while the valid ViT work continues.
+
+## 8. Experiment matrix and the minimal controls
+
+Main matrix, for every dataset, architecture, and seed:
+- one ordinary dense raw-image model;
+- each of the three contrast representations at all five sparsity levels, using compact execution from the beginning of training.
+
+This is 2 datasets x 2 architectures x 3 seeds x (1 + 3x5) = 192 requested training runs.
+
+Add one small control set: each contrast representation at 0% thresholding with ordinary DENSE, no-token-drop training, for every dataset/architecture/seed. This adds 36 runs, making 228 main/control runs under heldout_val, excluding pilots and optional full-data refits. These controls separate replacing the input representation from removing naturally empty patches, because 0% thresholding does not imply zero natural sparsity.
+
+For every compact checkpoint, benchmark its semantically equivalent dense-masked execution without retraining. This isolates the implementation's compute savings from the accuracy effects of changing the input representation or missing-token semantics.
+
+Do not train a new RGB baseline at every sparsity level. Do not expand to SLAM, additional datasets, extra architectures, random routers, model distillation, or a large hyperparameter search. Keep pilot runs out of the main result aggregates. Record every intended run up front and preserve failures instead of silently dropping them.
+
+## 9. Training recipe and validation discipline
+
+Default starting recipe for clean-validation pilots:
+- batch size 8, effective batch size 8, no gradient accumulation;
+- AdamW, learning rate 3e-4, betas (0.9,0.999), weight decay 0.05;
+- exclude biases, normalization parameters, and positional embeddings from weight decay;
+- cosine learning-rate decay to 1e-6; warmup 5 epochs on MNIST and 10 on CIFAR-10;
+- 50 epochs on MNIST and 200 on CIFAR-10;
+- gradient clipping at norm 1.0;
+- cross-entropy without Mixup, CutMix, distillation, or label smoothing;
+- dropout 0 and a fixed stochastic-depth schedule from 0 to 0.1.
+
+Use CIFAR-10 random crop with four-pixel padding and random horizontal flip. Use no augmentation for the initial MNIST study. No AugMix, corruption augmentation, color jitter, or robustness-specific training that would confound the input-representation question.
+
+Treat these as starting experimental choices, not a claim of a published optimal recipe. Before the full sweep, verify loss reduction, finite gradients, and convergence of raw-input pilots; run an augmentation-free tiny-subset overfit check. If a recipe is clearly failing, debug first and make a small, logged clean-validation-only correction. Freeze one recipe per dataset/architecture before main runs; never tune separately for favorable sparsity levels or revisit it after seeing corruption results.
+
+Use the same backbone initialization for a matched dataset/architecture/seed wherever shapes permit. Keep data-order and augmentation randomness independent of model RNG consumption. Train every main condition from a fresh initialization, not from another condition's checkpoint. Do not shorten weak conditions selectively or silently raise batch size to occupy GPUs.
+
+Mixed precision is allowed for learned layers, preferably BF16 where supported, but keep the frontend and support decision in float32. Choose and log a consistent precision policy for each comparison group. Do not systematically assign baselines and contrast models different precision or hardware classes; balance assignments and record all hardware provenance. Record every epoch's training and held-out validation losses/accuracies, learning rate, throughput, support statistics, and wall time in both machine-readable logs and TensorBoard, as specified in section 10A. Save the final checkpoint and resumable checkpoints atomically.
+
+## 10. Environment, cluster use, and reproducibility
+
+Create a dedicated conda environment named `sparse-contrast-bench`. Inspect the cluster's driver, CUDA compatibility, scheduler, available CPU/RAM/scratch, and existing conda installation. Select a compatible stable Python/PyTorch/torchvision/timm stack once, test it, and pin exact versions/builds. Install only necessary packages, including numpy, scipy/scikit-learn as needed, pandas, PyYAML, tqdm, pytest, matplotlib, seaborn, Pillow, and TensorBoard. Pin TensorBoard and its relevant dependencies too; use torch.utils.tensorboard.SummaryWriter, without requiring TensorFlow training or an external experiment-tracking service. Do not upgrade the environment halfway through the sweep.
+
+Save environment.yml, pip freeze, relevant explicit conda package/build information, installation commands, source commits, project commit/diff, and CUDA/driver/cuDNN/GPU details. Do not rely on an unversioned "latest" dependency or mutable Git branch for reproduction.
+
+Use seeds [0,1,2] for all reported training conditions. Set Python, NumPy including Generator instances, PyTorch CPU/CUDA, sampler, and DataLoader-worker seeds. Set PYTHONHASHSEED before process launch. Enable deterministic algorithms, disable cuDNN benchmarking, configure CUDA deterministic requirements for the installed stack, and explicitly record TF32/matmul settings. Unsupported nondeterministic operations must fail visibly or be replaced with tested deterministic alternatives, not silently ignored.
+
+Use reproducible epoch shuffles and augmentation decisions, preferably keyed by seed/epoch/sample index. Save model, optimizer, scheduler, AMP scaler when applicable, RNG state, epoch, step, sampler progress, and config hashes. Provide and test exact resume at a declared boundary; an epoch-boundary checkpoint and deterministic replay is acceptable when exact mid-epoch worker-state resume is not supported. Test uninterrupted versus resumed execution and repeated same-seed short training on the same stack. Do not promise bitwise identity across different GPU types or library releases.
+
+Exploit all GPUs actually allocated or authorized for this user. Prefer independent one-GPU runs distributed across dataset/architecture/representation/sparsity/seed, which preserves batch size 8. Prefer H100s when available without ignoring other usable authorized GPUs. Under Slurm, use job arrays/dependencies within account and partition limits; otherwise use a bounded local launcher respecting CUDA_VISIBLE_DEVICES and device locks. Do not train on login nodes, seize unallocated GPUs, kill other jobs, or silently change optimizer semantics via multi-GPU batching.
+
+Keep GPUs busy with queued independent runs, while respecting CPU, RAM, I/O, and scheduler limits. Measure a real pilot runtime and report estimated total GPU-hours and elapsed time. Support retries, checkpoint resume, preemption, and unique run IDs based on the frozen config. Avoid duplicate work and concurrent writers to one checkpoint or result file. Do not move an in-progress run between hardware types without recording it and its reproducibility implications.
+
+Reference:
+https://docs.pytorch.org/docs/2.9/notes/randomness.html
+
+## 10A. TensorBoard is required for every run and the aggregate study
+
+Use `torch.utils.tensorboard.SummaryWriter`. Create stable, descriptive paths such as:
+
+    outputs/tensorboard/<protocol>/<dataset>/<architecture>/<representation>/<execution>/p<percent>/seed<seed>/<config_hash>/train/
+    outputs/tensorboard/<same_run_identity>/evaluation/
+    outputs/tensorboard/<same_run_identity>/latency/<hardware_id>/batch<batch_size>/
+    outputs/tensorboard/study_summary/<protocol>/<dataset>/<architecture>/
+
+Raw input has representation=raw and sparsity=NA, not a fictitious sparsity sweep. Dense controls and compact models need different execution labels. One process owns each writer directory. Separate training-step, final-evaluation, and latency-sample axes; never put unrelated step meanings into the same scalar tag. Record optimizer_step, epoch, samples_seen, wall time, config hash, source/environment hashes, split IDs, normalization values/hash, precision, device, scheduler job ID, and parameter counts. No credentials in logs.
+
+Log ALL actual loss terms and performance metrics, not just console messages. The study has supervised cross-entropy; do not invent auxiliary objectives to populate a dashboard. Required logging:
+
+- At a documented step interval (default every 50 optimizer steps, configurable down to every step), log training cross-entropy/total loss, top-1 accuracy, every optimizer group's learning rate, gradient norm before clipping, and elapsed time. Include the first and last step of every epoch. Accumulate counts and loss sums so EVERY processed sample contributes to exact sample-weighted epoch summaries; do not average unequal batch accuracies or losses without weights.
+- Every epoch, log full training-online loss/accuracy, full held-out validation loss/accuracy/error, validation correct/total, epoch/validation duration, samples/second, GPU allocated/reserved/peak memory, natural/achieved coefficient sparsity, retained/removed patches, empty-image rate, executed padding, and Swin stage/window activity. Clearly label online augmented train-mode metrics versus unaugmented eval-mode validation metrics. Any clean train-eval subset is labelled train_monitor, never validation.
+- At final evaluation, log clean-test loss/accuracy/error/counts; every corruption/severity's loss/accuracy/error/counts; per-corruption average error; CIFAR-10-C per-severity macro error; and overall unnormalized mean corruption error. MNIST-C uses severity=fixed. Log per-class accuracy and a confusion-matrix figure for clean validation/test and aggregate corruption predictions. Do not run corruption tests every epoch or select a checkpoint from them.
+- Log fitted normalization mean, measured/effective std, guarded channels, and artifact identity. Log actual distributions before/after thresholding and normalization, and retained-token distributions, with explicitly different tag names. These are monitoring values, not running normalization updates.
+- Log all latency measurements/summary statistics specified in section 12, including raw per-batch distributions, stage timings, whole-pipeline median/p95/mean, throughput, memory, and matched speedups. Add the actual final comparison figures to TensorBoard, rather than leaving them only on disk.
+- Write final per-seed hyperparameters/results and cross-seed mean/sample-SD/paired changes into summary runs. Preserve seed-level runs. Test that TensorBoard values agree with the CSV/JSON source metrics; do not compute separate inconsistent numbers for each output format.
+
+Use parameter/gradient and activation histograms at a bounded interval such as every 10 epochs and the final epoch, on fixed diagnostic batches. Do not dump every activation from every batch. Every metric family must be logged, but image/histogram volume must not swamp Ceph or GPU training. Publish the logging intervals in the config. Keep numeric logs and checkpoint metadata as durable ground truth independent of event-file downsampling in the UI.
+
+### Image logging before/after representation, sparsity, and normalization
+
+Choose a fixed class-balanced panel of training images and a separate panel of held-out validation images (for example, one image per class). Save their exact IDs; reuse them across representations, sparsity levels, architectures, and seeds. Use an independent visualization RNG, preserve model/RNG state, and do not advance the training sampler to collect examples.
+
+For each of the three representations, log matched panels showing:
+
+    original raw image
+    actual augmented input when applicable, separately labelled
+    native signed contrast at 0% thresholding, BEFORE normalization
+    native signed contrast at each of 0/20/40/60/80%, BEFORE normalization
+    dense 0%-contrast AFTER mean/std normalization
+    sparse contrast AFTER the same normalization, with absent patches marked
+    coefficient support mask and original-grid retained/removed patch overlay
+
+Log all five sparsity previews in a shared preprocessing diagnostic run and the matching sparsity preview in each training run. Log fixed panels before training and at completion; every 10 epochs, log a bounded actual-augmentation/model-prediction panel. Fixed preprocessing previews need not be copied at every step. At final evaluation, add predetermined corrupted-input panels covering every official corruption and each available severity, in manageable groups; never choose images based on predictions or observed speedups.
+
+Signed contrast and normalized values must not be sent directly to an image API that clips them to a normal display range. Produce DISPLAY-ONLY per-channel views with a documented fixed symmetric color scale, including zero, using matplotlib; keep scales fixed across sparsity settings for a given representation/channel and comparable split. Derive display ranges from clean training diagnostics, not per-test-image min/max. Show opponent channels with their actual channel names, not as a fabricated RGB photograph. Include a colorbar/range label and explicitly distinguish absent patches from numerical zero. Show normalized-zero offsets when informative, while retaining the original support overlay.
+
+Keep a small NPZ artifact with the actual floating-point tensors, masks, IDs, and display scales behind the preview. Never feed rendered/clipped display copies to a model. Log images with add_image/add_images or matplotlib figures with add_figure, and close figures after writing. All produced scientific figures still obey the requested matplotlib/seaborn style in section 13.
+
+### Reliability, performance, and access
+
+Flush asynchronously at a reasonable interval and explicitly at epoch/checkpoint boundaries, preemption, exceptions, and normal completion. Use resume-aware global steps and `purge_step` where appropriate to hide orphaned training events after a rollback; test this. Do not reset a resumed run's step to zero or merge different seeds/configs into one run. Keep rollback handling for raw metrics consistent with checkpoints. Missing essential event logs make a run's reporting incomplete, not silently successful.
+
+Image rendering, histograms, profiler traces, scalar extraction with .item(), GPU-to-CPU logging copies, and TensorBoard writer work MUST be disabled in primary timed inference regions. Collect timing outputs in memory and write them only after the measurement pass is complete. Benchmark with no live TensorBoard process/writer or competing training work using that GPU/CPU allocation. Profiling is a separate diagnostic pass. Log training/logging overhead separately from inference.
+
+Include and test the startup command, using the project's real output location:
+
+    tensorboard --logdir outputs/tensorboard --host 127.0.0.1 --port 6006
+
+Document cluster-appropriate SSH forwarding and the actual host/log path without exposing an unauthenticated public dashboard. Do not run a heavy service on a login node if prohibited. In the end-to-end smoke test, parse the event files programmatically and verify that train/val scalars, image summaries, final metrics, and latency tags actually exist.
+
+Reference:
+https://docs.pytorch.org/docs/stable/tensorboard.html
+
+## 11. Metrics and aggregation
+
+For each seed/model, save integer correct/total counts and top-1 accuracy/error for clean test data and every corruption/severity cell. Error is a fraction in [0,1] internally.
+
+For CIFAR-10-C:
+
+    CE_raw(c) = (1/5) * sum over s=1..5 of error(c,s)
+    mCE_raw = (1/15) * sum over the 15 corruptions of CE_raw(c)
+
+For standard MNIST-C:
+
+    CE_raw(c) = error(c, fixed)
+    mCE_raw = (1/15) * sum over the 15 corruptions of CE_raw(c)
+
+Multiply by 100 only for percentage reporting. Label the main robustness statistic "Mean corruption error (%)" or "mCE (unnormalized, %)" and state its formula. Original ImageNet-C mCE uses reference-model normalization; do not copy ImageNet AlexNet denominators onto CIFAR-10-C or MNIST-C, or call an unnormalized average reference-normalized mCE. No reference-normalized metric is required here.
+
+First aggregate corruption/severity cells WITHIN each independently trained seed, then report mean +/- sample standard deviation across the three seeds. Also report paired changes versus the matching raw-input seed baseline, distinguishing percentage-point differences from relative percentage changes. Do not treat corruption cells, repeated timings, or duplicated MNIST encodings as independent training seeds. A macro-average with a missing corruption, severity, or seed is incomplete, not a completed primary result.
+
+The report starts with overall clean TEST performance and overall corruption error for each dataset/architecture, then per-corruption errors averaged over all five CIFAR-10-C severities. Follow with severity-wise and complete corruption/severity tables. For MNIST-C, explicitly state that per-corruption scores use its single fixed severity.
+
+Keep dataset/architecture groups separate. Do not average performance across architectures, datasets, sparsity levels, or representations into one headline number. Save the full precision machine-readable results behind all rounded tables.
+
+## 12. Inference latency is a primary result: totals AND a complete breakdown
+
+Do not equate coefficient sparsity, empty-patch fraction, FLOP reduction, and speedup. Report them separately. Count actual image tokens separately from class tokens, implementation padding, and packed/bucketed padding. Native coefficient sparsity is measured BEFORE mean/std normalization. Record natural and achieved zeros, all-channel-zero spatial fraction, empty patch fraction, retained patches, executed padded lengths, empty-image frequency, and Swin active tokens/windows at every stage, including distributions. Recompute support on corrupted inputs, never reuse a clean counterpart's mask.
+
+Benchmark EVERY raw baseline, all 15 compact representation/sparsity combinations, and all three dense 0%-contrast controls for each dataset/architecture, each seed, at batch sizes 1 and 8. Also benchmark the semantically equivalent dense-masked path for each compact checkpoint without retraining. Record checkpoint and normalization hashes. Use the SAME hardware, precision, backend, input layout, and execution policy for each comparison, with no competing work on that GPU. Reserve a benchmark device/allocation; pause or drain only this project's own jobs, never another user's jobs. Do not pool timings from different GPU types.
+
+Use fixed real-input batches selected without reference to prediction, sparsity, or latency. Preserve sample IDs, batch membership, and ordering across methods. Measure clean input and a balanced, explicitly saved timing subset for every corruption and each available severity. Accuracy still uses the FULL official test sets. Report clean timings, per-cell corruption timings, and a clearly defined balanced corrupted-input aggregate separately; the raw path is dense but must still be measured on matched inputs.
+
+### 12.1 Three explicitly bounded latency scopes
+
+1. `gpu_raw_to_logits`: decoded raw input already on the GPU -> output logits on the GPU. This is the primary online COMPUTE latency. Include conversion/range handling, frontend color mapping and blur, contrast subtraction, native coefficient ranking/thresholding, support computation, compaction, mean/std normalization, embedding, transformer, merging/pooling, and classifier. Input is raw, not a cached contrast tensor. Raw baselines include their own normalization only, not unused contrast computation.
+2. `host_raw_to_logits`: comparable decoded raw input in pinned host memory -> output logits on the GPU. Include H2D transfer and all online computation. State that disk/network I/O, image decoding before this boundary, and returning predictions to the CPU are excluded. This is the primary HOST-INPUT pipeline comparison alongside scope 1.
+3. `loader_to_cpu_prediction`: a separately labelled practical pipeline measurement starting before obtaining the batch from the configured loader -> usable CPU predictions. Include observed loader wait, decoding/layout/batch assembly, transfer, frontend, model, argmax, and D2H where performed. Report cold/warm cache policy, prefetch/workers, storage source, and outstanding work. With prefetch, observed loader wait is not total underlying disk service time; do not mislabel it. Do not use variable Ceph I/O as evidence of a model-compute speedup.
+
+Also measure cached-input/model-only timing as an explicitly diagnostic scope, never the headline result. One-time dataset-statistics fitting, model loading, CUDA/context initialization, compilation, and warmup are setup/cold-start costs; log them separately, not as recurring per-image normalization. The per-inference mean subtraction/division IS included. Benchmark individual representations independently: do not compute a shared contrast tensor or support outside the timed call, and do not compute all three modes when timing one deployed mode. No cached masks, coefficients, token indexes, embeddings, or sample-specific sparse layouts in the online totals. Fixed weights, normalization constants, and input-independent geometry tables may be resident.
+
+### 12.2 Stage-level timing and profiler diagnostics
+
+Instrument named stages covering the actual execution:
+
+    input conversion, range handling, layout, and MNIST channel replication if required
+    frontend color mapping
+    blur/center-surround operations and signed contrast subtraction
+    absolute magnitudes, stable sort/rank selection, and coefficient thresholding
+    native support/empty-patch detection
+    patch gathering and sequence packing/padding
+    frozen per-channel mean subtraction and std division
+    patch projection, positions, and special-token setup
+    transformer blocks, with attention and MLP/norm/residual work distinguished
+    Swin window grouping/shifts and position-bias indexing
+    Swin patch merging at each stage
+    final normalization, pooling, and classification head
+    optional prediction postprocessing/CPU return in the appropriate scope
+
+Record input/output/actual executed shapes and retained/padded lengths beside the times. For ViT, include per-block summaries; for Swin, include per-stage and merging summaries. Charge CPU-side length handling, sorting/index extraction, packing, host decisions, required synchronization, and kernel-launch overhead rather than hiding them outside the pipeline. The 0%-thresholding path bypasses sorting; dense controls skip support/gather work they do not need. Label genuinely inapplicable operations NA/not executed rather than pretending they were measured as zero. A fused operation gets a truthful fused-stage label, not invented individual sub-times.
+
+Use CUDA-event boundaries for GPU elapsed intervals and synchronized wall time for complete calls. Use a separate bounded torch.profiler CPU/CUDA pass, with named record_function scopes, to inspect kernels, CPU work, and shapes. Save traces and timing tables; log summaries/figures to TensorBoard. Use a TensorBoard profiler plugin only when supported by the installed stack, but do not make basic TensorBoard scalar/image logging depend on it. Export standard trace files as a fallback and report any unavailable profiler capability. Never use instrumented profiler latency as an uninstrumented headline result.
+
+Do not synchronize after every internal operation in the main total-latency pass. Use minimal top-level timing instrumentation there; obtain detailed stage attribution in a separate pass and quantify its overhead. Establish stream dependencies so events bracket all work, including work on additional streams. CPU and GPU intervals can overlap and profiler scopes can nest: never sum inclusive/self CPU and CUDA times into an invented end-to-end total. Never sum medians or p95s of separate stages and call the result a total median/p95. A breakdown plot uses additive exclusive intervals from one defined timing scope when available; otherwise show separate component plots and the independently measured total. Do not create an arbitrary residual to force agreement.
+
+### 12.3 Sampling, variability, and validity
+
+Use eval mode, inference_mode, and a fixed declared precision. For each timing condition, use at least 50 warmup batches and 200 measured paired batches, with balanced/randomized method order and a recorded benchmark RNG independent of training. Use the same real batches for every paired method. Preserve ALL valid measurements; do not retain only the fastest iterations or quietly remove slow outliers. Record execution batch size, sample/corruption/severity IDs, seed/checkpoint, repeat ID, hardware, timing scope, total/stage elapsed time, token counts, and measurement flags.
+
+Report mean, median, p95, actual images/second, and matched baseline_time/method_time speedup for all required scopes. Batch latency divided by batch size is amortized cost, not batch-1 request latency. Measure serial request latency and sustained-throughput elapsed time in explicitly separate passes rather than assuming reciprocal median latency is observed throughput. Show per-seed timing summaries; aggregate those summaries across the three seeds without pretending repeated batches are additional independently trained models. Retain within-run distributions separately from between-seed SD. Where feasible, repeat measurement sessions to check stability; do not present tiny differences within timing noise as established speedups.
+
+Measure peak allocated and reserved GPU memory in fresh comparable processes after warmup/reset. Capture dtype/backend/compilation/driver/device/power or clock state as available without changing cluster privileges. Log all-input token counts and all-empty-path timing; do not skip empty images. Validate output and gradient parity for compact implementations and output parity for optional faster kernels/compilation. Separate compile/cold-start time and record recompilations triggered by dynamic lengths. Optimize the raw baseline fairly under the same declared execution policy.
+
+Write raw timings and profile summaries to machine-readable files first, then mirror totals, stages, distributions, throughput, memory, and speedups to TensorBoard OUTSIDE measurement windows. Log inference setup/statistics time under separate setup tags. Produce the mandatory direct representation-comparison and latency-breakdown plots in section 13. Do not leave latency as "future work" after completing accuracy evaluation.
+
+No gain, worse corruption robustness, and an overhead-dominated Swin are valid outcomes. Report them without changing the method, sparsity levels, normalization, or timing boundaries to force a positive result.
+
+References:
+https://docs.pytorch.org/docs/stable/generated/torch.cuda.Event.html
+https://docs.pytorch.org/docs/stable/generated/torch.cuda.synchronize.html
+https://docs.pytorch.org/docs/stable/profiler.html
+
+## 13. Plotting: matplotlib and seaborn only
+
+Every plotting entry point must use exactly:
+
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    sns.set_theme(context="talk", style="whitegrid", font='serif', font_scale=1.0)
+
+Use only matplotlib and seaborn for figures. No Plotly, Altair, generated artwork, presentation templates, decorative dashboard-style plot layouts, emoji, watermark, decorative gradient backgrounds, "AI insights," hype captions, or unnecessary prose inside plots. Use short scientific axis labels, units, consistent colorblind-friendly representation colors, and distinguishable markers/line styles. Use installed serif fonts, without requiring external font downloads or LaTeX installation.
+
+Generate readable, separate figures for each dataset/architecture where necessary:
+1. Clean test accuracy versus requested coefficient sparsity, with three-seed mean and SD and a dense raw-input reference.
+2. Overall mean corruption error versus sparsity, again with mean and SD.
+3. Per-corruption error heatmaps, averaged over five severities for CIFAR-10-C and using fixed severity for MNIST-C; include baseline and all primary settings.
+4. CIFAR-10-C error versus severity, split across representations when needed to avoid unreadable collections of curves.
+5. Online latency/speedup versus sparsity at batches 1 and 8, and accuracy/robustness versus online latency trade-off plots.
+6. Requested versus achieved coefficient sparsity and actual token removal, including Swin stage-wise activity and execution-padding overhead.
+7. Training AND held-out validation loss/accuracy learning curves, clearly identified by their split, checkpoint policy, and pilot/main protocol.
+8. Predetermined-example diagnostics showing raw input, native signed contrast before/after sparsity, normalized contrast before/after sparsity, and coefficient/patch-support masks. Use meaningful fixed symmetric channel display scales, not clipping signed data into an RGB photograph.
+9. A mandatory direct latency-comparison overview for EACH dataset/architecture/batch-size: all 19 trained configurations (one raw baseline, three dense 0%-contrast controls, and the three compact representations at all five sparsity levels). Use a readable horizontal point/bar chart in fixed group order, not latency-sorted to hide missing cases. Label dense 0% and compact 0% separately. Plot the three individual seed medians and their mean +/- sample SD; show tail latency in a separate matched p95 figure or unambiguous second marker. State milliseconds per batch and the exact timing scope. Make separate gpu_raw_to_logits and host_raw_to_logits versions, with clean and balanced-corruption inputs distinguished.
+10. A latency-breakdown comparison covering raw input, the three dense contrast controls, and every compact sparsity setting. Use stacked mean exclusive-stage intervals ONLY when genuinely additive; otherwise separate stage plots plus independent total latency. Include frontend, sparsification/support, normalization/packing, embedding, transformer, and merging/head costs. The sum of component medians is not a total median. Preserve finer per-block/kernel tables without overcrowding the main figure.
+11. The 0%-contrast fitted per-channel mean/std table or figure, plus before/after-normalization distribution diagnostics and guard flags. Distinguish fitted train statistics from evaluation-only distribution measurements.
+
+Do not crowd all results into one giant figure or smooth away the five measured sparsity points. Show dense 0%-contrast controls as controls, not as secretly identical to compact 0% runs. Avoid pooling timing spread with seed SD. Save vector PDF/SVG and high-resolution PNG with unclipped legends/text; use at least 300 dpi for PNG. Save the plot-data CSV and regenerate every plot exclusively from saved metrics, not hardcoded arrays. Visually inspect the exported plots and fix layout problems. Mirror all final comparison figures into the appropriate TensorBoard study-summary run with add_figure. Preserve the user's exact seaborn theme for TensorBoard-rendered scientific plots too.
+
+## 14. Tests, deliverables, and completion
+
+Before expensive jobs, test at least:
+- dataset integrity, labels, official corruption lists, and severity slices;
+- original-frontend parity, all three modes, sign preservation, fixed/non-trainable status;
+- deterministic threshold ties, 0% behavior, existing-zero cases, and native sparsity denominators;
+- statistics fitting on the correct training partition only, population-moment aggregation across unequal batches, all native zeros included, and expected pixel/image counts;
+- finite per-channel mean/std normalization, guarded constant channels, stats cache invalidation/hashes, no leakage, and reuse of 0%-contrast stats for all sparsities/seeds/architectures;
+- support detection before normalization with explicitly nonzero means, normalized sparse-zero offsets, preserved positions, and gather/normalize equivalence;
+- displayed image mappings separated from actual signed model tensors, matched IDs/masks, and no training RNG changes from visualization;
+- ragged batches, all-active input, all-empty input, singleton windows, odd-grid merging, and shifted-window boundaries;
+- all-active parity with the matched dense architecture, and sparse versus dense-masked forward AND parameter-gradient parity with stochastic layers disabled;
+- genuine shorter executed sequences/windows, without attention across unrelated samples;
+- training overfit/finite-gradient checks, independent seeds, deterministic repeats, and checkpoint-resume equivalence;
+- metric aggregation and missing-cell detection using hand-checkable synthetic predictions;
+- per-epoch genuine held-out validation, sample-weighted losses/counts, and no official-test checkpoint selection;
+- TensorBoard scalar/image/histogram presence, numerical agreement with CSV/JSON, unique run identities, and resume-aware event steps;
+- latency scopes including online normalization/frontend work, no logging/profiling in primary timed regions, valid stage attribution, and complete 19-configuration overview data;
+- a tiny end-to-end smoke run that fits normalization, trains, validates, checkpoints, evaluates, measures total/stage latency, writes TensorBoard events, and renders plots.
+
+Implement a small, understandable package rather than a large framework. Provide configuration files, automated tests, dataset preparation, frontend adapters, dense and compact models, normalization-statistics and training/validation/evaluation/timing scripts, TensorBoard logging/verification, plotting/report generation, and scheduler/local launchers.
+
+Required outputs include README.md, PLAN.md, PREPROCESSING.md, the pinned environment files, dataset/split manifests, frozen experiment manifest, run-status registry, per-run configs/logs, initialization/checkpoint hashes, checkpoints, raw per-cell metrics, token statistics, raw timings, aggregated CSV/JSON tables, figures with their data, per-representation normalization JSON/NPZ artifacts, TensorBoard event files, fixed image/mask preview artifacts, per-stage profiler/timing outputs, and REPORT.md. Save compact prediction/correctness records with sample IDs so accuracy counts can be audited without retaining unnecessary full logits or image copies.
+
+README.md must contain tested commands for environment setup, data discovery/download, normalization-statistics fitting and verification, tests, smoke run, pilot runs, full launch, status inspection, resume, validation/evaluation, total/stage timing, plots, TensorBoard startup/access, event-file checks, and reporting. Provide one `run_all.sh` entry point, accepting `/ceph/sagnihot/datasets/` as the data root, that executes the phases and respects dependencies (data/split validation -> frontend verification -> 0%-contrast statistics -> tests/pilots -> frozen main training with TensorBoard -> final evaluation -> isolated latency benchmarking -> aggregation/plots/report); do not list commands that have not actually been implemented.
+
+REPORT.md begins with the overall IID test and corruption tables, with an adjacent headline gpu_raw_to_logits/host_raw_to_logits latency comparison at batches 1 and 8, then the per-corruption breakdown, all-condition latency figures and stage costs, normalization table, TensorBoard access/log paths, and a short interpretation answering:
+- Does training on contrast help or hurt compared with ordinary input training?
+- What changes as the requested coefficient sparsity increases?
+- How much token computation actually disappears, including under corruption?
+- Are the measured online latency gains positive at batches 1 and 8 after frontend overhead?
+- Do the results differ between ViT and Swin, and where does Swin's hierarchy become dense?
+- Which conclusions are supported across all three seeds, and which remain uncertain?
+
+Make only claims supported by completed measurements. Do not infer robustness from clean accuracy, latency from zeros, or equivalence between degenerate MNIST encodings and genuinely different color representations. MNIST already has sparse backgrounds, so do not claim all MNIST speedups uniquely require contrast without a raw-empty-patch control. State the held-out-validation training size/protocol, distinguish any optional full-data refits, record conventional raw-input versus newly fitted per-channel contrast normalization, and describe the small-image architecture adaptations; this is a controlled pilot study, not automatically a state-of-the-art comparison.
+
+Execute through the available environment. If jobs extend beyond the interactive session, use the real cluster scheduler or another authorized persistent process, save job IDs/log paths, and arrange evaluation/aggregation/plotting dependencies. Report them as running, not completed. Report any source-access, data-access, scheduler, kernel, or compute blocker precisely, preserve completed work, and provide exact restart commands. Do not fabricate results or silently reduce the requested dataset coverage, training seeds, or experiment matrix.

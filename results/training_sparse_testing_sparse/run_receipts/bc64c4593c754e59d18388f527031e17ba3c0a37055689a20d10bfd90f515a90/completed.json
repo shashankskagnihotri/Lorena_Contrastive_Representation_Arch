@@ -1,0 +1,10 @@
+{
+  "checkpoint_sha256": "55143ef7a6db8a527d33fa2ea534bde042402e1b6124282f949da7206de5d1ba",
+  "config_hash": "bc64c4593c754e59d18388f527031e17ba3c0a37055689a20d10bfd90f515a90",
+  "epochs": 200,
+  "primary_checkpoint": "final.pt",
+  "state": "completed",
+  "total_seconds": 10454.196966432035,
+  "training_count": 45000,
+  "validation_count": 5000
+}

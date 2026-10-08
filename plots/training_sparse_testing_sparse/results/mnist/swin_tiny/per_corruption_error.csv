@@ -1,0 +1,106 @@
+dataset,architecture,protocol,training_count,condition,corruption,mean_error_percent,seed_sd_percent,seeds
+mnist,swin_tiny,heldout_val,55000,Raw dense,shot_noise,3.350000000000001,0.20223748416156764,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,impulse_noise,17.110000000000003,3.2814021393300745,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,glass_blur,8.449999999999998,0.5556977595779921,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,motion_blur,3.93,0.155884572681201,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,shear,2.613333333333334,0.16165807537309665,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,scale,7.143333333333334,0.31895663237082317,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,rotate,7.566666666666666,0.42146569650842863,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,brightness,85.13666666666667,3.5672445014791685,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,translate,46.89333333333334,0.7280338819954263,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,stripe,76.37333333333332,3.954419468560883,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,fog,58.82333333333333,3.315212411495424,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,spatter,4.526666666666665,0.9322195735626504,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,dotted_line,4.086666666666664,0.8900187263947517,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,zigzag,13.923333333333332,1.1205504599674776,3
+mnist,swin_tiny,heldout_val,55000,Raw dense,canny_edges,20.593333333333334,0.9808329793259012,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",shot_noise,7.836666666666665,0.3324655370611088,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",impulse_noise,46.73,3.9755754300478308,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",glass_blur,26.583333333333332,0.81131580369997,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",motion_blur,8.010000000000002,0.74706090782479,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",shear,2.8233333333333293,0.13868429375143315,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",scale,6.996666666666666,0.33501243758006155,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",rotate,7.923333333333334,0.2196208854670565,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",brightness,36.45333333333333,6.963421094069594,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",translate,45.78666666666667,1.5395562131125105,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",stripe,40.94333333333333,5.663129288064448,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",fog,42.75666666666667,8.209417356507906,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",spatter,21.906666666666666,1.5908593065803616,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",dotted_line,8.786666666666665,1.5998229068660454,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",zigzag,18.9,1.8855503175465766,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, dense, 0%",canny_edges,19.363333333333333,1.1138372113254884,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",shot_noise,9.520000000000001,0.8612200647918054,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",impulse_noise,42.809999999999995,0.22605309110914693,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",glass_blur,43.23,6.157101590846136,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",motion_blur,11.213333333333335,1.0303559255584132,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",shear,3.2533333333333303,0.08020806277010867,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",scale,7.596666666666667,0.768721882954644,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",rotate,8.013333333333335,0.2956912804486023,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",brightness,62.84,10.896848168163128,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",translate,53.80333333333333,0.8093412959520488,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",stripe,46.74666666666667,8.864898946594558,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",fog,69.05,9.617114952000938,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",spatter,24.14666666666667,0.39715656022950724,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",dotted_line,4.27666666666667,0.31262330900515556,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",zigzag,9.530000000000001,0.2910326442171086,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 0%",canny_edges,9.890000000000002,0.43965895873961,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",shot_noise,9.583333333333337,0.8504900548115389,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",impulse_noise,42.51333333333333,0.4561067126598041,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",glass_blur,40.82000000000001,2.583853711029321,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",motion_blur,10.973333333333334,0.7858965156643293,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",shear,3.2633333333333328,0.08326663997864858,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",scale,7.3966666666666665,0.7943131204590109,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",rotate,7.933333333333333,0.41789153297636533,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",brightness,65.49000000000001,5.87214611534829,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",translate,54.35333333333333,0.1975685535031671,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",stripe,43.44333333333334,12.722650405215624,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",fog,70.39666666666666,10.639616221148833,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",spatter,24.11,0.4138840417314982,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",dotted_line,4.080000000000003,0.13076696830621853,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",zigzag,9.503333333333334,0.2793444707405806,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 20%",canny_edges,10.013333333333337,0.648254065419827,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",shot_noise,9.480000000000004,0.8750428560933465,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",impulse_noise,46.67000000000001,2.0685018733373184,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",glass_blur,40.79333333333333,2.4109403421348574,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",motion_blur,10.903333333333332,0.7184242015225647,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",shear,3.3066666666666653,0.12662279942148685,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",scale,7.739999999999998,0.8425556361451749,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",rotate,8.233333333333333,0.21361959960016333,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",brightness,61.63666666666666,8.242343922291361,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",translate,54.49333333333334,0.41476901202154987,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",stripe,55.91,5.496262366372258,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",fog,69.39999999999999,9.665345311989633,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",spatter,24.470000000000002,0.6337980750996307,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",dotted_line,4.183333333333335,0.1747378989610798,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",zigzag,9.82,0.657799361507747,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 40%",canny_edges,9.993333333333336,0.6141932377789013,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",shot_noise,8.386666666666668,0.34559128075420786,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",impulse_noise,61.03666666666666,3.7642573415394107,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",glass_blur,45.339999999999996,3.392388539068012,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",motion_blur,11.743333333333332,1.714652540118065,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",shear,3.2399999999999984,0.08888194417315673,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",scale,6.499999999999999,0.4775981574503843,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",rotate,7.86,0.17058722109231955,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",brightness,62.20333333333333,10.456654978210441,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",translate,54.06666666666668,0.9495964054972691,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",stripe,51.31666666666666,14.285070295008467,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",fog,68.39,10.666944267221048,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",spatter,24.863333333333333,3.338297969524794,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",dotted_line,4.159999999999997,0.3104834939251995,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",zigzag,10.166666666666668,1.1405408073950412,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 60%",canny_edges,11.796666666666667,0.2468467810876503,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",shot_noise,11.849999999999998,0.5501817881391593,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",impulse_noise,86.30333333333334,1.6218918993981442,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",glass_blur,57.10000000000001,1.4871449156017085,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",motion_blur,40.24333333333334,7.055454155001879,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",shear,4.873333333333333,0.4445597072760128,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",scale,8.75333333333333,0.6724086059334259,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",rotate,8.99333333333333,0.17097758137642913,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",brightness,80.83666666666667,4.493487880626063,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",translate,54.79666666666666,0.347898452617041,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",stripe,86.91000000000001,0.5370288632838998,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",fog,85.29333333333334,1.0876733578300661,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",spatter,11.139999999999999,1.23842642090679,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",dotted_line,8.223333333333334,0.11150485789118521,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",zigzag,22.009999999999998,0.8770974860299146,3
+mnist,swin_tiny,heldout_val,55000,"Grayscale, compact, 80%",canny_edges,32.15333333333333,0.8444130111108743,3

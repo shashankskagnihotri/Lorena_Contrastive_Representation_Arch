@@ -1,0 +1,78 @@
+{
+  "channel_names": [
+    "mean_rgb_contrast"
+  ],
+  "dataset": "mnist",
+  "display_only": true,
+  "display_scale_source": "max abs over fixed unaugmented training panel, with affine zero offset included for normalized scale",
+  "figures": {
+    "train/p0": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p0_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p0_c0_g1.png"
+    ],
+    "train/p20": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p20_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p20_c0_g1.png"
+    ],
+    "train/p40": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p40_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p40_c0_g1.png"
+    ],
+    "train/p60": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p60_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p60_c0_g1.png"
+    ],
+    "train/p80": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p80_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p80_c0_g1.png"
+    ],
+    "val/p0": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p0_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p0_c0_g1.png"
+    ],
+    "val/p20": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p20_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p20_c0_g1.png"
+    ],
+    "val/p40": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p40_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p40_c0_g1.png"
+    ],
+    "val/p60": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p60_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p60_c0_g1.png"
+    ],
+    "val/p80": [
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p80_c0_g0.png",
+      "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p80_c0_g1.png"
+    ]
+  },
+  "mean": [
+    8.502878699800931e-06
+  ],
+  "native_scales": [
+    0.5882353782653809
+  ],
+  "normalization_hash": "d2362b43edbe82cdc1f7c0323b1a1dd6e6ebb896538140efb20f06e957aed212",
+  "normalized_scales": [
+    5.423488140106201
+  ],
+  "representation": "grayscale",
+  "std": [
+    0.10846228152513504
+  ],
+  "tensor_artifacts": {
+    "train/p0": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p0.npz",
+    "train/p20": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p20.npz",
+    "train/p40": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p40.npz",
+    "train/p60": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p60.npz",
+    "train/p80": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p80.npz",
+    "val/p0": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p0.npz",
+    "val/p20": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p20.npz",
+    "val/p40": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p40.npz",
+    "val/p60": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p60.npz",
+    "val/p80": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p80.npz"
+  },
+  "train_panel_split_hash": "d741a18bd56f462d884dff0706105b777784eb438da17fedddb01e696912084a",
+  "version": 1
+}

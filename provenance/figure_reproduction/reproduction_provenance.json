@@ -1,0 +1,128 @@
+{
+  "created_utc": "2026-10-08T12:51:34.461194+00:00",
+  "environment": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "python": "3.11.13",
+    "seaborn": "0.13.2"
+  },
+  "error_coverage": {
+    "aggregate_rows": 1984,
+    "by_dataset": {
+      "cifar10": 1472,
+      "mnist": 512
+    },
+    "seed_ids": [
+      0,
+      1,
+      2
+    ],
+    "seed_rows": 5952
+  },
+  "inputs": [
+    {
+      "bytes": 95909,
+      "path": "MNIST_error_by_corruption.csv",
+      "sha256": "fe30af37e0cdf0fbfabfc0cba3ba2aa0120db5f0dcdcca0539a2c23d85a419e6"
+    },
+    {
+      "bytes": 484337,
+      "path": "requested_comparisons/MNIST_error_by_corruption_seeds.csv",
+      "sha256": "4777c7e01874f9047f2f6800db638c668890d579978ef6de7f42ef2a674bd8cb"
+    },
+    {
+      "bytes": 301129,
+      "path": "CIFAR10_error_by_corruption.csv",
+      "sha256": "d78d46774f313808a2f3b287651eb052113383a1091db27df04f110572c6a2f0"
+    },
+    {
+      "bytes": 1500177,
+      "path": "requested_comparisons/CIFAR10_error_by_corruption_seeds.csv",
+      "sha256": "5c9299691ff041a87b9287134038e2088339cb7ffec81a302d18f1cd2c908b78"
+    },
+    {
+      "bytes": 51259,
+      "path": "latency_vs_sparsity.csv",
+      "sha256": "3ea892f706ffc9326c42b76017a7567cf57b1bc43a3abdf3c74d66f3ad40b4b4"
+    },
+    {
+      "bytes": 368913,
+      "path": "latency_vs_sparsity_seeds.csv",
+      "sha256": "06d495d40100b5dd3f96f79765e88d286ddb70451130ddef0c598e6cc5adb113"
+    },
+    {
+      "bytes": 736081,
+      "path": "latency_vs_sparsity.provenance.json",
+      "sha256": "23c33172c26886bb66e8f8a5df56570f22118e5f3d022c876223b95d91c72d86"
+    }
+  ],
+  "latency": {
+    "coverage": {
+      "dense_trained_sparse_inference": {
+        "missing_three_seed": 98,
+        "planned": 160,
+        "plotted_three_seed": 62
+      },
+      "matched_sparse_training": {
+        "missing_three_seed": 0,
+        "planned": 80,
+        "plotted_three_seed": 80
+      },
+      "raw_dense_reference": {
+        "missing_three_seed": 0,
+        "planned": 8,
+        "plotted_three_seed": 8
+      }
+    },
+    "hardware_contract": {
+      "backend": "PyTorch_explicit_attention",
+      "compute_capability": [
+        8,
+        6
+      ],
+      "cpu_model": "AMD EPYC 7413 24-Core Processor",
+      "cuda": "12.6",
+      "cudnn": 91002,
+      "driver_version": "610.57.04",
+      "gpu": "NVIDIA RTX A6000",
+      "hardware_identity": "4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687",
+      "precision": "float32",
+      "torch": "2.9.1+cu126",
+      "torch_num_interop_threads": 48,
+      "torch_num_threads": 4
+    },
+    "seed_rows": 454,
+    "snapshot_utc": "2026-10-08T11:24:55.014723+00:00"
+  },
+  "limits": "Reproduces saved aggregate evidence, not inference or timing measurements. Historical paths are not opened; original checkpoints, predictions and raw timing rows are not revalidated. PDF bytes may vary with library versions, fonts and creation metadata.",
+  "outputs": [
+    {
+      "bytes": 58280,
+      "pages": 2,
+      "path": "MNIST_error_by_corruption.pdf",
+      "sha256": "ac04b68a71c6589508fbb28c1b8bc9729052cad92dc0ecbe2540cd28b73d1654"
+    },
+    {
+      "bytes": 128002,
+      "pages": 2,
+      "path": "CIFAR10_error_by_corruption.pdf",
+      "sha256": "36129e80b3138108916814f96869fc8485812e3ab0e723407e0c7ddab0b2fa3a"
+    },
+    {
+      "bytes": 39518,
+      "pages": 2,
+      "path": "latency_vs_sparsity.pdf",
+      "sha256": "f5d741df2bc186b17a065abe5906ceef60f200469ffcd7b5fddf6f5ce13051e6"
+    }
+  ],
+  "script_sha256": "a997034934bada44dc030ae08ee99b67b77df11cbf56a5d1d3481d3a604906ee",
+  "state": "complete",
+  "validation": [
+    "Complete protocol matrix and no duplicate rows",
+    "Exact seed identities and mean/sample-SD agreement",
+    "Checkpoint lineage shared between accuracy and latency",
+    "Matched timing panels and a single hardware class",
+    "Published latency CSV hashes",
+    "Partial latency points preserved as NaN, never averaged or interpolated"
+  ]
+}

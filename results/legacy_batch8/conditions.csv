@@ -1,0 +1,53 @@
+dataset,architecture,representation,execution,sparsity_percent,condition,protocol,training_count,clean_accuracy_mean,clean_accuracy_sd,clean_accuracy_seeds,clean_error_mean,clean_error_sd,clean_error_seeds,mCE_raw_mean,mCE_raw_sd,mCE_raw_seeds,trained_seeds,fully_evaluated_seeds
+cifar10,swin_tiny,raw,dense,,Raw dense,heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,single_color,dense,0,"Color, dense, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,grayscale,dense,0,"Grayscale, dense, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,color_opponency,dense,0,"Opponent, dense, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,single_color,compact,0,"Color, compact, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,single_color,compact,20,"Color, compact, 20%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,single_color,compact,40,"Color, compact, 40%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,single_color,compact,60,"Color, compact, 60%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,single_color,compact,80,"Color, compact, 80%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,grayscale,compact,0,"Grayscale, compact, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,grayscale,compact,20,"Grayscale, compact, 20%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,grayscale,compact,40,"Grayscale, compact, 40%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,grayscale,compact,60,"Grayscale, compact, 60%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,grayscale,compact,80,"Grayscale, compact, 80%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,color_opponency,compact,0,"Opponent, compact, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,color_opponency,compact,20,"Opponent, compact, 20%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,color_opponency,compact,40,"Opponent, compact, 40%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,color_opponency,compact,60,"Opponent, compact, 60%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,swin_tiny,color_opponency,compact,80,"Opponent, compact, 80%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,raw,dense,,Raw dense,heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,single_color,dense,0,"Color, dense, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,grayscale,dense,0,"Grayscale, dense, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,color_opponency,dense,0,"Opponent, dense, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,single_color,compact,0,"Color, compact, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,single_color,compact,20,"Color, compact, 20%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,single_color,compact,40,"Color, compact, 40%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,single_color,compact,60,"Color, compact, 60%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,single_color,compact,80,"Color, compact, 80%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,grayscale,compact,0,"Grayscale, compact, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,grayscale,compact,20,"Grayscale, compact, 20%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,grayscale,compact,40,"Grayscale, compact, 40%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,grayscale,compact,60,"Grayscale, compact, 60%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,grayscale,compact,80,"Grayscale, compact, 80%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,color_opponency,compact,0,"Opponent, compact, 0%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,color_opponency,compact,20,"Opponent, compact, 20%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,color_opponency,compact,40,"Opponent, compact, 40%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,color_opponency,compact,60,"Opponent, compact, 60%",heldout_val,45000,,,0,,,0,,,0,0,0
+cifar10,vit_small,color_opponency,compact,80,"Opponent, compact, 80%",heldout_val,45000,,,0,,,0,,,0,0,0
+mnist,swin_tiny,raw,dense,,Raw dense,heldout_val,55000,,,0,,,0,,,0,2,0
+mnist,swin_tiny,grayscale,dense,0,"Grayscale, dense, 0%",heldout_val,55000,,,0,,,0,,,0,2,0
+mnist,swin_tiny,grayscale,compact,0,"Grayscale, compact, 0%",heldout_val,55000,,,0,,,0,,,0,0,0
+mnist,swin_tiny,grayscale,compact,20,"Grayscale, compact, 20%",heldout_val,55000,,,0,,,0,,,0,0,0
+mnist,swin_tiny,grayscale,compact,40,"Grayscale, compact, 40%",heldout_val,55000,,,0,,,0,,,0,0,0
+mnist,swin_tiny,grayscale,compact,60,"Grayscale, compact, 60%",heldout_val,55000,,,0,,,0,,,0,0,0
+mnist,swin_tiny,grayscale,compact,80,"Grayscale, compact, 80%",heldout_val,55000,,,0,,,0,,,0,0,0
+mnist,vit_small,raw,dense,,Raw dense,heldout_val,55000,0.9804,,1,0.01959999999999995,,1,0.30743333333333334,,1,3,1
+mnist,vit_small,grayscale,dense,0,"Grayscale, dense, 0%",heldout_val,55000,0.9721,,1,0.027900000000000036,,1,0.37024666666666667,,1,3,1
+mnist,vit_small,grayscale,compact,0,"Grayscale, compact, 0%",heldout_val,55000,0.97845,0.0004949747468306073,2,0.021550000000000014,0.0004949747468306073,2,0.4412466666666667,0.012944768140921749,2,3,2
+mnist,vit_small,grayscale,compact,20,"Grayscale, compact, 20%",heldout_val,55000,0.9781,,1,0.02190000000000003,,1,0.42434000000000005,,1,3,1
+mnist,vit_small,grayscale,compact,40,"Grayscale, compact, 40%",heldout_val,55000,0.97845,0.0004949747468306073,2,0.021550000000000014,0.0004949747468306073,2,0.4218033333333334,0.010337901140947263,2,3,2
+mnist,vit_small,grayscale,compact,60,"Grayscale, compact, 60%",heldout_val,55000,,,0,,,0,,,0,3,0
+mnist,vit_small,grayscale,compact,80,"Grayscale, compact, 80%",heldout_val,55000,,,0,,,0,,,0,3,0

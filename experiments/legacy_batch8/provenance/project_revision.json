@@ -1,0 +1,7 @@
+{
+  "initial_workspace": "empty directory, not a Git checkout",
+  "commit_created": false,
+  "source_revision_scheme": "SHA-256 content manifest under outputs/source/<hash>/source_manifest.json",
+  "run_source_policy": "scheduler workers execute content-addressed snapshots; changed code requires a distinct source identity",
+  "user_task_copy": "provenance/USER_TASK.txt"
+}

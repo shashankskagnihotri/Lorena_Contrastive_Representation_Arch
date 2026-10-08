@@ -1,0 +1,9 @@
+dataset,architecture,representation,execution,sparsity_percent,seed,protocol,training_count,metric,method_minus_baseline_percentage_points
+mnist,vit_small,raw,dense,,0,heldout_val,55000,clean_accuracy,0.0
+mnist,vit_small,raw,dense,,0,heldout_val,55000,mCE_raw,0.0
+mnist,vit_small,grayscale,compact,0,0,heldout_val,55000,clean_accuracy,-0.16000000000000458
+mnist,vit_small,grayscale,compact,0,0,heldout_val,55000,mCE_raw,14.296666666666669
+mnist,vit_small,grayscale,compact,40,0,heldout_val,55000,clean_accuracy,-0.16000000000000458
+mnist,vit_small,grayscale,compact,40,0,heldout_val,55000,mCE_raw,12.168000000000001
+mnist,vit_small,grayscale,dense,0,0,heldout_val,55000,clean_accuracy,-0.8300000000000085
+mnist,vit_small,grayscale,dense,0,0,heldout_val,55000,mCE_raw,6.281333333333333

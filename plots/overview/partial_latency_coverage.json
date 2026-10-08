@@ -1,0 +1,16 @@
+{
+  "snapshot_updated": "2026-10-08T11:24:55.014723+00:00",
+  "expected_workers": 2424,
+  "sealed_full_workers": 961,
+  "worker_states": {
+    "completed": 961,
+    "blocked": 6,
+    "running": 4,
+    "pending": 124,
+    "unsubmitted": 1329
+  },
+  "sealed_clean_cells": 961,
+  "hardware_sessions": 961,
+  "timing_raw_rehashed": false,
+  "primary_complete_three_seed_condition_batches": 161
+}

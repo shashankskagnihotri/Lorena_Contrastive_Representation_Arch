@@ -1,0 +1,61 @@
+{
+  "architecture": "swin_tiny",
+  "config_hash": "51bdcac191bea4960344c4974b6d476d747311058f92f71f1f1df743044112da",
+  "data_manifest_sha256": "e806948f8a91af613f1e2c229c04bc5d618cc02bc1c8abef707d0f753af1a141",
+  "dataset": "cifar10",
+  "environment_hash": "5a802a6ff12747d9af58d21b0e4fbd96b1a08a3253f7aa899807c8b60f803198",
+  "execution": "dense",
+  "normalization": {
+    "description": "chosen published recipe",
+    "input_range": [
+      0,
+      1
+    ],
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "provenance": "https://github.com/kuangliu/pytorch-cifar/blob/master/main.py",
+    "std": [
+      0.2023,
+      0.1994,
+      0.201
+    ]
+  },
+  "normalization_hash": "377d79622b4be5ab780f2cc49d2998ca871c0899b1447524c906a2f2023b28ea",
+  "normalization_min_std": 1e-06,
+  "patch_size": 2,
+  "precision": "fp32",
+  "primary_checkpoint": "final_epoch",
+  "protocol": "heldout_val",
+  "recipe": {
+    "batch_size": 8,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "dropout": 0.0,
+    "effective_batch_size": 8,
+    "epochs": 200,
+    "grad_clip": 1.0,
+    "gradient_accumulation": 1,
+    "histogram_epoch_interval": 10,
+    "label_smoothing": 0.0,
+    "log_step_interval": 50,
+    "lr": 0.0003,
+    "min_lr": 1e-06,
+    "optimizer": "AdamW",
+    "stochastic_depth": 0.1,
+    "warmup_epochs": 10,
+    "weight_decay": 0.05
+  },
+  "registry_id": "cifar10/swin_tiny/raw/dense/pNA/seed1",
+  "representation": "raw",
+  "role": "main",
+  "seed": 1,
+  "source_hash": "1e483ff99cb9219478f00c63bd21bd47d8811098046e84b05370f8e0e3cae2cf",
+  "sparsity_percent": null,
+  "split_seed": 2026,
+  "token_epsilon": 0.0
+}

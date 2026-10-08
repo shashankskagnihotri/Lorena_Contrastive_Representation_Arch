@@ -1,0 +1,82 @@
+{
+  "state": "passed",
+  "verification_script_sha256": "28392a1d532426b31938101ad638b07bec9d94145a88b9be56d3fbbdc625c45c",
+  "checks": [
+    {
+      "pdf": "MNIST_error_by_corruption.pdf",
+      "output_sha256": "ac04b68a71c6589508fbb28c1b8bc9729052cad92dc0ecbe2540cd28b73d1654",
+      "published_sha256": "0ebdab96b605bf196b1d9d3e64efa449816fda40a1e379438866cfa203a3290f",
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1584.0,
+          "height_points": 1339.199951171875,
+          "extracted_text_identical": true,
+          "render_scale": 0.8,
+          "differing_color_components": 0,
+          "preview": "MNIST_error_by_corruption_verified_page1.png"
+        },
+        {
+          "page": 2,
+          "width_points": 1584.0,
+          "height_points": 1339.199951171875,
+          "extracted_text_identical": true,
+          "render_scale": 0.8,
+          "differing_color_components": 0,
+          "preview": "MNIST_error_by_corruption_verified_page2.png"
+        }
+      ]
+    },
+    {
+      "pdf": "CIFAR10_error_by_corruption.pdf",
+      "output_sha256": "36129e80b3138108916814f96869fc8485812e3ab0e723407e0c7ddab0b2fa3a",
+      "published_sha256": "d380ba789da1227606435881d0390738745d8953f4718770e0906d12bea79231",
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1584.0,
+          "height_points": 1339.199951171875,
+          "extracted_text_identical": true,
+          "render_scale": 0.8,
+          "differing_color_components": 0,
+          "preview": "CIFAR10_error_by_corruption_verified_page1.png"
+        },
+        {
+          "page": 2,
+          "width_points": 1584.0,
+          "height_points": 1339.199951171875,
+          "extracted_text_identical": true,
+          "render_scale": 0.8,
+          "differing_color_components": 0,
+          "preview": "CIFAR10_error_by_corruption_verified_page2.png"
+        }
+      ]
+    },
+    {
+      "pdf": "latency_vs_sparsity.pdf",
+      "output_sha256": "f5d741df2bc186b17a065abe5906ceef60f200469ffcd7b5fddf6f5ce13051e6",
+      "published_sha256": "33a14810177db8876d10121a75e989974d7290ff86ebcd5218a3a67ad37504f4",
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1152.0,
+          "height_points": 936.0,
+          "extracted_text_identical": true,
+          "render_scale": 0.8,
+          "differing_color_components": 0,
+          "preview": "latency_vs_sparsity_verified_page1.png"
+        },
+        {
+          "page": 2,
+          "width_points": 1152.0,
+          "height_points": 936.0,
+          "extracted_text_identical": true,
+          "render_scale": 0.8,
+          "differing_color_components": 0,
+          "preview": "latency_vs_sparsity_verified_page2.png"
+        }
+      ]
+    }
+  ],
+  "scope": "All six PDF pages checked against the published originals: dimensions, extracted text and rendered pixels at scale0.8; PDF creation metadata may differ."
+}

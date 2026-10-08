@@ -1,0 +1,57 @@
+{
+  "CIFAR_severity_policy": "Predetermined middle severity 3; not selected by model outcomes.",
+  "architecture_policy": "Use Swin saved frontend tensors only if every displayed array and scale exactly equals ViT; otherwise retain both.",
+  "fit_distribution_policy": "Fixed ten-image clean-training diagnostic only, not full-partition distributions; fitted mean/std table is full training partition.",
+  "inference_execution": "compact",
+  "samples": "All ten original class-balanced fixed sample IDs, two groups of five, all native channels.",
+  "scope": "No new model evaluation, predictions, normalization fits or input preprocessing. Stored arrays only.",
+  "seed": 0,
+  "selected_cells": {
+    "cifar10": [
+      [
+        "clean",
+        "test"
+      ],
+      [
+        "brightness",
+        3
+      ],
+      [
+        "contrast",
+        3
+      ],
+      [
+        "fog",
+        3
+      ]
+    ],
+    "mnist": [
+      [
+        "clean",
+        "test"
+      ],
+      [
+        "brightness",
+        "fixed"
+      ],
+      [
+        "fog",
+        "fixed"
+      ]
+    ]
+  },
+  "sparsities": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "trained_execution": "dense",
+  "unchanged_raw_reference": "Dense unmodified raw p0 cases remain in the full source catalog; compact raw p0 explicitly shows natural-zero removal."
+}

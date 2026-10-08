@@ -1,0 +1,51 @@
+# Live, path-bound campaign workspaces. The publication snapshot is under
+# src/, experiments/, provenance/, results/, and plots/. Never move live runs.
+/sparse_contrast_benchmark/
+/sparse_contrast_benchmark_large_batch/
+/training_dense_testing_sparse/
+
+# Local execution and authentication material is not a publication artifact.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+*.pem
+*.key
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+events.out.tfevents.*
+*.log
+*.out
+*.err
+*.tmp
+*.tmp.*
+*.previous.*
+
+# Keep the requested operational record and compact scientific evidence.
+/debugging/*
+!/debugging/scratchpad.md
+!/debugging/a6000*.csv
+!/debugging/a6000*.json
+
+# PDFs and their CSVs are the publication formats. Keep the requested previews.
+/plots/**/*.png
+/plots/**/*.svg
+!/plots/requested_comparisons/*_vit_small.png
+!/plots/requested_comparisons/*_swin_tiny.png
+!/plots/requested_comparisons/previews/*.png
+/plots/**/provenance/
+/plots/diagnostics/verification/
+
+# Generated local re-renders and build products.
+/reproduced_plots/
+build/
+dist/
+*.egg-info/
+.venv-*/
+
+# Frozen local execution copies; the same checked source is published normally.
+/scripts/verify_publication_frozen_*.py

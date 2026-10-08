@@ -1,0 +1,5251 @@
+{
+  "batch_size": 1,
+  "config_hash": "7c4187c643b7e210dc769d4c2b2adebfd5bcb5c678051889a482ac9b2ab223ad",
+  "cpu_diagnostic_only": false,
+  "execution": "dense",
+  "measurement": {
+    "hardware_identity": "4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687",
+    "hardware_metadata_file": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/runs/heldout_val/cifar10/vit_small/raw/dense/pNA/seed0/7c4187c643b7e210dc769d4c2b2adebfd5bcb5c678051889a482ac9b2ab223ad/benchmark/4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687/dense/batch1/sessions/5f25e656a17d245df78af59d/hardware.json",
+    "hardware_metadata_sha256": "8f7df6347a95f06a37cbae48c59c8dd164af927a2e8b10baab43ff8962adc38e",
+    "host": "dws-17.informatik.uni-mannheim.de",
+    "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+    "measurement_session_id": "5f25e656a17d245df78af59d",
+    "scheduler_job_id": "356141"
+  },
+  "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+  "measurement_session_id": "5f25e656a17d245df78af59d",
+  "native_support_all_empty": false,
+  "normalization_hash": "377d79622b4be5ab780f2cc49d2998ca871c0899b1447524c906a2f2023b28ea",
+  "origin": "controlled_synthetic_all_zero_raw_uint8",
+  "role": "all_empty_path_diagnostic_not_accuracy_or_real_input_aggregate",
+  "scopes": {
+    "gpu_raw_to_logits": {
+      "measurements": [
+        {
+          "cuda_stream_elapsed_ms": 10.081279754638672,
+          "elapsed_ms": 10.11401,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 0,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.700223922729492,
+          "elapsed_ms": 10.759675,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 1,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.045439720153809,
+          "elapsed_ms": 10.074281,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 2,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.009632110595703,
+          "elapsed_ms": 10.037241,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 3,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.008576393127441,
+          "elapsed_ms": 10.034541,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 4,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 11.705344200134277,
+          "elapsed_ms": 11.739665,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 5,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.33011245727539,
+          "elapsed_ms": 10.367357,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 6,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.0065279006958,
+          "elapsed_ms": 10.033761,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 7,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.002431869506836,
+          "elapsed_ms": 10.028261,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 8,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.205087661743164,
+          "elapsed_ms": 10.230428,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 9,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.044416427612305,
+          "elapsed_ms": 10.06991,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 10,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.042367935180664,
+          "elapsed_ms": 10.0677,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 11,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.046463966369629,
+          "elapsed_ms": 10.07163,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 12,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.02086353302002,
+          "elapsed_ms": 10.045821,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 13,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.04748821258545,
+          "elapsed_ms": 10.07291,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 14,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.02188777923584,
+          "elapsed_ms": 10.047011,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 15,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.077183723449707,
+          "elapsed_ms": 10.102779,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 16,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.053631782531738,
+          "elapsed_ms": 10.080231,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 17,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.050559997558594,
+          "elapsed_ms": 10.077581,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 18,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.027008056640625,
+          "elapsed_ms": 10.0518,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 19,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.04032039642334,
+          "elapsed_ms": 10.064681,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 20,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.04032039642334,
+          "elapsed_ms": 10.064961,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 21,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.054688453674316,
+          "elapsed_ms": 10.07995,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 22,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.0382719039917,
+          "elapsed_ms": 10.063831,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 23,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.010623931884766,
+          "elapsed_ms": 10.035481,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 24,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.026911735534668,
+          "elapsed_ms": 10.05175,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 25,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.01369571685791,
+          "elapsed_ms": 10.038741,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 26,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.02188777923584,
+          "elapsed_ms": 10.046791,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 27,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.023967742919922,
+          "elapsed_ms": 10.049661,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 28,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.016768455505371,
+          "elapsed_ms": 10.04201,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 29,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.03929615020752,
+          "elapsed_ms": 10.065161,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 30,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.018719673156738,
+          "elapsed_ms": 10.0531,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 31,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.02188777923584,
+          "elapsed_ms": 10.0482,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 32,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.033151626586914,
+          "elapsed_ms": 10.059751,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 33,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.04851245880127,
+          "elapsed_ms": 10.0737,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 34,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.117119789123535,
+          "elapsed_ms": 10.14227,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 35,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.041343688964844,
+          "elapsed_ms": 10.066,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 36,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.063872337341309,
+          "elapsed_ms": 10.08939,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 37,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.045439720153809,
+          "elapsed_ms": 10.072,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 38,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.033151626586914,
+          "elapsed_ms": 10.059071,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 39,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.050559997558594,
+          "elapsed_ms": 10.07523,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 40,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.03212833404541,
+          "elapsed_ms": 10.05775,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 41,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.034175872802734,
+          "elapsed_ms": 10.06007,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 42,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.02291202545166,
+          "elapsed_ms": 10.048471,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 43,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.042367935180664,
+          "elapsed_ms": 10.06762,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 44,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.051584243774414,
+          "elapsed_ms": 10.07693,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 45,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.02899169921875,
+          "elapsed_ms": 10.053671,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 46,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.095616340637207,
+          "elapsed_ms": 10.1209,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 47,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.145792007446289,
+          "elapsed_ms": 10.17101,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 48,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13043212890625,
+          "elapsed_ms": 10.155909,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 49,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.135552406311035,
+          "elapsed_ms": 10.16103,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 50,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.1396484375,
+          "elapsed_ms": 10.164729,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 51,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13043212890625,
+          "elapsed_ms": 10.15582,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 52,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.125311851501465,
+          "elapsed_ms": 10.150369,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 53,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.156031608581543,
+          "elapsed_ms": 10.182849,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 54,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.1732,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 55,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.148863792419434,
+          "elapsed_ms": 10.175469,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 56,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.135552406311035,
+          "elapsed_ms": 10.16133,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 57,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.19286,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 58,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.160127639770508,
+          "elapsed_ms": 10.185679,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 59,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.159104347229004,
+          "elapsed_ms": 10.184759,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 60,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.143744468688965,
+          "elapsed_ms": 10.16971,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 61,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.152959823608398,
+          "elapsed_ms": 10.179189,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 62,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.122271537780762,
+          "elapsed_ms": 10.147729,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 63,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.1726,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 64,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.159104347229004,
+          "elapsed_ms": 10.185629,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 65,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.142720222473145,
+          "elapsed_ms": 10.168789,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 66,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12838363647461,
+          "elapsed_ms": 10.15364,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 67,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.152959823608398,
+          "elapsed_ms": 10.180269,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 68,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.133503913879395,
+          "elapsed_ms": 10.15806,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 69,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.158080101013184,
+          "elapsed_ms": 10.18489,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 70,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.149888038635254,
+          "elapsed_ms": 10.175379,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 71,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.145792007446289,
+          "elapsed_ms": 10.1712,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 72,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.136575698852539,
+          "elapsed_ms": 10.162609,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 73,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.149888038635254,
+          "elapsed_ms": 10.175819,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 74,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.198269,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 75,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.149888038635254,
+          "elapsed_ms": 10.17524,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 76,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.161151885986328,
+          "elapsed_ms": 10.186709,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 77,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.142720222473145,
+          "elapsed_ms": 10.168569,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 78,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12224006652832,
+          "elapsed_ms": 10.14748,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 79,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13759994506836,
+          "elapsed_ms": 10.162759,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 80,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.132479667663574,
+          "elapsed_ms": 10.15838,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 81,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.136575698852539,
+          "elapsed_ms": 10.162239,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 82,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13759994506836,
+          "elapsed_ms": 10.16205,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 83,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.172159,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 84,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.162176132202148,
+          "elapsed_ms": 10.186859,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 85,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.204129,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 86,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.140671730041504,
+          "elapsed_ms": 10.16627,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 87,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.141695976257324,
+          "elapsed_ms": 10.166789,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 88,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.140671730041504,
+          "elapsed_ms": 10.16757,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 89,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.152959823608398,
+          "elapsed_ms": 10.17796,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 90,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12838363647461,
+          "elapsed_ms": 10.15314,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 91,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.1396484375,
+          "elapsed_ms": 10.16409,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 92,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.199040412902832,
+          "elapsed_ms": 10.232529,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 93,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.260479927062988,
+          "elapsed_ms": 10.285549,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 94,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.133503913879395,
+          "elapsed_ms": 10.159259,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 95,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12019157409668,
+          "elapsed_ms": 10.1444,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 96,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.225664138793945,
+          "elapsed_ms": 10.250549,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 97,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.096639633178711,
+          "elapsed_ms": 10.12277,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 98,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.257408142089844,
+          "elapsed_ms": 10.282729,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 99,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.142720222473145,
+          "elapsed_ms": 10.167729,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 100,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.127360343933105,
+          "elapsed_ms": 10.15391,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 101,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.141695976257324,
+          "elapsed_ms": 10.167139,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 102,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.136575698852539,
+          "elapsed_ms": 10.16297,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 103,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.152959823608398,
+          "elapsed_ms": 10.177849,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 104,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.124287605285645,
+          "elapsed_ms": 10.150429,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 105,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.148863792419434,
+          "elapsed_ms": 10.17401,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 106,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12224006652832,
+          "elapsed_ms": 10.148399,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 107,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.17241,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 108,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.206208229064941,
+          "elapsed_ms": 10.231318,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 109,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.297344207763672,
+          "elapsed_ms": 10.322459,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 110,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.102784156799316,
+          "elapsed_ms": 10.127899,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 111,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.098688125610352,
+          "elapsed_ms": 10.12302,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 112,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.098688125610352,
+          "elapsed_ms": 10.12398,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 113,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.134528160095215,
+          "elapsed_ms": 10.160649,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 114,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.272768020629883,
+          "elapsed_ms": 10.297448,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 115,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.109951972961426,
+          "elapsed_ms": 10.13484,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 116,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.102784156799316,
+          "elapsed_ms": 10.12871,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 117,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.099679946899414,
+          "elapsed_ms": 10.12518,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 118,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12224006652832,
+          "elapsed_ms": 10.14762,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 119,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.112000465393066,
+          "elapsed_ms": 10.1374,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 120,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.097663879394531,
+          "elapsed_ms": 10.12298,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 121,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.101759910583496,
+          "elapsed_ms": 10.12751,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 122,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.089407920837402,
+          "elapsed_ms": 10.11415,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 123,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12326431274414,
+          "elapsed_ms": 10.14897,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 124,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.32089614868164,
+          "elapsed_ms": 10.347018,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 125,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.163200378417969,
+          "elapsed_ms": 10.189759,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 126,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.155008316040039,
+          "elapsed_ms": 10.181689,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 127,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.161151885986328,
+          "elapsed_ms": 10.18661,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 128,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.286080360412598,
+          "elapsed_ms": 10.312458,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 129,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.145792007446289,
+          "elapsed_ms": 10.17116,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 130,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.133503913879395,
+          "elapsed_ms": 10.158349,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 131,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.300415992736816,
+          "elapsed_ms": 10.325478,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 132,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.085375785827637,
+          "elapsed_ms": 10.11093,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 133,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.1396484375,
+          "elapsed_ms": 10.16509,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 134,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.095616340637207,
+          "elapsed_ms": 10.12173,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 135,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.127360343933105,
+          "elapsed_ms": 10.15265,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 136,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.097663879394531,
+          "elapsed_ms": 10.12364,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 137,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.096639633178711,
+          "elapsed_ms": 10.12184,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 138,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.079232215881348,
+          "elapsed_ms": 10.10525,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 139,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.275839805603027,
+          "elapsed_ms": 10.301049,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 140,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.147839546203613,
+          "elapsed_ms": 10.173629,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 141,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.151935577392578,
+          "elapsed_ms": 10.177389,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 142,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.157055854797363,
+          "elapsed_ms": 10.182429,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 143,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.155008316040039,
+          "elapsed_ms": 10.18008,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 144,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.127360343933105,
+          "elapsed_ms": 10.161409,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 145,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.151935577392578,
+          "elapsed_ms": 10.17744,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 146,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.142751693725586,
+          "elapsed_ms": 10.168869,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 147,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.132479667663574,
+          "elapsed_ms": 10.15707,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 148,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.147839546203613,
+          "elapsed_ms": 10.17393,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 149,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.209280014038086,
+          "elapsed_ms": 10.235839,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 150,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.143744468688965,
+          "elapsed_ms": 10.170089,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 151,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.171889,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 152,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.117119789123535,
+          "elapsed_ms": 10.14235,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 153,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.136575698852539,
+          "elapsed_ms": 10.162059,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 154,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.147808074951172,
+          "elapsed_ms": 10.17286,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 155,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.156031608581543,
+          "elapsed_ms": 10.18194,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 156,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.171599,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 157,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13862419128418,
+          "elapsed_ms": 10.16477,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 158,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.11404800415039,
+          "elapsed_ms": 10.139299,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 159,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.124287605285645,
+          "elapsed_ms": 10.14956,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 160,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.124287605285645,
+          "elapsed_ms": 10.149909,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 161,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.137632369995117,
+          "elapsed_ms": 10.16338,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 162,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.142720222473145,
+          "elapsed_ms": 10.167979,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 163,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13759994506836,
+          "elapsed_ms": 10.1619,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 164,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.127360343933105,
+          "elapsed_ms": 10.153249,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 165,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.17294,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 166,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.134528160095215,
+          "elapsed_ms": 10.16828,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 167,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.158080101013184,
+          "elapsed_ms": 10.183029,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 168,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13043212890625,
+          "elapsed_ms": 10.15677,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 169,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.141695976257324,
+          "elapsed_ms": 10.16834,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 170,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.134528160095215,
+          "elapsed_ms": 10.15929,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 171,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12224006652832,
+          "elapsed_ms": 10.14784,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 172,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.151935577392578,
+          "elapsed_ms": 10.177949,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 173,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13862419128418,
+          "elapsed_ms": 10.16452,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 174,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.126336097717285,
+          "elapsed_ms": 10.151999,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 175,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.155008316040039,
+          "elapsed_ms": 10.18137,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 176,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12838363647461,
+          "elapsed_ms": 10.1551,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 177,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.136575698852539,
+          "elapsed_ms": 10.162149,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 178,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.141695976257324,
+          "elapsed_ms": 10.17465,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 179,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.21951961517334,
+          "elapsed_ms": 10.245389,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 180,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.19281,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 181,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.183679580688477,
+          "elapsed_ms": 10.210099,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 182,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.201087951660156,
+          "elapsed_ms": 10.226759,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 183,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.161151885986328,
+          "elapsed_ms": 10.186499,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 184,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.165247917175293,
+          "elapsed_ms": 10.190069,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 185,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.149888038635254,
+          "elapsed_ms": 10.175779,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 186,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.149888038635254,
+          "elapsed_ms": 10.1756,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 187,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.189824104309082,
+          "elapsed_ms": 10.21567,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 188,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.291199684143066,
+          "elapsed_ms": 10.317159,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 189,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.2041597366333,
+          "elapsed_ms": 10.230378,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 190,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.150912284851074,
+          "elapsed_ms": 10.176239,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 191,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.184703826904297,
+          "elapsed_ms": 10.211049,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 192,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.127360343933105,
+          "elapsed_ms": 10.15254,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 193,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.170368194580078,
+          "elapsed_ms": 10.196269,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 194,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.134528160095215,
+          "elapsed_ms": 10.16004,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 195,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.13862419128418,
+          "elapsed_ms": 10.16389,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 196,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.12224006652832,
+          "elapsed_ms": 10.15458,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 197,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.172859,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 198,
+          "scope": "gpu_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.133503913879395,
+          "elapsed_ms": 10.15961,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 199,
+          "scope": "gpu_raw_to_logits"
+        }
+      ],
+      "summary": {
+        "amortized_mean_ms_per_image": 10.163324065000001,
+        "batch_size": 1,
+        "count": 200,
+        "latency_unit": "milliseconds_per_batch",
+        "mean_ms": 10.163324065000001,
+        "median_ms": 10.162104,
+        "p95_ms": 10.28614395,
+        "serial_images_per_second": 98.39300543842296
+      }
+    },
+    "host_raw_to_logits": {
+      "measurements": [
+        {
+          "cuda_stream_elapsed_ms": 10.192895889282227,
+          "elapsed_ms": 10.217799,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 0,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.202400207519531,
+          "elapsed_ms": 10.230109,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 1,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.21337604522705,
+          "elapsed_ms": 10.249318,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 2,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.207232475280762,
+          "elapsed_ms": 10.234049,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 3,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.193920135498047,
+          "elapsed_ms": 10.218629,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 4,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.191871643066406,
+          "elapsed_ms": 10.217369,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 5,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.197729,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 6,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.2225923538208,
+          "elapsed_ms": 10.247589,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 7,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.203609,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 8,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.165247917175293,
+          "elapsed_ms": 10.190839,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 9,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.209280014038086,
+          "elapsed_ms": 10.234719,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 10,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.187775611877441,
+          "elapsed_ms": 10.212989,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 11,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.186752319335938,
+          "elapsed_ms": 10.212889,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 12,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.181632041931152,
+          "elapsed_ms": 10.207309,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 13,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.177536010742188,
+          "elapsed_ms": 10.203099,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 14,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.184703826904297,
+          "elapsed_ms": 10.209529,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 15,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.189649,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 16,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.191871643066406,
+          "elapsed_ms": 10.216619,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 17,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.179583549499512,
+          "elapsed_ms": 10.204299,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 18,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.205183982849121,
+          "elapsed_ms": 10.230229,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 19,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.195967674255371,
+          "elapsed_ms": 10.221279,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 20,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.189824104309082,
+          "elapsed_ms": 10.214279,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 21,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.179583549499512,
+          "elapsed_ms": 10.205509,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 22,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.197369,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 23,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.207199,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 24,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.181632041931152,
+          "elapsed_ms": 10.205899,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 25,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.193920135498047,
+          "elapsed_ms": 10.218839,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 26,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.200063705444336,
+          "elapsed_ms": 10.225099,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 27,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.193920135498047,
+          "elapsed_ms": 10.219959,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 28,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.212749,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 29,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.186752319335938,
+          "elapsed_ms": 10.212679,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 30,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.211509,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 31,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.205183982849121,
+          "elapsed_ms": 10.230979,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 32,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.183679580688477,
+          "elapsed_ms": 10.209519,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 33,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.198379,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 34,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.176511764526367,
+          "elapsed_ms": 10.202669,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 35,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.174464225769043,
+          "elapsed_ms": 10.199549,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 36,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.181632041931152,
+          "elapsed_ms": 10.206569,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 37,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.212019,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 38,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.183679580688477,
+          "elapsed_ms": 10.209079,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 39,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.189824104309082,
+          "elapsed_ms": 10.215869,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 40,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.184703826904297,
+          "elapsed_ms": 10.209549,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 41,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.203136444091797,
+          "elapsed_ms": 10.228689,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 42,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.176511764526367,
+          "elapsed_ms": 10.201649,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 43,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.203899,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 44,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.182656288146973,
+          "elapsed_ms": 10.207659,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 45,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.163200378417969,
+          "elapsed_ms": 10.188219,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 46,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.189824104309082,
+          "elapsed_ms": 10.214799,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 47,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.198016166687012,
+          "elapsed_ms": 10.224279,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 48,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.201087951660156,
+          "elapsed_ms": 10.226419,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 49,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.203579,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 50,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.188799858093262,
+          "elapsed_ms": 10.220269,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 51,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.201087951660156,
+          "elapsed_ms": 10.226989,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 52,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.211419,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 53,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.166272163391113,
+          "elapsed_ms": 10.192649,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 54,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.205369,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 55,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.169343948364258,
+          "elapsed_ms": 10.196109,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 56,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.186752319335938,
+          "elapsed_ms": 10.212739,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 57,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.210189,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 58,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.216447830200195,
+          "elapsed_ms": 10.241379,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 59,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.2041597366333,
+          "elapsed_ms": 10.230349,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 60,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.195967674255371,
+          "elapsed_ms": 10.220959,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 61,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.190089,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 62,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.207232475280762,
+          "elapsed_ms": 10.232989,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 63,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.188799858093262,
+          "elapsed_ms": 10.214279,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 64,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.165247917175293,
+          "elapsed_ms": 10.191119,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 65,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.184703826904297,
+          "elapsed_ms": 10.210799,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 66,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.203969,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 67,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.160127639770508,
+          "elapsed_ms": 10.186229,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 68,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.223615646362305,
+          "elapsed_ms": 10.249519,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 69,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.160127639770508,
+          "elapsed_ms": 10.185929,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 70,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.198016166687012,
+          "elapsed_ms": 10.225259,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 71,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 13.26899242401123,
+          "elapsed_ms": 13.297412,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 72,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.284031867980957,
+          "elapsed_ms": 10.309489,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 73,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.181632041931152,
+          "elapsed_ms": 10.207499,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 74,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.183679580688477,
+          "elapsed_ms": 10.210119,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 75,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.166272163391113,
+          "elapsed_ms": 10.19332,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 76,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.199040412902832,
+          "elapsed_ms": 10.224629,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 77,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.201087951660156,
+          "elapsed_ms": 10.225819,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 78,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.202112197875977,
+          "elapsed_ms": 10.228998,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 79,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.174464225769043,
+          "elapsed_ms": 10.20014,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 80,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.214400291442871,
+          "elapsed_ms": 10.240659,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 81,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.192029,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 82,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.173439979553223,
+          "elapsed_ms": 10.19862,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 83,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.198159,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 84,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.181632041931152,
+          "elapsed_ms": 10.207909,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 85,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.175488471984863,
+          "elapsed_ms": 10.20193,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 86,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.177536010742188,
+          "elapsed_ms": 10.203899,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 87,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.200063705444336,
+          "elapsed_ms": 10.225739,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 88,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.176511764526367,
+          "elapsed_ms": 10.201509,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 89,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.180607795715332,
+          "elapsed_ms": 10.206819,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 90,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.211859,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 91,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.175488471984863,
+          "elapsed_ms": 10.201639,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 92,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.170368194580078,
+          "elapsed_ms": 10.195769,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 93,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.174464225769043,
+          "elapsed_ms": 10.199539,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 94,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.179583549499512,
+          "elapsed_ms": 10.216699,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 95,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.163200378417969,
+          "elapsed_ms": 10.188759,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 96,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.203136444091797,
+          "elapsed_ms": 10.230839,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 97,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.190848350524902,
+          "elapsed_ms": 10.216339,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 98,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.190848350524902,
+          "elapsed_ms": 10.216319,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 99,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.189824104309082,
+          "elapsed_ms": 10.214949,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 100,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.165247917175293,
+          "elapsed_ms": 10.191319,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 101,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.189199,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 102,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.162176132202148,
+          "elapsed_ms": 10.18825,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 103,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.289152145385742,
+          "elapsed_ms": 10.314288,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 104,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.165247917175293,
+          "elapsed_ms": 10.190789,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 105,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.153984069824219,
+          "elapsed_ms": 10.179719,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 106,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.189949,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 107,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.183679580688477,
+          "elapsed_ms": 10.20992,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 108,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.160127639770508,
+          "elapsed_ms": 10.18654,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 109,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.19724,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 110,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.151935577392578,
+          "elapsed_ms": 10.178089,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 111,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.197629,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 112,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.190279,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 113,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.32089614868164,
+          "elapsed_ms": 10.346428,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 114,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.179583549499512,
+          "elapsed_ms": 10.206469,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 115,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.162176132202148,
+          "elapsed_ms": 10.188099,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 116,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.203136444091797,
+          "elapsed_ms": 10.229289,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 117,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.169343948364258,
+          "elapsed_ms": 10.194889,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 118,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.187775611877441,
+          "elapsed_ms": 10.214839,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 119,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.156031608581543,
+          "elapsed_ms": 10.18171,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 120,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.186752319335938,
+          "elapsed_ms": 10.21196,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 121,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.151935577392578,
+          "elapsed_ms": 10.17758,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 122,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.160127639770508,
+          "elapsed_ms": 10.186619,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 123,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.158080101013184,
+          "elapsed_ms": 10.183249,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 124,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.199040412902832,
+          "elapsed_ms": 10.224629,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 125,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.23078441619873,
+          "elapsed_ms": 10.256389,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 126,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.195967674255371,
+          "elapsed_ms": 10.221659,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 127,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.177536010742188,
+          "elapsed_ms": 10.203199,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 128,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.202112197875977,
+          "elapsed_ms": 10.227599,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 129,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.192895889282227,
+          "elapsed_ms": 10.2177,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 130,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.168319702148438,
+          "elapsed_ms": 10.194019,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 131,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.155008316040039,
+          "elapsed_ms": 10.181529,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 132,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.198519,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 133,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.197419,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 134,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.175488471984863,
+          "elapsed_ms": 10.20159,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 135,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.163200378417969,
+          "elapsed_ms": 10.18945,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 136,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.196991920471191,
+          "elapsed_ms": 10.222949,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 137,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.19721,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 138,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.180607795715332,
+          "elapsed_ms": 10.20713,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 139,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.173439979553223,
+          "elapsed_ms": 10.20037,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 140,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.178560256958008,
+          "elapsed_ms": 10.204069,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 141,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.153984069824219,
+          "elapsed_ms": 10.180519,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 142,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.172269,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 143,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.155008316040039,
+          "elapsed_ms": 10.187859,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 144,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.197009,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 145,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.211279,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 146,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.187775611877441,
+          "elapsed_ms": 10.21314,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 147,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.168319702148438,
+          "elapsed_ms": 10.194329,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 148,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.189824104309082,
+          "elapsed_ms": 10.215129,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 149,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.168319702148438,
+          "elapsed_ms": 10.194509,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 150,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.186752319335938,
+          "elapsed_ms": 10.212239,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 151,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.185728073120117,
+          "elapsed_ms": 10.211579,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 152,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.179583549499512,
+          "elapsed_ms": 10.204879,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 153,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.158080101013184,
+          "elapsed_ms": 10.184189,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 154,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.176480293273926,
+          "elapsed_ms": 10.201319,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 155,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.153984069824219,
+          "elapsed_ms": 10.179879,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 156,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.203136444091797,
+          "elapsed_ms": 10.22866,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 157,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.2041597366333,
+          "elapsed_ms": 10.229909,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 158,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.190848350524902,
+          "elapsed_ms": 10.216999,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 159,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.17193,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 160,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.170368194580078,
+          "elapsed_ms": 10.195869,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 161,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.19811,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 162,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.331135749816895,
+          "elapsed_ms": 10.355847,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 163,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.184703826904297,
+          "elapsed_ms": 10.209969,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 164,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.19342,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 165,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.192999,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 166,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.197989,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 167,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.181632041931152,
+          "elapsed_ms": 10.207379,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 168,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.208255767822266,
+          "elapsed_ms": 10.233609,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 169,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.160127639770508,
+          "elapsed_ms": 10.186099,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 170,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.173439979553223,
+          "elapsed_ms": 10.199119,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 171,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.176511764526367,
+          "elapsed_ms": 10.201529,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 172,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.232831954956055,
+          "elapsed_ms": 10.257289,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 173,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.189359,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 174,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.164223670959473,
+          "elapsed_ms": 10.190839,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 175,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.207232475280762,
+          "elapsed_ms": 10.233499,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 176,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.174464225769043,
+          "elapsed_ms": 10.200659,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 177,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.193920135498047,
+          "elapsed_ms": 10.218859,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 178,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.206208229064941,
+          "elapsed_ms": 10.233059,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 179,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.201087951660156,
+          "elapsed_ms": 10.228229,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 180,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.165247917175293,
+          "elapsed_ms": 10.191149,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 181,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.193269,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 182,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.171392440795898,
+          "elapsed_ms": 10.196469,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 183,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.158080101013184,
+          "elapsed_ms": 10.1834,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 184,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.19727,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 185,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.184703826904297,
+          "elapsed_ms": 10.210238,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 186,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.141695976257324,
+          "elapsed_ms": 10.16777,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 187,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.159104347229004,
+          "elapsed_ms": 10.185999,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 188,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.170368194580078,
+          "elapsed_ms": 10.196049,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 189,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.159104347229004,
+          "elapsed_ms": 10.193499,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 190,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.19828,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 191,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.170368194580078,
+          "elapsed_ms": 10.19561,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 192,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.175488471984863,
+          "elapsed_ms": 10.201609,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 193,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.193199,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 194,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.167296409606934,
+          "elapsed_ms": 10.192879,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 195,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.200063705444336,
+          "elapsed_ms": 10.225799,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 196,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.14681625366211,
+          "elapsed_ms": 10.172539,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 197,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.172415733337402,
+          "elapsed_ms": 10.198529,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 198,
+          "scope": "host_raw_to_logits"
+        },
+        {
+          "cuda_stream_elapsed_ms": 10.179583549499512,
+          "elapsed_ms": 10.20566,
+          "measurement_device_uuid": "GPU-ec8b6ae1-998f-7810-88fe-2982b7a7191d",
+          "measurement_flags": [
+            "valid",
+            "synchronized_wall",
+            "all_observations_retained"
+          ],
+          "measurement_session_id": "5f25e656a17d245df78af59d",
+          "repeat_id": 199,
+          "scope": "host_raw_to_logits"
+        }
+      ],
+      "summary": {
+        "amortized_mean_ms_per_image": 10.22450227,
+        "batch_size": 1,
+        "count": 200,
+        "latency_unit": "milliseconds_per_batch",
+        "mean_ms": 10.22450227,
+        "median_ms": 10.2055845,
+        "p95_ms": 10.2416895,
+        "serial_images_per_second": 97.80427189440097
+      }
+    }
+  }
+}

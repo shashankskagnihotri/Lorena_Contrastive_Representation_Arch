@@ -1,0 +1,6 @@
+dataset,representation,sparsity_percent,patch_size,images,achieved_zero_fraction,empty_patch_fraction,empty_patch_p95,protocol,training_count
+cifar10,grayscale,0,2,45000,0.00046184894745238125,0.0003581597120501101,0.0,heldout_val,45000
+cifar10,grayscale,20,2,45000,0.1992744356393814,0.029776476323604584,0.078125,heldout_val,45000
+cifar10,grayscale,40,2,45000,0.39941778779029846,0.12977352738380432,0.22265625,heldout_val,45000
+cifar10,grayscale,60,2,45000,0.599609375,0.2984503507614136,0.38671875,heldout_val,45000
+cifar10,grayscale,80,2,45000,0.7998046875,0.5683913826942444,0.61328125,heldout_val,45000

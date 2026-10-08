@@ -1,0 +1,29 @@
+{
+  "state": "verified_byte_identical",
+  "renderer": "analysis/reproduce_figures.py",
+  "renderer_sha256": "a997034934bada44dc030ae08ee99b67b77df11cbf56a5d1d3481d3a604906ee",
+  "copies": [
+    {
+      "source": "reproduced_plots/reproduction_provenance.json",
+      "target": "provenance/figure_reproduction/reproduction_provenance.json",
+      "source_sha256": "0e47454cf1e65ee599216672ebd06fad880c28fd25bb3f910f579d75aaafb9a2",
+      "target_sha256": "0e47454cf1e65ee599216672ebd06fad880c28fd25bb3f910f579d75aaafb9a2",
+      "bytes": 3982
+    },
+    {
+      "source": "reproduced_plots/pdf_verification.json",
+      "target": "provenance/figure_reproduction/pdf_verification.json",
+      "source_sha256": "fbec4f163e5b83b1d778d3a2f46b7f5afaddf01051a5b51992207a9caa0d588f",
+      "target_sha256": "fbec4f163e5b83b1d778d3a2f46b7f5afaddf01051a5b51992207a9caa0d588f",
+      "bytes": 2925
+    },
+    {
+      "source": "reproduced_plots/render_submission.json",
+      "target": "provenance/figure_reproduction/render_submission.json",
+      "source_sha256": "63a408bb332785cca7e82f3444bf4d4369e346534a020b3e61be979432464ac4",
+      "target_sha256": "63a408bb332785cca7e82f3444bf4d4369e346534a020b3e61be979432464ac4",
+      "bytes": 1590
+    }
+  ],
+  "note": "Only small verification receipts are copied; generated PDF duplicates remain outside the public repository."
+}

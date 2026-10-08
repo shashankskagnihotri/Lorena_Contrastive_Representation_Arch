@@ -1,0 +1,12 @@
+{
+  "job_id": "361229",
+  "source_sha256": "7989335a3c474d792327f7ad239838bdde18d9fcf189734edf2950c584c9596d",
+  "public_source": "scripts/verify_publication.py",
+  "executed_frozen_source": "scripts/verify_publication_frozen_7989335a3c474d792327f7ad239838bdde18d9fcf189734edf2950c584c9596d.py",
+  "sbatch_file": "debugging/checks/publication_verify_7989335a3c474d79.sbatch",
+  "submitted_utc": "2026-10-08T13:01:39.745608+00:00",
+  "previous_attempt": {
+    "job_id": "361228",
+    "result": "failed honestly on two documentation links to local-only exporter paths; corrected to committed archived exporters before this resubmission"
+  }
+}

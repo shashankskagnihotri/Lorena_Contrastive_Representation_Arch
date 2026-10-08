@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-08T12:50:25.391241+00:00",
+  "publication_snapshot": {
+    "path": "provenance/publication_snapshot.json",
+    "sha256": "e2c84b4ef5e89829a562835083db95578117a098b53c7492f0efd04ff3b5d9b7"
+  },
+  "scope": "Public package bootstrap, default paths, and interpreter selection only. Immutable execution snapshots and live production files are unchanged. The adapted files do not claim their original execution-source hashes.",
+  "environment_overrides": {
+    "SPARSE_CONTRAST_PROJECT_ROOT": "Public checkout root; defaults to the checkout containing src/ for an editable installation.",
+    "SPARSE_CONTRAST_ROOT": "Main study artifact root; defaults to <project>/experiments/training_sparse_testing_sparse.",
+    "DENSE_SPARSE_ROOT": "Follow-up study artifact root; defaults to <project>/experiments/training_dense_testing_sparse."
+  },
+  "adaptations": [
+    {
+      "target": "src/dense_sparse/__init__.py",
+      "original_source": "training_dense_testing_sparse/outputs/source/8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb/dense_sparse/__init__.py",
+      "original_source_snapshot_hash": "8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb",
+      "archived_source": "provenance/sources/8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb/dense_sparse/__init__.py",
+      "original_sha256": "21c848f0a20b75a38b2c48d58815442d8e07633afa1ee7a6ea245bde71008d52",
+      "initial_export_sha256": "21c848f0a20b75a38b2c48d58815442d8e07633afa1ee7a6ea245bde71008d52",
+      "public_sha256": "58f2221a7ba1e6e8c585455815712dbcab29a0b95b91b21cc1a0a3d9eaa6adcf",
+      "reason": "Make the public installed package importable outside the original Ceph checkout. Resolve the project and base study roots from explicit environment overrides or the checkout; retain BASE_SOURCE_HASH and an archival BASE_SOURCE reference without forcing environment state, checking for the original live directory, or inserting its source snapshot into sys.path.",
+      "top_level_functions_and_classes_ast_unchanged": true,
+      "path": "src/dense_sparse/__init__.py"
+    },
+    {
+      "target": "src/dense_sparse/common.py",
+      "original_source": "training_dense_testing_sparse/outputs/source/8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb/dense_sparse/common.py",
+      "original_source_snapshot_hash": "8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb",
+      "archived_source": "provenance/sources/8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb/dense_sparse/common.py",
+      "original_sha256": "960637b81c26d160e227a680fb02cb70f8c99c601f70854a873b8e7d375e1b7d",
+      "initial_export_sha256": "960637b81c26d160e227a680fb02cb70f8c99c601f70854a873b8e7d375e1b7d",
+      "public_sha256": "06045bd90cea163dfa4bcdef477e570c12e79aa46549e855707d022a7c16959f",
+      "reason": "Default the public follow-up study root to experiments/training_dense_testing_sparse and use the interpreter importing the package (sys.executable), instead of a machine-specific Conda path. Preserve all source, case, checkpoint, normalization, and receipt verification functions unchanged.",
+      "top_level_functions_and_classes_ast_unchanged": true,
+      "path": "src/dense_sparse/common.py"
+    },
+    {
+      "target": "src/sparse_contrast/common.py",
+      "original_source": "sparse_contrast_benchmark_large_batch/outputs/source/7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0/sparse_contrast/common.py",
+      "original_source_snapshot_hash": "7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0",
+      "archived_source": "provenance/sources/7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0/sparse_contrast/common.py",
+      "original_sha256": "7df16f4325b4bdbd3141a3acac6630619d8dfd929492142f12555cd49100098b",
+      "initial_export_sha256": "7df16f4325b4bdbd3141a3acac6630619d8dfd929492142f12555cd49100098b",
+      "public_sha256": "f16a11d41d11e6b6e6e6fa552d57d53d75d7c6a5dacad1a48f18402e1e962577",
+      "reason": "Default the public main study root to experiments/training_sparse_testing_sparse within the checkout or SPARSE_CONTRAST_PROJECT_ROOT, while preserving the explicit SPARSE_CONTRAST_ROOT override. Preserve every scientific, persistence, initialization, and source-verification function unchanged.",
+      "top_level_functions_and_classes_ast_unchanged": true,
+      "path": "src/sparse_contrast/common.py"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "architecture_distinct_tasks": 0,
+  "architecture_equal_tasks": 220,
+  "completed_at": "2026-10-08T11:43:18.076935+00:00",
+  "followup_pdf_pages": 920,
+  "followup_pdfs": 220,
+  "normalization_pdfs": 9,
+  "parent_pdfs": 160,
+  "source_catalog_cases": 612,
+  "source_script_sha256": "e9a08dc45fe3ebe84dd7ca0d8ea01172430be9cabbefc2145df48e4164703890",
+  "state": "completed",
+  "tasks": 220,
+  "total_pdfs": 389
+}

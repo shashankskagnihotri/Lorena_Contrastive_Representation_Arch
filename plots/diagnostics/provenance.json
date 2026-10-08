@@ -1,0 +1,78 @@
+{
+  "argv": [
+    "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/diagnostics/provenance/render_diagnostic_pdfs_20261008_e9a08dc45fe3ebe8.py",
+    "--project",
+    "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch",
+    "--workers",
+    "8"
+  ],
+  "expected_tasks": 220,
+  "hostname": "dws-08.informatik.uni-mannheim.de",
+  "new_render_policy": "Matplotlib/seaborn exact requested serif whitegrid talk theme; PDF/PNG dpi=300.",
+  "original_renderer_sha256": "8bd4f3e17bad0e8396570db34ab70c3b835f41538e32d32ffd1579b5e78afb78",
+  "original_renderer_source_hash": "7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0",
+  "parent_preview_policy": "Byte-identical copies of original PDF/PNG/NPZ/metadata; original previews have 300 dpi PNGs.",
+  "script_path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/diagnostics/provenance/render_diagnostic_pdfs_20261008_e9a08dc45fe3ebe8.py",
+  "script_sha256": "e9a08dc45fe3ebe84dd7ca0d8ea01172430be9cabbefc2145df48e4164703890",
+  "selection_policy": {
+    "CIFAR_severity_policy": "Predetermined middle severity 3; not selected by model outcomes.",
+    "architecture_policy": "Use Swin saved frontend tensors only if every displayed array and scale exactly equals ViT; otherwise retain both.",
+    "fit_distribution_policy": "Fixed ten-image clean-training diagnostic only, not full-partition distributions; fitted mean/std table is full training partition.",
+    "inference_execution": "compact",
+    "samples": "All ten original class-balanced fixed sample IDs, two groups of five, all native channels.",
+    "scope": "No new model evaluation, predictions, normalization fits or input preprocessing. Stored arrays only.",
+    "seed": 0,
+    "selected_cells": {
+      "cifar10": [
+        [
+          "clean",
+          "test"
+        ],
+        [
+          "brightness",
+          3
+        ],
+        [
+          "contrast",
+          3
+        ],
+        [
+          "fog",
+          3
+        ]
+      ],
+      "mnist": [
+        [
+          "clean",
+          "test"
+        ],
+        [
+          "brightness",
+          "fixed"
+        ],
+        [
+          "fog",
+          "fixed"
+        ]
+      ]
+    },
+    "sparsities": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "trained_execution": "dense",
+    "unchanged_raw_reference": "Dense unmodified raw p0 cases remain in the full source catalog; compact raw p0 explicitly shows natural-zero removal."
+  },
+  "slurm_job_id": "361064",
+  "started": "2026-10-08T11:29:54.094088+00:00",
+  "study_manifest": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/training_dense_testing_sparse/study_manifest.json",
+  "study_manifest_sha256": "37eecb5dd88a282adf8c4fce34a424a178978bc991826d2b471d323653a322ce"
+}

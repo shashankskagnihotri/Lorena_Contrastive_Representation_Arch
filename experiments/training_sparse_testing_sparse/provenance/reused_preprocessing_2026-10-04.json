@@ -1,0 +1,979 @@
+{
+  "active_representations": {
+    "cifar10": [
+      "single_color",
+      "grayscale",
+      "color_opponency"
+    ],
+    "mnist": [
+      "grayscale"
+    ]
+  },
+  "copied_artifacts": [
+    {
+      "destination": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/preprocessing_pilot/summary.csv",
+      "destination_sha256": "4a95da55b096bbb99abafb5a856008018acfb79f51e2756c7c590005689faae2",
+      "source": {
+        "bytes": 4983,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/preprocessing_pilot/summary.csv",
+        "sha256": "4a95da55b096bbb99abafb5a856008018acfb79f51e2756c7c590005689faae2"
+      }
+    },
+    {
+      "destination": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/preprocessing_pilot/mnist.npz",
+      "destination_sha256": "168f926448c7af63cc0d9bc612366e1ca3c644344e87da8ddc475303798a5953",
+      "source": {
+        "bytes": 1817326,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/preprocessing_pilot/mnist.npz",
+        "sha256": "168f926448c7af63cc0d9bc612366e1ca3c644344e87da8ddc475303798a5953"
+      }
+    },
+    {
+      "destination": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/preprocessing_pilot/cifar10.npz",
+      "destination_sha256": "bf842164a373d34b8935f5d1cd5ddbb820b0d13f0998c23da9142d070946b5e3",
+      "source": {
+        "bytes": 1992718,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/preprocessing_pilot/cifar10.npz",
+        "sha256": "bf842164a373d34b8935f5d1cd5ddbb820b0d13f0998c23da9142d070946b5e3"
+      }
+    },
+    {
+      "destination": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/preprocessing_pilot/completed.json",
+      "destination_sha256": "7e267838f6a4f3c6db11f72a567255dbb56b31045a5ce4d324874380a86fbd61",
+      "source": {
+        "bytes": 384,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/preprocessing_pilot/completed.json",
+        "sha256": "7e267838f6a4f3c6db11f72a567255dbb56b31045a5ce4d324874380a86fbd61"
+      }
+    }
+  ],
+  "current_root": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch",
+  "data_manifest_current": {
+    "bytes": 71486,
+    "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/datasets_manifest.json",
+    "sha256": "bf13d3ac64641480ddfb09b7b8b2dc8c439dba4d0d8da9795a8d67df48861d2c"
+  },
+  "data_manifest_original": {
+    "bytes": 71426,
+    "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/datasets_manifest.json",
+    "sha256": "e806948f8a91af613f1e2c229c04bc5d618cc02bc1c8abef707d0f753af1a141"
+  },
+  "execution_note": "No new training, frontend fitting, GPU work, or full-data frontend computation. Saved per-image statistics were recomputed and validated; current shared previews were checked in place. Optimizer batch size does not affect this deterministic unaugmented preprocessing diagnostic.",
+  "historical_reference_source": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/source/1e483ff99cb9219478f00c63bd21bd47d8811098046e84b05370f8e0e3cae2cf",
+  "historical_source_note": "The original preprocessing completed.json did not record its producing source snapshot. No producing hash is invented. The preserved historical snapshot and current old/new trees have byte-identical frontend/data/normalization code; the historical preprocessing script differs only in active-representation enumeration, with the numerical/data/reduction loop unchanged.",
+  "manifest_differences": [
+    {
+      "current": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/cifar10_seed2026.json",
+      "field": "/datasets/cifar10/splits/json",
+      "original": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/cifar10_seed2026.json"
+    },
+    {
+      "current": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/cifar10_seed2026.npz",
+      "field": "/datasets/cifar10/splits/npz",
+      "original": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/cifar10_seed2026.npz"
+    },
+    {
+      "current": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/mnist_seed2026.json",
+      "field": "/datasets/mnist/splits/json",
+      "original": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/mnist_seed2026.json"
+    },
+    {
+      "current": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/mnist_seed2026.npz",
+      "field": "/datasets/mnist/splits/npz",
+      "original": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/mnist_seed2026.npz"
+    },
+    {
+      "current": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/provenance/datasets_inventory.json",
+      "field": "/inventory",
+      "original": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/datasets_inventory.json"
+    }
+  ],
+  "normalization_note": "The copied statistic measures native preprocessing before normalization. Normalization identity is additionally checked for existing preview validity.",
+  "original_root": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark",
+  "preprocessing_validation": {
+    "ids_exactly_match_current_train_splits": true,
+    "no_withdrawn_mnist_arrays_or_rows": true,
+    "patch_sizes": [
+      1,
+      2,
+      4
+    ],
+    "requested_percentages": [
+      0,
+      20,
+      40,
+      60,
+      80
+    ],
+    "rows": 60,
+    "saved_array_recomputed_statistics": [
+      {
+        "array": "grayscale_p0_patch1",
+        "array_sha256": "9996d2082feffcf5e60ad161fc338a89a2b592695c0d008e12b52e7d7ce9e01e",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p0_patch2",
+        "array_sha256": "33b07e9bdb567c4c2d9b19f3b1a4fe32fcd52fd86e662ae9b7420ecd98eb0d47",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p0_patch4",
+        "array_sha256": "a0917c2a97d85f9fc2510b644051388415377ddb78a845c38f8e4b2cf7bbe142",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p20_patch1",
+        "array_sha256": "9996d2082feffcf5e60ad161fc338a89a2b592695c0d008e12b52e7d7ce9e01e",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p20_patch2",
+        "array_sha256": "33b07e9bdb567c4c2d9b19f3b1a4fe32fcd52fd86e662ae9b7420ecd98eb0d47",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p20_patch4",
+        "array_sha256": "a0917c2a97d85f9fc2510b644051388415377ddb78a845c38f8e4b2cf7bbe142",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p40_patch1",
+        "array_sha256": "9996d2082feffcf5e60ad161fc338a89a2b592695c0d008e12b52e7d7ce9e01e",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p40_patch2",
+        "array_sha256": "33b07e9bdb567c4c2d9b19f3b1a4fe32fcd52fd86e662ae9b7420ecd98eb0d47",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p40_patch4",
+        "array_sha256": "a0917c2a97d85f9fc2510b644051388415377ddb78a845c38f8e4b2cf7bbe142",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p60_patch1",
+        "array_sha256": "958bc6c45f7956d9f0babbbe7848058fa25ab949f9e5aac93324f69774baaf27",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p60_patch2",
+        "array_sha256": "d689b6b2bc77f640847e3dcbe16a0638a45e34acfc54c116cf15397fa5cfba78",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p60_patch4",
+        "array_sha256": "a0e0bbd40856125f2e03adcf627444271c6131c3d27385e14ab466edbe743e88",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p80_patch1",
+        "array_sha256": "c2d6cb7d18a8acd8e70f2ca38ff51c49a8cb1598095b83b61fd0a0e3fb7727e2",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p80_patch2",
+        "array_sha256": "bff9461c32a9ded35b8ce56b4cbc8b6c5b4b3f60d2bb81040c68b93d21d1c898",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p80_patch4",
+        "array_sha256": "ba2ed1d5a2713d78a49308dee1e1c1bdeefa01380b3dc113e815acf207a95925",
+        "dataset": "mnist",
+        "images": 55000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p0_patch1",
+        "array_sha256": "30d6d1d59c3f76bc657109eb2c3bf17ec793a9c9dd08ce76b4ea5dacb0126b11",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p0_patch2",
+        "array_sha256": "f7baca4e39a346ffb82377d36c2f8d81655c6341785eee68c965c01ec5ef22b5",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p0_patch4",
+        "array_sha256": "aa0489c6d1d2a470da9ae82aea44f6505b96df7544dfea0276534de3cd727a76",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p20_patch1",
+        "array_sha256": "8690274623ec548d00a4a24c3695c8bd3121fdd41d714b3d27beaf833708799c",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p20_patch2",
+        "array_sha256": "59a9896d2adee8ad981cc9975e9b7707c53eaa9340f8b345cdac8820a25c515e",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p20_patch4",
+        "array_sha256": "2885bf17e3f40bf682c030a136044361a90683ff6951604fb3381a70b4d281cc",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p40_patch1",
+        "array_sha256": "19ec661c937cc8add51999aa109f5031e0b36bb28572ddeadefc8f8be1aa094f",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p40_patch2",
+        "array_sha256": "303a692c2545d2dabc292bfc9dcb04289f547bd737fbc6e57fdfe0637244f528",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p40_patch4",
+        "array_sha256": "24f0cd1a2513db416d8a069d3f7c996b7fdfe56b83fde6c51f6289f45207a49b",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p60_patch1",
+        "array_sha256": "42ac90fd3f31fcc971c7a1130655c3b4d29901ab72ab3efa505400919f8e924f",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p60_patch2",
+        "array_sha256": "a6d222df95dfefc06befc35e7db10aade52d8e9f32070bfdd880d2835438d03c",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p60_patch4",
+        "array_sha256": "17f0732647af1169ccadd3d3eab8d78d4103b0957b4130670ff38ef5f596f2aa",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p80_patch1",
+        "array_sha256": "5f8d0cc4df7df8dba0457ed0cae1a87e37cf7232ff5d106bc6ee550fe54da235",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p80_patch2",
+        "array_sha256": "e9031009d4e59d2ef5d8628b5dbb9e9a92f4882fb81a67b7c6154c2f95693ee2",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "single_color_p80_patch4",
+        "array_sha256": "d301b0dde9aad6a4007955c9ba5159665ea041f31cc74e06a9e79f3e176b8b90",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p0_patch1",
+        "array_sha256": "78a3c955f2f253c04538d1bbd6b2caa8a20de7cf47f3e55d1054ffc5ba77f4d9",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p0_patch2",
+        "array_sha256": "1924fd4f4e1f78edbbf283e915558077c3519756b37d9ddbf92f1964dbd0aa4b",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p0_patch4",
+        "array_sha256": "5182d989126e176e0e046c2be7ee27b2964da9e4de15d8146da5e76fb7c05576",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p20_patch1",
+        "array_sha256": "a82b71d2cfb105ce06a96eaba6180d636e4e7603718e9ddf702ac9a0e547000e",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p20_patch2",
+        "array_sha256": "1d4c815282d7183d7ca536bc58d18721e84f7b66227349c7ab1d17ab01404371",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p20_patch4",
+        "array_sha256": "504f74f940d620507509fcddea03cdd82a6353818324246eada1332f97957fad",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p40_patch1",
+        "array_sha256": "305ae351e97b30b5c1b50e239f2cce126510308ec2e9c45b29126c04ec5ec5f0",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p40_patch2",
+        "array_sha256": "8ecc244b5c822424a115b82087bd5aac038521d206cc9b041edf7dac5d2e844a",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p40_patch4",
+        "array_sha256": "1e740857464ff1ded03b419484daa4637887e62403d531f2fbd621f1300edef7",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p60_patch1",
+        "array_sha256": "d12edc6537509ce3d2be47fa90b71ab718f4a4a3bb70c26cc0eda9c472669e04",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p60_patch2",
+        "array_sha256": "73201280fd753a49feeb338571ebc3d20715abc195384b75463f76a42ed2f903",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p60_patch4",
+        "array_sha256": "1609356228b698af87df5b6dd5a48b3b7b0adb0330360cc536d5d459594b2ec0",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p80_patch1",
+        "array_sha256": "bc9abb60566aec81b063ce9e65ab16a786de4af656558516280de1987c65161a",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p80_patch2",
+        "array_sha256": "79b4b35d007eba1414e97d4b2847996b934d530fd849cc63e9aee4ffa08edbaa",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "grayscale_p80_patch4",
+        "array_sha256": "bb6a8ec62e6759da58622ed1f9ae2c4f7b1ec9bb38f9aa7e7e93143a918a7544",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p0_patch1",
+        "array_sha256": "98f86076d9368ba7b9ed8597ea6428d0ba09f6a05fb8104c0d3aaa7b62b38694",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p0_patch2",
+        "array_sha256": "329f24597eebafaacc81a8ab341b378fa0ca3b7e25f7c8fc8f9a4a21e8f3f8ff",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p0_patch4",
+        "array_sha256": "6c7a5490a16d3da982b56a727ffdde669632ea33b8a9473e80502c10e403d67e",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p20_patch1",
+        "array_sha256": "e7947c8716300258d902f313b3e6d13de86dc08efffc586c10e7282da72c08d7",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p20_patch2",
+        "array_sha256": "d9e9f04c589a4ad9cab09a064bfb21ae51e990dc33f870c6e41a60acdc482ffa",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p20_patch4",
+        "array_sha256": "58a9674fadfc163ecf0af93a1d725530fc2f77bc15e5f878dbf701611ed3ca23",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p40_patch1",
+        "array_sha256": "f71c6a26595f72b1d08f110182732afc40f3d687da57382f3835e30d7cb8ca74",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p40_patch2",
+        "array_sha256": "654bbf9eee3f7ec72572ad6eb5ba6383fcbd7684a104d51187595e7440ade99c",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p40_patch4",
+        "array_sha256": "63349e872de5df73facee2ceeb4728dbe7525b7d9452aa30db8739a1400bdd15",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p60_patch1",
+        "array_sha256": "0f24cfe2f9d8e92b7d97932baddf08048290a37db645c0ac67632cddc4534fef",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p60_patch2",
+        "array_sha256": "90c2ab8f22d0bd8999107d30c749bfdeaf903f428ba422bc0163beb22ded7c2f",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p60_patch4",
+        "array_sha256": "257ab2aa8e8fc3abd2add51ca90c0053da47367bfbc453d4b57e83aa20c4e343",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p80_patch1",
+        "array_sha256": "e41b814f2e82fb5184d0ed73f973dbba65494d3cd68b04294e785dcba10277ed",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p80_patch2",
+        "array_sha256": "ea5e66a21aba242cd851d51bac8a48d14fa6927f328d63c3a4b1a6e064f4564c",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      },
+      {
+        "array": "color_opponency_p80_patch4",
+        "array_sha256": "04341bf596c5cc08a57505e9accd0864b6194e384c12e3ea1ab40a5306a85170",
+        "dataset": "cifar10",
+        "images": 45000,
+        "maximum_csv_recompute_absolute_error": 0.0
+      }
+    ],
+    "token_epsilon": 0,
+    "training_counts": {
+      "cifar10": 45000,
+      "mnist": 55000
+    }
+  },
+  "schema_version": 1,
+  "scientific_source_file_hashes": {
+    "scripts/preprocessing_pilot.py": {
+      "current_live": "56d58d2e340b54631226b84c2c93eaf51fa96585786ea09c12d0285a181b8781",
+      "original_live": "56d58d2e340b54631226b84c2c93eaf51fa96585786ea09c12d0285a181b8781"
+    },
+    "sparse_contrast/data.py": {
+      "current_live": "bce54235b9acc68633fdb0f284bd4926fc983d2e2b0599349dee869b5d4b9a54",
+      "historical_frozen": "bce54235b9acc68633fdb0f284bd4926fc983d2e2b0599349dee869b5d4b9a54",
+      "measurement_frozen": "bce54235b9acc68633fdb0f284bd4926fc983d2e2b0599349dee869b5d4b9a54",
+      "original_live": "bce54235b9acc68633fdb0f284bd4926fc983d2e2b0599349dee869b5d4b9a54",
+      "training_frozen": "bce54235b9acc68633fdb0f284bd4926fc983d2e2b0599349dee869b5d4b9a54"
+    },
+    "sparse_contrast/frontend.py": {
+      "current_live": "a9db1d06376ea09fa877fd77d7cb9cab5ceed038bd059682d0695b8700413c03",
+      "historical_frozen": "a9db1d06376ea09fa877fd77d7cb9cab5ceed038bd059682d0695b8700413c03",
+      "measurement_frozen": "a9db1d06376ea09fa877fd77d7cb9cab5ceed038bd059682d0695b8700413c03",
+      "original_live": "a9db1d06376ea09fa877fd77d7cb9cab5ceed038bd059682d0695b8700413c03",
+      "training_frozen": "a9db1d06376ea09fa877fd77d7cb9cab5ceed038bd059682d0695b8700413c03"
+    },
+    "sparse_contrast/normalization.py": {
+      "current_live": "adf6336d123a84b742337d15c80345e9d63c6f87213c43f5950c0dff1d76f5d5",
+      "historical_frozen": "adf6336d123a84b742337d15c80345e9d63c6f87213c43f5950c0dff1d76f5d5",
+      "measurement_frozen": "adf6336d123a84b742337d15c80345e9d63c6f87213c43f5950c0dff1d76f5d5",
+      "original_live": "adf6336d123a84b742337d15c80345e9d63c6f87213c43f5950c0dff1d76f5d5",
+      "training_frozen": "adf6336d123a84b742337d15c80345e9d63c6f87213c43f5950c0dff1d76f5d5"
+    },
+    "sparse_contrast/visualize.py": {
+      "current_live": "8bd4f3e17bad0e8396570db34ab70c3b835f41538e32d32ffd1579b5e78afb78",
+      "original_live": "8bd4f3e17bad0e8396570db34ab70c3b835f41538e32d32ffd1579b5e78afb78"
+    }
+  },
+  "shared_previews": [
+    {
+      "action": "validated_existing_current_campaign_previews_no_copy",
+      "complete": {
+        "bytes": 18516,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/complete.json",
+        "sha256": "baf671bd865b696656b219eaa7d2a6d4b3dc50d772d65026fa90ceac55fb8673"
+      },
+      "dataset": "cifar10",
+      "fixed_ids_labels_masks_ranking_normalization_train_scales_verified": true,
+      "pdf_count": 60,
+      "png_count": 60,
+      "representation": "color_opponency",
+      "tensor_artifacts": [
+        {
+          "bytes": 382463,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/train_p0.npz",
+          "sha256": "de7b24ae3aa0df465983418a5795629a9e38b4534610ff56a04c08db00439b48"
+        },
+        {
+          "bytes": 365992,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/train_p20.npz",
+          "sha256": "32794cf27c40d356c5653382969cdb31f3f77e52fe0b499e099a2ea8e5adccfb"
+        },
+        {
+          "bytes": 337153,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/train_p40.npz",
+          "sha256": "354febf28a461dadfdae3279f656a1065c4dc0a6bbe8f3ec427ba5b64ea050e8"
+        },
+        {
+          "bytes": 301963,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/train_p60.npz",
+          "sha256": "fc615a0d5d712b6c93f1f333adff6df846d02ced15828c1fc49430e37368a981"
+        },
+        {
+          "bytes": 257707,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/train_p80.npz",
+          "sha256": "63f2230a95a27f6c786098540311790346a32d60602429ba3f75d09f256d60bb"
+        },
+        {
+          "bytes": 397073,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/val_p0.npz",
+          "sha256": "ec317f7d050cc855d241183f08be91709784015ef3faeb577f52771f8834db40"
+        },
+        {
+          "bytes": 377866,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/val_p20.npz",
+          "sha256": "42f4ced525f7c5e0d1d5dfc2c677609e04ad3ee2d905445fc70146f384594934"
+        },
+        {
+          "bytes": 348730,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/val_p40.npz",
+          "sha256": "8f4aac92d4c088ccb574dce65a811b9a536130218bb869cb0ff52aa37f245175"
+        },
+        {
+          "bytes": 312653,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/val_p60.npz",
+          "sha256": "124bc1d2b0308b99682ac1b4919de56d8417973250549ff82badce4f00b68ecf"
+        },
+        {
+          "bytes": 268222,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/color_opponency/b342413f7fab68dca9f51d5336d9fc188828ed434a596141a8b9ee2a55ef791e/val_p80.npz",
+          "sha256": "94543cab653b8d64db996e216d970c5f5b97d536cbb054c69eafa0c3c302cfb2"
+        }
+      ]
+    },
+    {
+      "action": "validated_existing_current_campaign_previews_no_copy",
+      "complete": {
+        "bytes": 8198,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/complete.json",
+        "sha256": "969564ab06cbc5fd47d9a6138fa44359360c74fe82f5a469fbaf94cb0c1f0c8a"
+      },
+      "dataset": "cifar10",
+      "fixed_ids_labels_masks_ranking_normalization_train_scales_verified": true,
+      "pdf_count": 20,
+      "png_count": 20,
+      "representation": "grayscale",
+      "tensor_artifacts": [
+        {
+          "bytes": 162086,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/train_p0.npz",
+          "sha256": "cac4fad4fc5d4bebead1cfcc07770ef02d77df1de33110b895f46a96f374ee5e"
+        },
+        {
+          "bytes": 155517,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/train_p20.npz",
+          "sha256": "0d6192687101968eeeed2f88915014b626344fb30adfefa75ede51255c742a37"
+        },
+        {
+          "bytes": 144434,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/train_p40.npz",
+          "sha256": "d44750721e59492c0270a9813b257bc9dadff7ec2d3a92a3bf1210ced166abc9"
+        },
+        {
+          "bytes": 130713,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/train_p60.npz",
+          "sha256": "19670ca014d74dc72a14fb0090d3ee17917985c159d83c8e5258825f433d6762"
+        },
+        {
+          "bytes": 114719,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/train_p80.npz",
+          "sha256": "afe333fd800c439005cf765e94e1d362cb4e2b0b95517968cb349811e835a03a"
+        },
+        {
+          "bytes": 167026,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/val_p0.npz",
+          "sha256": "22640269334dbd131368a1d796722ccc57f7843693e448ead33174b4cf575734"
+        },
+        {
+          "bytes": 160168,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/val_p20.npz",
+          "sha256": "79e8d86af987f8260400db885deb9cf5568553f764a97507c070abd8d8978d69"
+        },
+        {
+          "bytes": 148970,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/val_p40.npz",
+          "sha256": "b7b31e02fb1b421b551668bfb18a753c49ff310eb365afc0575b7592e461b13b"
+        },
+        {
+          "bytes": 134891,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/val_p60.npz",
+          "sha256": "5d4c6a4ff2ec04038b0e3af60f036cbd609d4abc7eaeb94e8246d83e1c8c14b8"
+        },
+        {
+          "bytes": 118594,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/grayscale/f7c3b3d85132572e5d985b23a65ed73b044adcb0e5d043ef4e4bc39d420946bd/val_p80.npz",
+          "sha256": "905290fa05cd00b158bbe830f1efd9d9bad4cb15251b1d933e6cea6dec494ea2"
+        }
+      ]
+    },
+    {
+      "action": "validated_existing_current_campaign_previews_no_copy",
+      "complete": {
+        "bytes": 18277,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/complete.json",
+        "sha256": "bbf12a7759c2774877d01c2faee499e61620cd9a7a2a189315fe9d576449d10d"
+      },
+      "dataset": "cifar10",
+      "fixed_ids_labels_masks_ranking_normalization_train_scales_verified": true,
+      "pdf_count": 60,
+      "png_count": 60,
+      "representation": "single_color",
+      "tensor_artifacts": [
+        {
+          "bytes": 321995,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p0.npz",
+          "sha256": "0cdc0cda67f247b4575d19c1598f3ec1405a166dfd2a20157a39f422c2975c0e"
+        },
+        {
+          "bytes": 312566,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p20.npz",
+          "sha256": "e6c809c01bb9bdd741c4a7c28aa5d5a75017459940c3d6d8f8bd07692e7b25c6"
+        },
+        {
+          "bytes": 291476,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p40.npz",
+          "sha256": "cdc715527228e836c01fb7dc0d3bb8b12237c68b69fda2093efb2de9d505ea7f"
+        },
+        {
+          "bytes": 262790,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p60.npz",
+          "sha256": "fd5a7ae11923bdf78f5a3d554ce5571a520f11cad38548763416b9466f098963"
+        },
+        {
+          "bytes": 224716,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/train_p80.npz",
+          "sha256": "b1edb03f40a5cdc94680ec2c47974919a374327251d121625bc84b1cd28c01c6"
+        },
+        {
+          "bytes": 333698,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p0.npz",
+          "sha256": "898f3c65e8fc433d828bb3ac92520b767b116f10a77d492cb5caa4f1dba5aeca"
+        },
+        {
+          "bytes": 324450,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p20.npz",
+          "sha256": "9c760c82c560edd806380da77b7225138b7966411f9de420d01a8117b8fc3923"
+        },
+        {
+          "bytes": 302980,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p40.npz",
+          "sha256": "6d4977ece0dc7075c03e7fc026accc3a177da21802717cccd30b61b2bba7382d"
+        },
+        {
+          "bytes": 274048,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p60.npz",
+          "sha256": "7c3513af613188fc6179f6247a5ce319b3e5b3744b46cbc98b373dc506dcceb8"
+        },
+        {
+          "bytes": 234678,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/cifar10/single_color/56ae526b7d21bdac1496debb0e3cebab87a7697c38410e28973d91302c77be85/val_p80.npz",
+          "sha256": "7df8d1a213f4573a283769ff4d0c05026625474ff1496d34ab3baff52f9ff05b"
+        }
+      ]
+    },
+    {
+      "action": "validated_existing_current_campaign_previews_no_copy",
+      "complete": {
+        "bytes": 8137,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/complete.json",
+        "sha256": "c7ec0906fb6a741eb12840e2b1cea3e7979f24398c645d3b676da2efbd11da11"
+      },
+      "dataset": "mnist",
+      "fixed_ids_labels_masks_ranking_normalization_train_scales_verified": true,
+      "pdf_count": 20,
+      "png_count": 20,
+      "representation": "grayscale",
+      "tensor_artifacts": [
+        {
+          "bytes": 38807,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p0.npz",
+          "sha256": "a6b8329841845cabfb0b9b0a8dc651814303f8a943e4cd396fac4152db05cee5"
+        },
+        {
+          "bytes": 38807,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p20.npz",
+          "sha256": "a6b8329841845cabfb0b9b0a8dc651814303f8a943e4cd396fac4152db05cee5"
+        },
+        {
+          "bytes": 38807,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p40.npz",
+          "sha256": "a6b8329841845cabfb0b9b0a8dc651814303f8a943e4cd396fac4152db05cee5"
+        },
+        {
+          "bytes": 38620,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p60.npz",
+          "sha256": "388a59f16e0f8c011fe7b0c69235295c6da8be23c9d7baf4c98be2b7ee2ad5fa"
+        },
+        {
+          "bytes": 34095,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/train_p80.npz",
+          "sha256": "14768a1c9bb9b07455c94a876c5bbcd66f0d48f46fa46267efc8f387c063dab7"
+        },
+        {
+          "bytes": 40018,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p0.npz",
+          "sha256": "c12824ca6476265b0eb08d10d30628eeb7af973c686842433029a9a16ba17216"
+        },
+        {
+          "bytes": 40018,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p20.npz",
+          "sha256": "c12824ca6476265b0eb08d10d30628eeb7af973c686842433029a9a16ba17216"
+        },
+        {
+          "bytes": 40018,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p40.npz",
+          "sha256": "c12824ca6476265b0eb08d10d30628eeb7af973c686842433029a9a16ba17216"
+        },
+        {
+          "bytes": 39950,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p60.npz",
+          "sha256": "fa263237142264070b95e68873c181f73466137b3f95d486964ac4548c0875d5"
+        },
+        {
+          "bytes": 35730,
+          "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/previews/heldout_val/mnist/grayscale/044b5258920ebe081b5e86d4f8c1686ccb2f4ef2445a899fe141f64448265d7a/val_p80.npz",
+          "sha256": "032fc01f743a05180a7650d24c8d7cc53ec07cdd7c25270b3ff47a9d0028bdef"
+        }
+      ]
+    }
+  ],
+  "split_and_normalization_identities": [
+    {
+      "current": {
+        "bytes": 2148093,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/mnist_seed2026.json",
+        "sha256": "751169d21029efacedc4134333d2c17dd09858e311a9beb340aafd0b860e925c"
+      },
+      "original": {
+        "bytes": 2148093,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/mnist_seed2026.json",
+        "sha256": "751169d21029efacedc4134333d2c17dd09858e311a9beb340aafd0b860e925c"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1040994,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/mnist_seed2026.npz",
+        "sha256": "b81f59895e2ac45c937abc327c937f122a1d65fca0a9a724137466d4f03994d2"
+      },
+      "original": {
+        "bytes": 1040994,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/mnist_seed2026.npz",
+        "sha256": "b81f59895e2ac45c937abc327c937f122a1d65fca0a9a724137466d4f03994d2"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1378378,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/mnist_grayscale_heldout_val.json",
+        "sha256": "f9f07e9f1272ac32e5e755c4f8840a7912a92a40b02923b34830b7935038d2c9"
+      },
+      "original": {
+        "bytes": 1378378,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/mnist_grayscale_heldout_val.json",
+        "sha256": "f9f07e9f1272ac32e5e755c4f8840a7912a92a40b02923b34830b7935038d2c9"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1315,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/mnist_grayscale_heldout_val.2d92be88fe73f95a.npz",
+        "sha256": "748e48ec0c42e1c4ff2edcde96b626e98608d6628df593621afc20c799814dbc"
+      },
+      "original": {
+        "bytes": 1315,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/mnist_grayscale_heldout_val.2d92be88fe73f95a.npz",
+        "sha256": "748e48ec0c42e1c4ff2edcde96b626e98608d6628df593621afc20c799814dbc"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1857655,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/cifar10_seed2026.json",
+        "sha256": "3218df00ff213dd4580c8556113342eefa5ca574bea3bc1957651d4b2604c4bb"
+      },
+      "original": {
+        "bytes": 1857655,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/cifar10_seed2026.json",
+        "sha256": "3218df00ff213dd4580c8556113342eefa5ca574bea3bc1957651d4b2604c4bb"
+      }
+    },
+    {
+      "current": {
+        "bytes": 880994,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/cifar10_seed2026.npz",
+        "sha256": "2b134c72ffbe46ac8476d40f1416b0239b1de8a0e1ac10aab9f6269aee75e36c"
+      },
+      "original": {
+        "bytes": 880994,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/cifar10_seed2026.npz",
+        "sha256": "2b134c72ffbe46ac8476d40f1416b0239b1de8a0e1ac10aab9f6269aee75e36c"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1219203,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/cifar10_single_color_heldout_val.json",
+        "sha256": "bd89ca7be3ad6706d1ed568df739b9355120986033684701a25e779171f8b2aa"
+      },
+      "original": {
+        "bytes": 1219203,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_single_color_heldout_val.json",
+        "sha256": "bd89ca7be3ad6706d1ed568df739b9355120986033684701a25e779171f8b2aa"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1381,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/cifar10_single_color_heldout_val.1c894a7b4749854c.npz",
+        "sha256": "45e4a0dce65eda8b7023374aff0e1d747b79c0b2093deff1970af535e96a0261"
+      },
+      "original": {
+        "bytes": 1381,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_single_color_heldout_val.1c894a7b4749854c.npz",
+        "sha256": "45e4a0dce65eda8b7023374aff0e1d747b79c0b2093deff1970af535e96a0261"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1218383,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/cifar10_grayscale_heldout_val.json",
+        "sha256": "3ada7cfa9fb36b093d5dd9ac52ef5cb98c4468c3342588bbce1162efc9c55b17"
+      },
+      "original": {
+        "bytes": 1218383,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_grayscale_heldout_val.json",
+        "sha256": "3ada7cfa9fb36b093d5dd9ac52ef5cb98c4468c3342588bbce1162efc9c55b17"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1315,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/cifar10_grayscale_heldout_val.90ea0b39776374c8.npz",
+        "sha256": "fa839098ceb6803d411445893e59c0c514bd042f3d964721a73a39ac92377862"
+      },
+      "original": {
+        "bytes": 1315,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_grayscale_heldout_val.90ea0b39776374c8.npz",
+        "sha256": "fa839098ceb6803d411445893e59c0c514bd042f3d964721a73a39ac92377862"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1219263,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/cifar10_color_opponency_heldout_val.json",
+        "sha256": "a9458c8bb51544728040e1bc6bc636f2f0271fd8e4c0e129d3dc91d0e404228e"
+      },
+      "original": {
+        "bytes": 1219263,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_color_opponency_heldout_val.json",
+        "sha256": "a9458c8bb51544728040e1bc6bc636f2f0271fd8e4c0e129d3dc91d0e404228e"
+      }
+    },
+    {
+      "current": {
+        "bytes": 1381,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/normalization/cifar10_color_opponency_heldout_val.2e6f17a99efa314d.npz",
+        "sha256": "2da2b18033fd6af2ed5a9e7af9d9af01ad1a1eceb9500bfb7703456184aa2203"
+      },
+      "original": {
+        "bytes": 1381,
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_color_opponency_heldout_val.2e6f17a99efa314d.npz",
+        "sha256": "2da2b18033fd6af2ed5a9e7af9d9af01ad1a1eceb9500bfb7703456184aa2203"
+      }
+    }
+  ],
+  "state": "verified_reused_evidence",
+  "verified_at_utc": "2026-10-04T18:12:10.458272+00:00"
+}

@@ -1,0 +1,76 @@
+{
+  "state": "verified",
+  "checked_utc": "2026-10-08T12:14:16.730553+00:00",
+  "render_job_id": "361101",
+  "source": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/debugging/verify_requested_error_plots_20261008.py",
+  "source_sha256": "61df974494995f84e9ded899965a8ae82c62eea207447e6d74a0919e5261e5ce",
+  "render_provenance_sha256": "11094f6b5bbd0e3a72a016620f85775ae96c8fe68ef48e6885a9faaf7c1a8b41",
+  "output_hashes_checked": 14,
+  "aggregate_rows": 1984,
+  "seed_rows": 5952,
+  "pdf_count": 2,
+  "page_count": 4,
+  "pages": [
+    {
+      "pdf": "plots/MNIST_error_by_corruption.pdf",
+      "page": 1,
+      "architecture": "ViT-Small",
+      "panels": 16,
+      "baseline": "Grayscale baseline",
+      "width_points": 1584.0,
+      "height_points": 1339.199951171875
+    },
+    {
+      "pdf": "plots/MNIST_error_by_corruption.pdf",
+      "page": 2,
+      "architecture": "Swin-Tiny",
+      "panels": 16,
+      "baseline": "Grayscale baseline",
+      "width_points": 1584.0,
+      "height_points": 1339.199951171875
+    },
+    {
+      "pdf": "plots/CIFAR10_error_by_corruption.pdf",
+      "page": 1,
+      "architecture": "ViT-Small",
+      "panels": 16,
+      "baseline": "RGB baseline",
+      "width_points": 1584.0,
+      "height_points": 1339.199951171875
+    },
+    {
+      "pdf": "plots/CIFAR10_error_by_corruption.pdf",
+      "page": 2,
+      "architecture": "Swin-Tiny",
+      "panels": 16,
+      "baseline": "RGB baseline",
+      "width_points": 1584.0,
+      "height_points": 1339.199951171875
+    }
+  ],
+  "label_only_revision_csv_bytes_unchanged": true,
+  "rendered_actual_pdf_samples": [
+    {
+      "pdf": "plots/MNIST_error_by_corruption.pdf",
+      "page": 1,
+      "png": "plots/requested_comparisons/MNIST_error_actual_pdf_page1.png",
+      "sha256": "791c68cc3d73b93c9ba7dbfdfdbb0a9a1d1f72f8d9d31ad37d0ddda8c667bcb0"
+    },
+    {
+      "pdf": "plots/CIFAR10_error_by_corruption.pdf",
+      "page": 2,
+      "png": "plots/requested_comparisons/CIFAR10_error_actual_pdf_page2.png",
+      "sha256": "b5876d281ad75016abfa2cf4872eadf1794b25c89c970d6b25abb0e3bcebd89d"
+    }
+  ],
+  "visual_inspection": {
+    "state": "passed",
+    "checked_utc": "2026-10-08T12:14:46.728429+00:00",
+    "actual_pdf_pages": [
+      "MNIST page1 ViT-Small",
+      "CIFAR10 page2 Swin-Tiny"
+    ],
+    "findings": "Correct baseline/contrast labels, all16 facets, shared0\u2013100% axes, requested colors, solid/dashed curves and SD bands readable; no legend/title/footer overlaps."
+  },
+  "limitations": "This checks saved accuracy figure artifacts, not completion of the ongoing latency campaign."
+}

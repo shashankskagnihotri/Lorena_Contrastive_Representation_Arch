@@ -1,0 +1,67 @@
+{
+  "architecture": "vit_small",
+  "config_hash": "4c7d3bdfe12fc4767b82d8a04998444f253fd482219117e5a74037bab11291e0",
+  "data_manifest_sha256": "bf13d3ac64641480ddfb09b7b8b2dc8c439dba4d0d8da9795a8d67df48861d2c",
+  "dataset": "cifar10",
+  "environment_hash": "5a802a6ff12747d9af58d21b0e4fbd96b1a08a3253f7aa899807c8b60f803198",
+  "execution": "dense",
+  "normalization": {
+    "description": "chosen published recipe",
+    "input_range": [
+      0,
+      1
+    ],
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "provenance": "https://github.com/kuangliu/pytorch-cifar/blob/master/main.py",
+    "std": [
+      0.2023,
+      0.1994,
+      0.201
+    ]
+  },
+  "normalization_hash": "377d79622b4be5ab780f2cc49d2998ca871c0899b1447524c906a2f2023b28ea",
+  "normalization_min_std": 1e-06,
+  "patch_size": 2,
+  "precision": "fp32",
+  "primary_checkpoint": "final_epoch",
+  "protocol": "heldout_val",
+  "recipe": {
+    "batch_size": 128,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "dropout": 0.0,
+    "effective_batch_size": 128,
+    "epochs": 200,
+    "eval_batch_size": 128,
+    "eval_num_workers": 0,
+    "evaluation_time_limit": "04:00:00",
+    "gpu_partitions": "gpu-vram-94gb,gpu-vram-48gb",
+    "grad_clip": 1.0,
+    "gradient_accumulation": 1,
+    "histogram_epoch_interval": 10,
+    "label_smoothing": 0.0,
+    "log_step_interval": 50,
+    "lr": 0.0003,
+    "min_lr": 1e-06,
+    "num_workers": 0,
+    "optimizer": "AdamW",
+    "stochastic_depth": 0.1,
+    "train_time_limit": "24:00:00",
+    "warmup_epochs": 10,
+    "weight_decay": 0.05
+  },
+  "registry_id": "cifar10/vit_small/raw/dense/pNA/seed1",
+  "representation": "raw",
+  "role": "main",
+  "seed": 1,
+  "source_hash": "9359e4f10c0c2184eef4af8885edc7076bded30188775cc14222f79819f648c4",
+  "sparsity_percent": null,
+  "split_seed": 2026,
+  "token_epsilon": 0.0
+}

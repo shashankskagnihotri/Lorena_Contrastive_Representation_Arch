@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lorena-sparse-contrast"
+version = "0.1.0"
+description = "Fixed contrast representations, sparse transformer execution, and measured robustness/latency"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Shashank Agnihotri"}]
+dependencies = [
+  "numpy==2.2.6", "torch==2.9.1", "torchvision==0.24.1",
+  "timm==1.0.22", "matplotlib==3.10.7", "seaborn==0.13.2",
+  "pandas==2.3.3", "Pillow==11.3.0", "tensorboard==2.20.0",
+  "scipy==1.15.3", "scikit-learn==1.7.2", "PyYAML==6.0.3",
+]
+
+[project.optional-dependencies]
+analysis = ["pypdfium2==4.30.0"]
+test = ["pytest>=8.4,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/shashankskagnihotri/Lorena_Contrastive_Representation_Arch"

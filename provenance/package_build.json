@@ -1,0 +1,15 @@
+{
+  "job_id": "361229",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "wheel": "lorena_sparse_contrast-0.1.0-py3-none-any.whl",
+  "bytes": 159495,
+  "sha256": "934ae2b879354cd45d487e7a7dbde7f6ef406672b1d44a4b71fa1c3b7f81425c",
+  "included_packages": [
+    "sparse_contrast",
+    "dense_sparse"
+  ],
+  "production_environment_modified": false,
+  "wheel_blob_published": false,
+  "command": "python -m pip wheel --no-deps --no-build-isolation --wheel-dir reproduced_plots/package_build ."
+}

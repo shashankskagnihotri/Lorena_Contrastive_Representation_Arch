@@ -1,0 +1,44 @@
+{
+  "state": "passed",
+  "pdf": {
+    "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/latency_vs_sparsity.pdf",
+    "sha256": "33a14810177db8876d10121a75e989974d7290ff86ebcd5218a3a67ad37504f4"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "width_points": 1152.0,
+      "height_points": 936.0,
+      "preview": {
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/requested_comparisons/previews/latency_vs_sparsity_page1.png",
+        "sha256": "31602c6d4620b9f7c1b52aee8ad5ede0a41e97c28220beb5d009c0de3f4d9015"
+      }
+    },
+    {
+      "page": 2,
+      "width_points": 1152.0,
+      "height_points": 936.0,
+      "preview": {
+        "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/requested_comparisons/previews/latency_vs_sparsity_page2.png",
+        "sha256": "a2c7ff18202aedc138d0021c59863dfd31d92353d86e198956a9387465abdc6a"
+      }
+    }
+  ],
+  "raster_export_dpi": 300,
+  "vector_text_and_lines": true,
+  "visual_inspection": {
+    "state": "passed",
+    "checked_utc": "2026-10-08T12:14:22.792202+00:00",
+    "pages": [
+      1,
+      2
+    ],
+    "checks": [
+      "Actual PDF pages rendered and viewed",
+      "All four panels and legends visible",
+      "Coverage labels clear of measured curves",
+      "No missing-point interpolation or tail extrapolation",
+      "RGB/grayscale raw baseline distinct from grayscale contrast"
+    ]
+  }
+}

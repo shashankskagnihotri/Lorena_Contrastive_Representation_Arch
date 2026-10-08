@@ -1,0 +1,18 @@
+{
+  "state": "verified",
+  "timestamp": "2026-10-08T11:45:18.120573+00:00",
+  "diagnostic_pdfs": 389,
+  "followup_pdfs": 220,
+  "followup_sample_channel_rows": 4600,
+  "architecture_exact_equality_tasks": 220,
+  "full_source_catalog_cases": 612,
+  "groups": {
+    "cifar10/color_opponency": 40,
+    "cifar10/grayscale": 40,
+    "cifar10/raw": 40,
+    "cifar10/single_color": 40,
+    "mnist/grayscale": 30,
+    "mnist/raw": 30
+  },
+  "method": "Every rendered panel has a nonempty PDF/PNG/CSV and existing original tensor path; CSV rows cover each of ten saved sample IDs once per channel; all saved array-equivalence receipts pass."
+}

@@ -1,0 +1,180 @@
+{
+  "created_utc": "2026-10-08T12:12:45.512944+00:00",
+  "job_id": "361101",
+  "script": {
+    "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/debugging/error_plots_source_2881341eb27a51d5.py",
+    "sha256": "2881341eb27a51d5c482d9b4027f726ef48cc4dacafe5ab75addaec4ac186188"
+  },
+  "inputs": [
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/source/7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0/sparse_contrast/data.py",
+      "sha256": "bce54235b9acc68633fdb0f284bd4926fc983d2e2b0599349dee869b5d4b9a54"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/tables/coverage.json",
+      "sha256": "9d1943d9202b819ca12b7f68d913f2032814fa3e7f36230642c142953d15ab4e"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/training_dense_testing_sparse/outputs/tables/coverage.json",
+      "sha256": "740c031ebe4324a5264c10006b9d47d8d54e2ae5a43dff9ab0cd57b4adf5eaf5"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/training_dense_testing_sparse/study_manifest.json",
+      "sha256": "37eecb5dd88a282adf8c4fce34a424a178978bc991826d2b471d323653a322ce"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/tables/run_coverage.csv",
+      "sha256": "98894df5ef58f0bf99c807341ac8285ab39f78134f3e7d416c094ceac2bf004d"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/tables/cells.csv",
+      "sha256": "499e8d206630e5075df286e5485882435aae8602685d2677b135fd55de8ea5f5"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/training_dense_testing_sparse/outputs/tables/accuracy_seeds.csv",
+      "sha256": "15ea01cbafd5cea26070485ec9f1462f8937cb6544a1eed36e2107ac4575d4e4"
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/training_dense_testing_sparse/outputs/tables/evaluation_cells.csv",
+      "sha256": "158a752c5bcfb099de25f43dab906d899daa1b6e0ae6b4e78ae7de276da70f64"
+    }
+  ],
+  "colors": {
+    "raw": "#000000",
+    "color_opponency": "#7B3294",
+    "single_color": "#E69F00",
+    "grayscale": "#0072B2"
+  },
+  "protocol": "heldout_val",
+  "seed_ids": [
+    0,
+    1,
+    2
+  ],
+  "solid": "training_sparse_testing_sparse; compact trained and tested at the same imposed sparsity 0/20/40/60/80",
+  "dashed": "training_dense_testing_sparse; trained_execution=dense and inference_execution=compact; 0..90 in steps of10",
+  "raw": "Original unchanged dense raw baseline; exact correctness counts/checkpoints cross-checked against follow-up dense raw references",
+  "uncertainty": "Sample SD across three seeds after per-seed equal averaging of five CIFAR-C severities; fixed MNIST-C severity",
+  "limitations": "Derived from saved complete report cell tables with exact file hashes and registry/coverage checks. No new inference, checkpoint loading, prediction-file rehashing, or latency measurement.",
+  "accuracy_coverage": {
+    "parent_runs": 156,
+    "parent_cells": 9336,
+    "followup_cases": 612,
+    "followup_cells": 35352,
+    "selected_parent_runs": 132,
+    "selected_followup_cases": 240,
+    "selected_seed_corruption_rows": 5952,
+    "raw_reference_exact_cross_study_checks": 12
+  },
+  "corruption_order": {
+    "mnist": [
+      "clean",
+      "shot_noise",
+      "impulse_noise",
+      "glass_blur",
+      "motion_blur",
+      "shear",
+      "scale",
+      "rotate",
+      "brightness",
+      "translate",
+      "stripe",
+      "fog",
+      "spatter",
+      "dotted_line",
+      "zigzag",
+      "canny_edges"
+    ],
+    "cifar10": [
+      "clean",
+      "gaussian_noise",
+      "shot_noise",
+      "impulse_noise",
+      "defocus_blur",
+      "glass_blur",
+      "motion_blur",
+      "zoom_blur",
+      "snow",
+      "frost",
+      "fog",
+      "brightness",
+      "contrast",
+      "elastic_transform",
+      "pixelate",
+      "jpeg_compression"
+    ]
+  },
+  "aggregate_rows": 1984,
+  "outputs": [
+    {
+      "path": "plots/MNIST_error_by_corruption.csv",
+      "sha256": "fe30af37e0cdf0fbfabfc0cba3ba2aa0120db5f0dcdcca0539a2c23d85a419e6",
+      "bytes": 95909
+    },
+    {
+      "path": "plots/requested_comparisons/MNIST_error_by_corruption_seeds.csv",
+      "sha256": "4777c7e01874f9047f2f6800db638c668890d579978ef6de7f42ef2a674bd8cb",
+      "bytes": 484337
+    },
+    {
+      "path": "plots/requested_comparisons/MNIST_error_by_corruption_vit_small.png",
+      "sha256": "a7c19fe73c1d7fd751e8dd195e360ceb89d8ddbd2fc25ea42173327403076693",
+      "bytes": 1040211
+    },
+    {
+      "path": "plots/requested_comparisons/MNIST_error_by_corruption_vit_small.svg",
+      "sha256": "d43bace82f7f9c745c4adcccac1c9a89531f2058f210f6543df8f63d9473cfd5",
+      "bytes": 230842
+    },
+    {
+      "path": "plots/requested_comparisons/MNIST_error_by_corruption_swin_tiny.png",
+      "sha256": "01642abf04ffdd458993e5a300796cf3b88703b76176df55a8add98d347e290c",
+      "bytes": 1021992
+    },
+    {
+      "path": "plots/requested_comparisons/MNIST_error_by_corruption_swin_tiny.svg",
+      "sha256": "00a3854d69c17eb045940a4cb12bd1dfb37b2302a8a41e2054fc0ff34ad25f8b",
+      "bytes": 230819
+    },
+    {
+      "path": "plots/MNIST_error_by_corruption.pdf",
+      "sha256": "0ebdab96b605bf196b1d9d3e64efa449816fda40a1e379438866cfa203a3290f",
+      "bytes": 58280
+    },
+    {
+      "path": "plots/CIFAR10_error_by_corruption.csv",
+      "sha256": "d78d46774f313808a2f3b287651eb052113383a1091db27df04f110572c6a2f0",
+      "bytes": 301129
+    },
+    {
+      "path": "plots/requested_comparisons/CIFAR10_error_by_corruption_seeds.csv",
+      "sha256": "5c9299691ff041a87b9287134038e2088339cb7ffec81a302d18f1cd2c908b78",
+      "bytes": 1500177
+    },
+    {
+      "path": "plots/requested_comparisons/CIFAR10_error_by_corruption_vit_small.png",
+      "sha256": "3a20e836cf2e0340d38c47adb3d6ac820eb7b37336da8d867747262723cd5e0c",
+      "bytes": 1744289
+    },
+    {
+      "path": "plots/requested_comparisons/CIFAR10_error_by_corruption_vit_small.svg",
+      "sha256": "c88425d9e2f1c1cb3222fbadffec939a96733ce5887f1c9c98be77f2e8b2e803",
+      "bytes": 376758
+    },
+    {
+      "path": "plots/requested_comparisons/CIFAR10_error_by_corruption_swin_tiny.png",
+      "sha256": "28122ae393801dc1555e45c60e7e4f4fb52fd1ff63fb68485f50937a62a2d3e2",
+      "bytes": 1609929
+    },
+    {
+      "path": "plots/requested_comparisons/CIFAR10_error_by_corruption_swin_tiny.svg",
+      "sha256": "41f0862dd2b4b2e2caa86999060d43e76b52308f2a242890dd17f1dea27703d8",
+      "bytes": 376446
+    },
+    {
+      "path": "plots/CIFAR10_error_by_corruption.pdf",
+      "sha256": "d380ba789da1227606435881d0390738745d8953f4718770e0906d12bea79231",
+      "bytes": 128002
+    }
+  ]
+}

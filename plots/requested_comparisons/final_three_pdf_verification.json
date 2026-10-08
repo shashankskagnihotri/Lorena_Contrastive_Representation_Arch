@@ -1,0 +1,73 @@
+{
+  "state": "verified",
+  "scope": "Exactly the three corrected requested PDFs; each has two pages. All pages parsed and text extracted. Representative rendered pages visually inspected.",
+  "pdfs": [
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/CIFAR10_error_by_corruption.pdf",
+      "sha256": "d380ba789da1227606435881d0390738745d8953f4718770e0906d12bea79231",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1584.0,
+            1339.199951171875
+          ],
+          "text_characters": 803
+        },
+        {
+          "page": 2,
+          "size": [
+            1584.0,
+            1339.199951171875
+          ],
+          "text_characters": 803
+        }
+      ]
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/MNIST_error_by_corruption.pdf",
+      "sha256": "0ebdab96b605bf196b1d9d3e64efa449816fda40a1e379438866cfa203a3290f",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1584.0,
+            1339.199951171875
+          ],
+          "text_characters": 741
+        },
+        {
+          "page": 2,
+          "size": [
+            1584.0,
+            1339.199951171875
+          ],
+          "text_characters": 741
+        }
+      ]
+    },
+    {
+      "path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/plots/latency_vs_sparsity.pdf",
+      "sha256": "33a14810177db8876d10121a75e989974d7290ff86ebcd5218a3a67ad37504f4",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            936.0
+          ],
+          "text_characters": 1268
+        },
+        {
+          "page": 2,
+          "size": [
+            1152.0,
+            936.0
+          ],
+          "text_characters": 1274
+        }
+      ]
+    }
+  ],
+  "verified_at": "2026-10-08T12:16:03.292469+00:00"
+}

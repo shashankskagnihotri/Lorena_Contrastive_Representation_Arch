@@ -1,0 +1,19 @@
+{
+  "source": "sparse_contrast_benchmark_large_batch/outputs/tables/timings.csv",
+  "source_sha256": "a3d40a6de5622bae9821464a6f0684a0e0507eae9502133456edb480fc09d070",
+  "selection": {
+    "execution": [
+      "compact",
+      "dense_masked"
+    ],
+    "representation": "grayscale",
+    "sparsity_percent": 60,
+    "scope": "gpu_raw_to_logits",
+    "corruption": "clean",
+    "hardware_id": "4ba79ef9f76ff06df88f37ba7586b1b5a3ac8b43008b3eed0ca6a744393e6687"
+  },
+  "rows": 48,
+  "paired_seed_dataset_architecture_batch_groups": 24,
+  "verified_same_checkpoint_and_normalization": true,
+  "extracted_csv_sha256": "81aa1955c3c7a1d20740d69a1721d132d9d2a114ab2d9fc1729a748cbce26929"
+}

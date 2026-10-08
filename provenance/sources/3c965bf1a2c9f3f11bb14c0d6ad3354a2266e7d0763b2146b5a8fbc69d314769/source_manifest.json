@@ -1,0 +1,24 @@
+{
+  "base_source_hash": "7ea1b6e8bd5a78b0ad411d0545ce060a5ae3597a2f29d788017f39cbeecf50d0",
+  "files": {
+    "validation.py": "1c344d011729329279912106e6ec293b00ccc19f439cd6453197772fa3b57860",
+    "worker.py": "170fe48432f6d0a4dacd346460ef9185db71fb53d192ee62e50e09b421f1d3ee"
+  },
+  "policy": {
+    "fp32_to_reference": {
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "fp64_semantic": {
+      "atol": 1e-11,
+      "rtol": 1e-10
+    },
+    "scope": "untimed_validation_only; measured_inference_remains_original_FP32",
+    "strict_fp32": {
+      "atol": 2e-05,
+      "rtol": 0.0001
+    },
+    "version": "fp32_strict_then_fp64_semantic_reference_v1"
+  },
+  "scientific_source_hash": "8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb"
+}

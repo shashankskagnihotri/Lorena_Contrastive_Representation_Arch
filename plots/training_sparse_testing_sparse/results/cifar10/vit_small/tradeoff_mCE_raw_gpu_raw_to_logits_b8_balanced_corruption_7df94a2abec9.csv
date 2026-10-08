@@ -1,0 +1,6 @@
+dataset,architecture,protocol,training_count,condition,mean_seed_median_ms,between_seed_sd_ms,mCE_raw_percent
+cifar10,vit_small,heldout_val,45000,"Opponent, dense, 0%",48.0429865,,48.6836
+cifar10,vit_small,heldout_val,45000,"Color, compact, 40%",50.236009499999994,,49.60848888888889
+cifar10,vit_small,heldout_val,45000,"Color, compact, 80%",50.459278999999995,,54.59737777777778
+cifar10,vit_small,heldout_val,45000,"Grayscale, compact, 0%",49.5352675,,48.47506666666666
+cifar10,vit_small,heldout_val,45000,"Opponent, compact, 20%",50.118397,,48.07564444444445

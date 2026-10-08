@@ -1,0 +1,16 @@
+registry_id,dataset,architecture,representation,execution,sparsity_percent,seed,protocol,training_count,source,epoch,metric,value
+mnist/swin_tiny/grayscale/compact/p0/seed0,mnist,swin_tiny,grayscale,compact,0,0,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p20/seed0,mnist,swin_tiny,grayscale,compact,20,0,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p40/seed0,mnist,swin_tiny,grayscale,compact,40,0,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p60/seed0,mnist,swin_tiny,grayscale,compact,60,0,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7083
+mnist/swin_tiny/grayscale/compact/p80/seed0,mnist,swin_tiny,grayscale,compact,80,0,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,21.8604
+mnist/swin_tiny/grayscale/compact/p0/seed1,mnist,swin_tiny,grayscale,compact,0,1,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p20/seed1,mnist,swin_tiny,grayscale,compact,20,1,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p40/seed1,mnist,swin_tiny,grayscale,compact,40,1,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p60/seed1,mnist,swin_tiny,grayscale,compact,60,1,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7083
+mnist/swin_tiny/grayscale/compact/p80/seed1,mnist,swin_tiny,grayscale,compact,80,1,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,21.8604
+mnist/swin_tiny/grayscale/compact/p0/seed2,mnist,swin_tiny,grayscale,compact,0,2,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p20/seed2,mnist,swin_tiny,grayscale,compact,20,2,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p40/seed2,mnist,swin_tiny,grayscale,compact,40,2,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7719
+mnist/swin_tiny/grayscale/compact/p60/seed2,mnist,swin_tiny,grayscale,compact,60,2,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,24.7083
+mnist/swin_tiny/grayscale/compact/p80/seed2,mnist,swin_tiny,grayscale,compact,80,2,heldout_val,55000,clean/test,,stages/1/blocks/1/active_per_image/mean,21.8604

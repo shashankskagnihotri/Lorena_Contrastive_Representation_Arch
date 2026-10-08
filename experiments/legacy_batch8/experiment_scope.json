@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "scope_id": "mnist-grayscale-2026-10-01",
+  "reason": "Explicit user instruction: cancel and remove MNIST single-color and color-opponency runs and artifacts; retain native raw grayscale and grayscale contrast. CIFAR-10 is unchanged.",
+  "active_representations": {
+    "mnist": ["grayscale"],
+    "cifar10": ["single_color", "grayscale", "color_opponency"]
+  }
+}

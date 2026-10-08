@@ -1,0 +1,2266 @@
+{
+  "archive_checksums": {
+    "cifar10": {
+      "filename": "cifar-10-python.tar.gz",
+      "md5": "c58f30108f718f92721af3b95e74349a",
+      "source": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+    },
+    "cifar10_c": {
+      "filename": "CIFAR-10-C.tar",
+      "md5": "56bf5dcef84df0e2308c6dcbcbbd8499",
+      "source": "https://zenodo.org/records/2535967/files/CIFAR-10-C.tar?download=1"
+    },
+    "mnist_c": {
+      "filename": "mnist_c.zip",
+      "md5": "4b34b33045869ee6d424616cd3a65da3",
+      "source": "https://zenodo.org/records/3239543/files/mnist_c.zip?download=1"
+    },
+    "mnist_test_images": {
+      "filename": "t10k-images-idx3-ubyte.gz",
+      "md5": "9fb629c4189551a2d022fa330f9573f3",
+      "source": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz"
+    },
+    "mnist_test_labels": {
+      "filename": "t10k-labels-idx1-ubyte.gz",
+      "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+      "source": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz"
+    },
+    "mnist_train_images": {
+      "filename": "train-images-idx3-ubyte.gz",
+      "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+      "source": "https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz"
+    },
+    "mnist_train_labels": {
+      "filename": "train-labels-idx1-ubyte.gz",
+      "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+      "source": "https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz"
+    }
+  },
+  "data_root": "/ceph/sagnihot/datasets",
+  "datasets": {
+    "cifar10": {
+      "archive": {
+        "bytes": 170498071,
+        "expected_md5": "c58f30108f718f92721af3b95e74349a",
+        "md5": "c58f30108f718f92721af3b95e74349a",
+        "path": "/ceph/sagnihot/datasets/cifar-10-python.tar.gz",
+        "publisher_md5_verified": true,
+        "sha256": "6d958be074577803d12ecdefd02955f39262c83c16fe9348329d7fe0b5c001ce"
+      },
+      "files": {
+        "batches.meta": {
+          "bytes": 158,
+          "expected_md5": "5ff9c542aee3614f3951f8cda6e48888",
+          "md5": "5ff9c542aee3614f3951f8cda6e48888",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/batches.meta",
+          "publisher_md5_verified": true,
+          "sha256": "f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb"
+        },
+        "data_batch_1": {
+          "bytes": 31035704,
+          "expected_md5": "c99cafc152244af753f735de768cd75f",
+          "md5": "c99cafc152244af753f735de768cd75f",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_1",
+          "publisher_md5_verified": true,
+          "sha256": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd"
+        },
+        "data_batch_2": {
+          "bytes": 31035320,
+          "expected_md5": "d4bba439e000b95fd0a9bffe97cbabec",
+          "md5": "d4bba439e000b95fd0a9bffe97cbabec",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_2",
+          "publisher_md5_verified": true,
+          "sha256": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8"
+        },
+        "data_batch_3": {
+          "bytes": 31035999,
+          "expected_md5": "54ebc095f3ab1f0389bbae665268c751",
+          "md5": "54ebc095f3ab1f0389bbae665268c751",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_3",
+          "publisher_md5_verified": true,
+          "sha256": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9"
+        },
+        "data_batch_4": {
+          "bytes": 31035696,
+          "expected_md5": "634d18415352ddfa80567beed471001a",
+          "md5": "634d18415352ddfa80567beed471001a",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_4",
+          "publisher_md5_verified": true,
+          "sha256": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b"
+        },
+        "data_batch_5": {
+          "bytes": 31035623,
+          "expected_md5": "482c414d41f54cd18b22e5b47cb7c3cb",
+          "md5": "482c414d41f54cd18b22e5b47cb7c3cb",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_5",
+          "publisher_md5_verified": true,
+          "sha256": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+        },
+        "test_batch": {
+          "bytes": 31035526,
+          "expected_md5": "40351d587109b95175f43aff81a1287e",
+          "md5": "40351d587109b95175f43aff81a1287e",
+          "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/test_batch",
+          "publisher_md5_verified": true,
+          "sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831"
+        }
+      },
+      "paths": {
+        "directory": "/ceph/sagnihot/datasets/cifar-10-batches-py"
+      },
+      "splits": {
+        "json": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/cifar10_seed2026.json",
+        "json_sha256": "3218df00ff213dd4580c8556113342eefa5ca574bea3bc1957651d4b2604c4bb",
+        "npz": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/cifar10_seed2026.npz",
+        "test_ids_sha256": "d4202c28b1774b6773e86fef3d36fda9d1f8c7b51953410eed3eefd99ec22422",
+        "train_ids_sha256": "235eef81c7e392a13662991c533d94885f6433d807e19c52099ed9851b61faf2",
+        "val_ids_sha256": "4beeb1c60a2103eb77062381d744536fb154cde19086c4ca311697bbec968378"
+      },
+      "status": "validated",
+      "test": {
+        "class_counts": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "count": 10000,
+        "dtype": "uint8",
+        "layout": "NCHW",
+        "pixel_max": 255,
+        "pixel_min": 0,
+        "shape": [
+          10000,
+          3,
+          32,
+          32
+        ]
+      },
+      "train": {
+        "class_counts": [
+          5000,
+          5000,
+          5000,
+          5000,
+          5000,
+          5000,
+          5000,
+          5000,
+          5000,
+          5000
+        ],
+        "count": 50000,
+        "dtype": "uint8",
+        "layout": "NCHW",
+        "pixel_max": 255,
+        "pixel_min": 0,
+        "shape": [
+          50000,
+          3,
+          32,
+          32
+        ]
+      }
+    },
+    "cifar10_c": {
+      "archive": {
+        "bytes": 2918471680,
+        "expected_md5": "56bf5dcef84df0e2308c6dcbcbbd8499",
+        "md5": "56bf5dcef84df0e2308c6dcbcbbd8499",
+        "path": "/ceph/sagnihot/datasets/CIFAR-10-C.tar",
+        "publisher_md5_verified": true,
+        "sha256": "c72763e101c723b7c507b96205f7e938912a5d587376173b825850cf3cb876a7"
+      },
+      "cells": {
+        "brightness/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0a81ef75e0b523c3383219c330a85d48",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/brightness.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "3bb5990e41b0212b62bc0b4385f4f95d68ecb94da627eacba4552381228a17c3",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "brightness/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0a81ef75e0b523c3383219c330a85d48",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/brightness.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "3bb5990e41b0212b62bc0b4385f4f95d68ecb94da627eacba4552381228a17c3",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "brightness/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0a81ef75e0b523c3383219c330a85d48",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/brightness.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "3bb5990e41b0212b62bc0b4385f4f95d68ecb94da627eacba4552381228a17c3",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "brightness/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0a81ef75e0b523c3383219c330a85d48",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/brightness.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "3bb5990e41b0212b62bc0b4385f4f95d68ecb94da627eacba4552381228a17c3",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "brightness/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0a81ef75e0b523c3383219c330a85d48",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/brightness.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "3bb5990e41b0212b62bc0b4385f4f95d68ecb94da627eacba4552381228a17c3",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "contrast/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3c8262171c51307f916c30a3308235a8",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/contrast.npy",
+          "pixel_max": 254,
+          "pixel_min": 1,
+          "severity": 1,
+          "sha256": "cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "contrast/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3c8262171c51307f916c30a3308235a8",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/contrast.npy",
+          "pixel_max": 254,
+          "pixel_min": 1,
+          "severity": 2,
+          "sha256": "cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "contrast/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3c8262171c51307f916c30a3308235a8",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/contrast.npy",
+          "pixel_max": 254,
+          "pixel_min": 1,
+          "severity": 3,
+          "sha256": "cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "contrast/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3c8262171c51307f916c30a3308235a8",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/contrast.npy",
+          "pixel_max": 254,
+          "pixel_min": 1,
+          "severity": 4,
+          "sha256": "cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "contrast/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3c8262171c51307f916c30a3308235a8",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/contrast.npy",
+          "pixel_max": 254,
+          "pixel_min": 1,
+          "severity": 5,
+          "sha256": "cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "defocus_blur/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7d1322666342a0702b1957e92f6254bc",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/defocus_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "6140f9954d10d5c606d598ca6e26d5d94a301894e94493035f03182f551b745e",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "defocus_blur/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7d1322666342a0702b1957e92f6254bc",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/defocus_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "6140f9954d10d5c606d598ca6e26d5d94a301894e94493035f03182f551b745e",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "defocus_blur/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7d1322666342a0702b1957e92f6254bc",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/defocus_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "6140f9954d10d5c606d598ca6e26d5d94a301894e94493035f03182f551b745e",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "defocus_blur/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7d1322666342a0702b1957e92f6254bc",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/defocus_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "6140f9954d10d5c606d598ca6e26d5d94a301894e94493035f03182f551b745e",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "defocus_blur/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7d1322666342a0702b1957e92f6254bc",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/defocus_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "6140f9954d10d5c606d598ca6e26d5d94a301894e94493035f03182f551b745e",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "elastic_transform/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "9421657c6cd452429cf6ce96cc412b5f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/elastic_transform.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "664626e48ed03abec17614d2c7a2cf827bc82778e2319573c73a49a99ca0b21a",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "elastic_transform/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "9421657c6cd452429cf6ce96cc412b5f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/elastic_transform.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "664626e48ed03abec17614d2c7a2cf827bc82778e2319573c73a49a99ca0b21a",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "elastic_transform/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "9421657c6cd452429cf6ce96cc412b5f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/elastic_transform.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "664626e48ed03abec17614d2c7a2cf827bc82778e2319573c73a49a99ca0b21a",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "elastic_transform/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "9421657c6cd452429cf6ce96cc412b5f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/elastic_transform.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "664626e48ed03abec17614d2c7a2cf827bc82778e2319573c73a49a99ca0b21a",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "elastic_transform/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "9421657c6cd452429cf6ce96cc412b5f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/elastic_transform.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "664626e48ed03abec17614d2c7a2cf827bc82778e2319573c73a49a99ca0b21a",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "fog/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7b397314b5670f825465fbcd1f6e9ccd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/fog.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "48f8f040b3aa25850119400ac2afacf72affdaaa3fcdd5daff425e876f996e50",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "fog/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7b397314b5670f825465fbcd1f6e9ccd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/fog.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "48f8f040b3aa25850119400ac2afacf72affdaaa3fcdd5daff425e876f996e50",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "fog/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7b397314b5670f825465fbcd1f6e9ccd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/fog.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "48f8f040b3aa25850119400ac2afacf72affdaaa3fcdd5daff425e876f996e50",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "fog/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7b397314b5670f825465fbcd1f6e9ccd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/fog.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "48f8f040b3aa25850119400ac2afacf72affdaaa3fcdd5daff425e876f996e50",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "fog/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7b397314b5670f825465fbcd1f6e9ccd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/fog.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "48f8f040b3aa25850119400ac2afacf72affdaaa3fcdd5daff425e876f996e50",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "frost/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "31f6ab3bce1d9934abfb0cc13656f141",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/frost.npy",
+          "pixel_max": 255,
+          "pixel_min": 3,
+          "severity": 1,
+          "sha256": "8be9ab8d9095b3fb3ebf4dd60f0a83651be115c3ac77c8adc5b3e0d3add5ad8c",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "frost/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "31f6ab3bce1d9934abfb0cc13656f141",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/frost.npy",
+          "pixel_max": 255,
+          "pixel_min": 3,
+          "severity": 2,
+          "sha256": "8be9ab8d9095b3fb3ebf4dd60f0a83651be115c3ac77c8adc5b3e0d3add5ad8c",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "frost/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "31f6ab3bce1d9934abfb0cc13656f141",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/frost.npy",
+          "pixel_max": 255,
+          "pixel_min": 3,
+          "severity": 3,
+          "sha256": "8be9ab8d9095b3fb3ebf4dd60f0a83651be115c3ac77c8adc5b3e0d3add5ad8c",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "frost/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "31f6ab3bce1d9934abfb0cc13656f141",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/frost.npy",
+          "pixel_max": 255,
+          "pixel_min": 3,
+          "severity": 4,
+          "sha256": "8be9ab8d9095b3fb3ebf4dd60f0a83651be115c3ac77c8adc5b3e0d3add5ad8c",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "frost/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "31f6ab3bce1d9934abfb0cc13656f141",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/frost.npy",
+          "pixel_max": 255,
+          "pixel_min": 3,
+          "severity": 5,
+          "sha256": "8be9ab8d9095b3fb3ebf4dd60f0a83651be115c3ac77c8adc5b3e0d3add5ad8c",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "gaussian_noise/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "ecaf8b9a2399ffeda7680934c33405fd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "gaussian_noise/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "ecaf8b9a2399ffeda7680934c33405fd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "gaussian_noise/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "ecaf8b9a2399ffeda7680934c33405fd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "gaussian_noise/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "ecaf8b9a2399ffeda7680934c33405fd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "gaussian_noise/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "ecaf8b9a2399ffeda7680934c33405fd",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "glass_blur/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7361fb4019269e02dbf6925f083e8629",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/glass_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "ec1586616c585b8f8742dc0003d9bebe07d822ed3c997b6215003d5afd66bdfa",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "glass_blur/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7361fb4019269e02dbf6925f083e8629",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/glass_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "ec1586616c585b8f8742dc0003d9bebe07d822ed3c997b6215003d5afd66bdfa",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "glass_blur/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7361fb4019269e02dbf6925f083e8629",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/glass_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "ec1586616c585b8f8742dc0003d9bebe07d822ed3c997b6215003d5afd66bdfa",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "glass_blur/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7361fb4019269e02dbf6925f083e8629",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/glass_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "ec1586616c585b8f8742dc0003d9bebe07d822ed3c997b6215003d5afd66bdfa",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "glass_blur/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "7361fb4019269e02dbf6925f083e8629",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/glass_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "ec1586616c585b8f8742dc0003d9bebe07d822ed3c997b6215003d5afd66bdfa",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "impulse_noise/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2090e01c83519ec51427e65116af6b1a",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/impulse_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "9eaebc6e508ebe05382c2631177ca1503f6f3aea68090c509d24506f86b1164f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "impulse_noise/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2090e01c83519ec51427e65116af6b1a",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/impulse_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "9eaebc6e508ebe05382c2631177ca1503f6f3aea68090c509d24506f86b1164f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "impulse_noise/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2090e01c83519ec51427e65116af6b1a",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/impulse_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "9eaebc6e508ebe05382c2631177ca1503f6f3aea68090c509d24506f86b1164f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "impulse_noise/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2090e01c83519ec51427e65116af6b1a",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/impulse_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "9eaebc6e508ebe05382c2631177ca1503f6f3aea68090c509d24506f86b1164f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "impulse_noise/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2090e01c83519ec51427e65116af6b1a",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/impulse_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "9eaebc6e508ebe05382c2631177ca1503f6f3aea68090c509d24506f86b1164f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "jpeg_compression/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2b9cc4c864e0193bb64db8d7728f8187",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/jpeg_compression.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "jpeg_compression/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2b9cc4c864e0193bb64db8d7728f8187",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/jpeg_compression.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "jpeg_compression/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2b9cc4c864e0193bb64db8d7728f8187",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/jpeg_compression.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "jpeg_compression/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2b9cc4c864e0193bb64db8d7728f8187",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/jpeg_compression.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "jpeg_compression/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "2b9cc4c864e0193bb64db8d7728f8187",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/jpeg_compression.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "motion_blur/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "fffa5f852ff7ad299cfe8a7643f090f4",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/motion_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "34baad18726fabefeb69b5cbedefda41ee7969dbed1562740ef9e1095d5dd954",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "motion_blur/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "fffa5f852ff7ad299cfe8a7643f090f4",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/motion_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "34baad18726fabefeb69b5cbedefda41ee7969dbed1562740ef9e1095d5dd954",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "motion_blur/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "fffa5f852ff7ad299cfe8a7643f090f4",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/motion_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "34baad18726fabefeb69b5cbedefda41ee7969dbed1562740ef9e1095d5dd954",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "motion_blur/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "fffa5f852ff7ad299cfe8a7643f090f4",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/motion_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "34baad18726fabefeb69b5cbedefda41ee7969dbed1562740ef9e1095d5dd954",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "motion_blur/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "fffa5f852ff7ad299cfe8a7643f090f4",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/motion_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "34baad18726fabefeb69b5cbedefda41ee7969dbed1562740ef9e1095d5dd954",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "pixelate/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0f14f7e2db14288304e1de10df16832f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/pixelate.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "6657f75ac66c907ad8206248bc1f48bef0dac219a1617f4dfd1b15e46ccf5ac7",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "pixelate/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0f14f7e2db14288304e1de10df16832f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/pixelate.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "6657f75ac66c907ad8206248bc1f48bef0dac219a1617f4dfd1b15e46ccf5ac7",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "pixelate/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0f14f7e2db14288304e1de10df16832f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/pixelate.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "6657f75ac66c907ad8206248bc1f48bef0dac219a1617f4dfd1b15e46ccf5ac7",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "pixelate/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0f14f7e2db14288304e1de10df16832f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/pixelate.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "6657f75ac66c907ad8206248bc1f48bef0dac219a1617f4dfd1b15e46ccf5ac7",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "pixelate/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "0f14f7e2db14288304e1de10df16832f",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/pixelate.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "6657f75ac66c907ad8206248bc1f48bef0dac219a1617f4dfd1b15e46ccf5ac7",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "shot_noise/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3a7239bb118894f013d9bf1984be7f11",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/shot_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "645936b5a5cf0b72151289c598b61b59429c917b346256e63d399a8c3a5ed078",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "shot_noise/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3a7239bb118894f013d9bf1984be7f11",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/shot_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "645936b5a5cf0b72151289c598b61b59429c917b346256e63d399a8c3a5ed078",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "shot_noise/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3a7239bb118894f013d9bf1984be7f11",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/shot_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "645936b5a5cf0b72151289c598b61b59429c917b346256e63d399a8c3a5ed078",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "shot_noise/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3a7239bb118894f013d9bf1984be7f11",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/shot_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "645936b5a5cf0b72151289c598b61b59429c917b346256e63d399a8c3a5ed078",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "shot_noise/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "3a7239bb118894f013d9bf1984be7f11",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/shot_noise.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "645936b5a5cf0b72151289c598b61b59429c917b346256e63d399a8c3a5ed078",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "snow/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "bb238de8555123da9c282dea23bd6e55",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/snow.npy",
+          "pixel_max": 255,
+          "pixel_min": 6,
+          "severity": 1,
+          "sha256": "84d3fdf8b17e18b7657804321dc13dd260ea1151c9bc91e55e13656e5f5410f2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "snow/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "bb238de8555123da9c282dea23bd6e55",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/snow.npy",
+          "pixel_max": 255,
+          "pixel_min": 6,
+          "severity": 2,
+          "sha256": "84d3fdf8b17e18b7657804321dc13dd260ea1151c9bc91e55e13656e5f5410f2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "snow/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "bb238de8555123da9c282dea23bd6e55",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/snow.npy",
+          "pixel_max": 255,
+          "pixel_min": 6,
+          "severity": 3,
+          "sha256": "84d3fdf8b17e18b7657804321dc13dd260ea1151c9bc91e55e13656e5f5410f2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "snow/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "bb238de8555123da9c282dea23bd6e55",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/snow.npy",
+          "pixel_max": 255,
+          "pixel_min": 6,
+          "severity": 4,
+          "sha256": "84d3fdf8b17e18b7657804321dc13dd260ea1151c9bc91e55e13656e5f5410f2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "snow/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "bb238de8555123da9c282dea23bd6e55",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/snow.npy",
+          "pixel_max": 255,
+          "pixel_min": 6,
+          "severity": 5,
+          "sha256": "84d3fdf8b17e18b7657804321dc13dd260ea1151c9bc91e55e13656e5f5410f2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        },
+        "zoom_blur/1": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "6ea8e63f1c5cdee1517533840641641b",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/zoom_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 1,
+          "sha256": "a3af830b0759addce9ac555f938643f3dcf2b9fef9df7f4479750a568c62006f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 0,
+          "stop": 10000
+        },
+        "zoom_blur/2": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "6ea8e63f1c5cdee1517533840641641b",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/zoom_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 2,
+          "sha256": "a3af830b0759addce9ac555f938643f3dcf2b9fef9df7f4479750a568c62006f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 10000,
+          "stop": 20000
+        },
+        "zoom_blur/3": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "6ea8e63f1c5cdee1517533840641641b",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/zoom_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 3,
+          "sha256": "a3af830b0759addce9ac555f938643f3dcf2b9fef9df7f4479750a568c62006f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 20000,
+          "stop": 30000
+        },
+        "zoom_blur/4": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "6ea8e63f1c5cdee1517533840641641b",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/zoom_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 4,
+          "sha256": "a3af830b0759addce9ac555f938643f3dcf2b9fef9df7f4479750a568c62006f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 30000,
+          "stop": 40000
+        },
+        "zoom_blur/5": {
+          "bytes": 153600128,
+          "count": 10000,
+          "dtype": "uint8",
+          "layout": "NHWC",
+          "md5": "6ea8e63f1c5cdee1517533840641641b",
+          "path": "/ceph/sagnihot/datasets/CIFAR-10-C/zoom_blur.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": 5,
+          "sha256": "a3af830b0759addce9ac555f938643f3dcf2b9fef9df7f4479750a568c62006f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "start": 40000,
+          "stop": 50000
+        }
+      },
+      "directory": "/ceph/sagnihot/datasets/CIFAR-10-C",
+      "excluded_extra_corruptions": [
+        "gaussian_blur",
+        "saturate",
+        "spatter",
+        "speckle_noise"
+      ],
+      "expected_predictions_per_model": 750000,
+      "label_layout": "50000_repeated_clean_test",
+      "labels": {
+        "all_severity_labels_equal_clean_test": true,
+        "bytes": 50128,
+        "dtype": "uint8",
+        "md5": "c439b113295ed5254878798ffe28fd54",
+        "path": "/ceph/sagnihot/datasets/CIFAR-10-C/labels.npy",
+        "sha256": "e6d972b1238665d8ef54aae5affe8e292dda1eb88a6840bf0f5988cdb649da7b",
+        "shape": [
+          50000
+        ]
+      },
+      "primary_corruptions": [
+        "gaussian_noise",
+        "shot_noise",
+        "impulse_noise",
+        "defocus_blur",
+        "glass_blur",
+        "motion_blur",
+        "zoom_blur",
+        "snow",
+        "frost",
+        "fog",
+        "brightness",
+        "contrast",
+        "elastic_transform",
+        "pixelate",
+        "jpeg_compression"
+      ],
+      "status": "validated",
+      "validated_at": "2026-09-30T16:47:52.143667+00:00"
+    },
+    "mnist": {
+      "files": {
+        "mnist_test_images": {
+          "bytes": 1648877,
+          "expected_md5": "9fb629c4189551a2d022fa330f9573f3",
+          "extracted": {
+            "bytes": 7840016,
+            "md5": "2646ac647ad5339dbf082846283269ea",
+            "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-images-idx3-ubyte",
+            "sha256": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7"
+          },
+          "extracted_bytes_verified_equal": true,
+          "md5": "9fb629c4189551a2d022fa330f9573f3",
+          "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-images-idx3-ubyte.gz",
+          "publisher_md5_verified": true,
+          "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6"
+        },
+        "mnist_test_labels": {
+          "bytes": 4542,
+          "expected_md5": "ec29112dd5afa0611ce80d1b7f02629c",
+          "extracted": {
+            "bytes": 10008,
+            "md5": "27ae3e4e09519cfbb04c329615203637",
+            "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-labels-idx1-ubyte",
+            "sha256": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2"
+          },
+          "extracted_bytes_verified_equal": true,
+          "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+          "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-labels-idx1-ubyte.gz",
+          "publisher_md5_verified": true,
+          "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+        },
+        "mnist_train_images": {
+          "bytes": 9912422,
+          "expected_md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+          "extracted": {
+            "bytes": 47040016,
+            "md5": "6bbc9ace898e44ae57da46a324031adb",
+            "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-images-idx3-ubyte",
+            "sha256": "ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db"
+          },
+          "extracted_bytes_verified_equal": true,
+          "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+          "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-images-idx3-ubyte.gz",
+          "publisher_md5_verified": true,
+          "sha256": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609"
+        },
+        "mnist_train_labels": {
+          "bytes": 28881,
+          "expected_md5": "d53e105ee54ea40749a09fcbcd1e9432",
+          "extracted": {
+            "bytes": 60008,
+            "md5": "a25bea736e30d166cdddb491f175f624",
+            "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-labels-idx1-ubyte",
+            "sha256": "65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5"
+          },
+          "extracted_bytes_verified_equal": true,
+          "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+          "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-labels-idx1-ubyte.gz",
+          "publisher_md5_verified": true,
+          "sha256": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c"
+        }
+      },
+      "paths": {
+        "test_images": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-images-idx3-ubyte",
+        "test_labels": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-labels-idx1-ubyte",
+        "train_images": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-images-idx3-ubyte",
+        "train_labels": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-labels-idx1-ubyte"
+      },
+      "splits": {
+        "json": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/mnist_seed2026.json",
+        "json_sha256": "751169d21029efacedc4134333d2c17dd09858e311a9beb340aafd0b860e925c",
+        "npz": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/outputs/splits/mnist_seed2026.npz",
+        "test_ids_sha256": "afd97b7a753eb19adfb6226af2f359c6af789fa9b63c6b8af2b2575a6ef6f47e",
+        "train_ids_sha256": "d741a18bd56f462d884dff0706105b777784eb438da17fedddb01e696912084a",
+        "val_ids_sha256": "15f2e8246e3905ad2eb7e3132ff81decc89ba31c9b311d99f1ca1ead45795afa"
+      },
+      "status": "validated",
+      "test": {
+        "class_counts": [
+          980,
+          1135,
+          1032,
+          1010,
+          982,
+          892,
+          958,
+          1028,
+          974,
+          1009
+        ],
+        "count": 10000,
+        "dtype": "uint8",
+        "layout": "NCHW",
+        "pixel_max": 255,
+        "pixel_min": 0,
+        "shape": [
+          10000,
+          1,
+          28,
+          28
+        ]
+      },
+      "train": {
+        "class_counts": [
+          5923,
+          6742,
+          5958,
+          6131,
+          5842,
+          5421,
+          5918,
+          6265,
+          5851,
+          5949
+        ],
+        "count": 60000,
+        "dtype": "uint8",
+        "layout": "NCHW",
+        "pixel_max": 255,
+        "pixel_min": 0,
+        "shape": [
+          60000,
+          1,
+          28,
+          28
+        ]
+      }
+    },
+    "mnist_c": {
+      "archive": {
+        "bytes": 246661575,
+        "expected_md5": "4b34b33045869ee6d424616cd3a65da3",
+        "md5": "4b34b33045869ee6d424616cd3a65da3",
+        "path": "/ceph/sagnihot/datasets/mnist_c.zip",
+        "publisher_md5_verified": true,
+        "sha256": "af9ee8c6a815870c7fdde5af84c7bf8db0bcfa1f41056db83871037fba70e493"
+      },
+      "cells": {
+        "brightness/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/brightness/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "cde00e4cfdc9b9c0cd8c478e3234f734",
+          "path": "/ceph/sagnihot/datasets/mnist_c/brightness/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 127,
+          "severity": "fixed",
+          "sha256": "0be26b927b2be43bc0b2430ccf6aa6048a5fcd8bcd087d97576972f009c1e8a9",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "canny_edges/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/canny_edges/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "1b66818f12bb2f6807c69a41abc12a5d",
+          "path": "/ceph/sagnihot/datasets/mnist_c/canny_edges/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "e86b158456cbaf0bf621092259f186a223b68e31128c18cceedb8a2f1b8baf1f",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "dotted_line/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/dotted_line/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "ffae933b697d28560632eaba38882600",
+          "path": "/ceph/sagnihot/datasets/mnist_c/dotted_line/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "02f5a8bd11e1bed6ca5f31418c6804a4f89ab5abdaba38f880e4743294516c6b",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "fog/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/fog/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "4b30964d919fd7ac4397d57b0470ac6b",
+          "path": "/ceph/sagnihot/datasets/mnist_c/fog/test_images.npy",
+          "pixel_max": 254,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "8f48ea89b4793c45bedda39bd27b42710f4f0cbf5bced559597c015157188488",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "glass_blur/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/glass_blur/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "e384bcc52ab7e2cb9ad32aaa683c2689",
+          "path": "/ceph/sagnihot/datasets/mnist_c/glass_blur/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "300a4829b7fe6e4cfa5ad0e134cf19136e2c23e1e6bc29b6c574848b6a493388",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "impulse_noise/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/impulse_noise/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "958983b41068a35a9bd78f8c4b2fc66f",
+          "path": "/ceph/sagnihot/datasets/mnist_c/impulse_noise/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "63ad2d4c0860dca3814da6034943dda6e9fe267ba6e12136341c52f2c13ca3d5",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "motion_blur/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/motion_blur/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "99c22fad3d63b5e18cf6d2334009278d",
+          "path": "/ceph/sagnihot/datasets/mnist_c/motion_blur/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "7767b48be95a63abcdf851a4baedc0491d5643a192072e4f6de0a14c75cb089e",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "rotate/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/rotate/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "c56a431ccae28b8d644482eb821554b9",
+          "path": "/ceph/sagnihot/datasets/mnist_c/rotate/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "8fb565f28d858733ec94d4e6d976d9f2cb3e6aa75deb9a7a11b0504b9ae64520",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "scale/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/scale/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "5c5ce6a7c6f792133a208b2e25d63083",
+          "path": "/ceph/sagnihot/datasets/mnist_c/scale/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "282dfee12607c13ea76cc82985e3e5d78f36b44d56d6ad9f12a2298e20ea2200",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "shear/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/shear/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "b437191ee62850f0236b0abd2be471b1",
+          "path": "/ceph/sagnihot/datasets/mnist_c/shear/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "38412620554c8d775e38d6b9d771b4825605998179e88bd004d8d5d0a7afaa7d",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "shot_noise/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/shot_noise/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "fe19c254507ae58c8e9d3639ee2a106a",
+          "path": "/ceph/sagnihot/datasets/mnist_c/shot_noise/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "2c7026fb754f234a1563711576266f179f47b6f5e4a8e43dfbbb182e1299d764",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "spatter/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/spatter/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "f8584cd37eb3711a21b53a38c3b1124b",
+          "path": "/ceph/sagnihot/datasets/mnist_c/spatter/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "c2944a2bcf07747a61235e759f039498848f6a975a8646e1fe50bd9378e3365e",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "stripe/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/stripe/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "d8d75f15f65eef717b451bec621b2e08",
+          "path": "/ceph/sagnihot/datasets/mnist_c/stripe/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "e1037ade91e048957df2b942657ac23b944b6b061f1331e0abca0d60f385b9a0",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "translate/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/translate/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "727e431a73db945002e1031685787aa4",
+          "path": "/ceph/sagnihot/datasets/mnist_c/translate/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "c4954a5bd344e047f016d2a64cc1b8bf9624a11526dc75acef8367181ba0ab3b",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        },
+        "zigzag/fixed": {
+          "bytes": 7840128,
+          "count": 10000,
+          "dtype": "uint8",
+          "labels": {
+            "bytes": 80128,
+            "md5": "10bd739acbb3520b133e2c4d4f4b21f1",
+            "path": "/ceph/sagnihot/datasets/mnist_c/zigzag/test_labels.npy",
+            "sha256": "996074233ccae69ee65b8551233f608adc1bce84b6b440e3531478a847958149"
+          },
+          "labels_equal_clean_test": true,
+          "layout": "NHWC",
+          "md5": "911876dc0ba7365769fd889724e56d3d",
+          "path": "/ceph/sagnihot/datasets/mnist_c/zigzag/test_images.npy",
+          "pixel_max": 255,
+          "pixel_min": 0,
+          "severity": "fixed",
+          "sha256": "ae655a6b0bdfd2d70951431465d1045274ab8f8bce475edba4477114c2fbfa7d",
+          "shape": [
+            10000,
+            28,
+            28,
+            1
+          ]
+        }
+      },
+      "directory": "/ceph/sagnihot/datasets/mnist_c",
+      "excluded_extra_corruptions": [
+        "identity"
+      ],
+      "expected_predictions_per_model": 150000,
+      "primary_corruptions": [
+        "shot_noise",
+        "impulse_noise",
+        "glass_blur",
+        "motion_blur",
+        "shear",
+        "scale",
+        "rotate",
+        "brightness",
+        "translate",
+        "stripe",
+        "fog",
+        "spatter",
+        "dotted_line",
+        "zigzag",
+        "canny_edges"
+      ],
+      "status": "validated",
+      "validated_at": "2026-09-30T16:47:11.402423+00:00"
+    }
+  },
+  "inventory": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch/provenance/datasets_inventory.json",
+  "prepared_at": "2026-09-30T16:46:28.434969+00:00",
+  "schema_version": 1
+}

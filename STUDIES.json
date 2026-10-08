@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "studies": [
+    {
+      "study_id": "training_sparse_testing_sparse",
+      "root": "sparse_contrast_benchmark_large_batch",
+      "scope": "Existing large-batch planned training/evaluation/latency campaign",
+      "label_effective_after": "all original planned experiments complete",
+      "physical_paths_preserved": true
+    },
+    {
+      "study_id": "training_dense_testing_sparse",
+      "root": "training_dense_testing_sparse",
+      "scope": "Evaluation only of all zero-imposed-sparsity trained final checkpoints at 0..90 percent test sparsity",
+      "retraining": false,
+      "original_starts_after": "training_sparse_testing_sparse verified complete",
+      "starts_after": "Source checkpoint and integration validation; immediate evaluation authorized by user October 5 while parent reporting continues",
+      "scheduling_amendment": "training_dense_testing_sparse/outputs/checks/evaluation_release_2026-10-05.json"
+    }
+  ],
+  "archive": {
+    "root": "sparse_contrast_benchmark",
+    "status": "stopped old batch-8 evidence; do not restart"
+  },
+  "human_record": "debugging/scratchpad.md"
+}

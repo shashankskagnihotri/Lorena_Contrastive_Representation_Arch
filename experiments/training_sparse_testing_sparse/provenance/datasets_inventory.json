@@ -1,0 +1,238 @@
+{
+  "created": "2026-09-30T16:46:28.409258+00:00",
+  "data_root": "/ceph/sagnihot/datasets",
+  "directories": [
+    "/ceph/sagnihot/datasets",
+    "/ceph/sagnihot/datasets/CIFAR-10-C",
+    "/ceph/sagnihot/datasets/cifar-10",
+    "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py",
+    "/ceph/sagnihot/datasets/cifar-10-batches-py",
+    "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py",
+    "/ceph/sagnihot/datasets/mnist",
+    "/ceph/sagnihot/datasets/mnist/MNIST",
+    "/ceph/sagnihot/datasets/mnist/MNIST/raw"
+  ],
+  "files": [
+    {
+      "bytes": 2918471680,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C.tar"
+    },
+    {
+      "bytes": 2918473216,
+      "path": "/ceph/sagnihot/datasets/CIFAR-100-C.tar"
+    },
+    {
+      "bytes": 170498071,
+      "path": "/ceph/sagnihot/datasets/cifar-10-python.tar.gz"
+    },
+    {
+      "bytes": 169001437,
+      "path": "/ceph/sagnihot/datasets/cifar-100-python.tar.gz"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/brightness.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/contrast.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/defocus_blur.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/elastic_transform.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/fog.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/frost.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_blur.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/gaussian_noise.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/glass_blur.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/impulse_noise.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/jpeg_compression.npy"
+    },
+    {
+      "bytes": 50128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/labels.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/motion_blur.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/pixelate.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/saturate.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/shot_noise.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/snow.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/spatter.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/speckle_noise.npy"
+    },
+    {
+      "bytes": 153600128,
+      "path": "/ceph/sagnihot/datasets/CIFAR-10-C/zoom_blur.npy"
+    },
+    {
+      "bytes": 170498071,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-python.tar.gz"
+    },
+    {
+      "bytes": 158,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/batches.meta"
+    },
+    {
+      "bytes": 31035704,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/data_batch_1"
+    },
+    {
+      "bytes": 31035320,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/data_batch_2"
+    },
+    {
+      "bytes": 31035999,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/data_batch_3"
+    },
+    {
+      "bytes": 31035696,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/data_batch_4"
+    },
+    {
+      "bytes": 31035623,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/data_batch_5"
+    },
+    {
+      "bytes": 31035526,
+      "path": "/ceph/sagnihot/datasets/cifar-10/cifar-10-batches-py/test_batch"
+    },
+    {
+      "bytes": 158,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/batches.meta"
+    },
+    {
+      "bytes": 170498071,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-python.tar.gz"
+    },
+    {
+      "bytes": 31035704,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_1"
+    },
+    {
+      "bytes": 31035320,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_2"
+    },
+    {
+      "bytes": 31035999,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_3"
+    },
+    {
+      "bytes": 31035696,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_4"
+    },
+    {
+      "bytes": 31035623,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/data_batch_5"
+    },
+    {
+      "bytes": 31035526,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/test_batch"
+    },
+    {
+      "bytes": 158,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/batches.meta"
+    },
+    {
+      "bytes": 31035704,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/data_batch_1"
+    },
+    {
+      "bytes": 31035320,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/data_batch_2"
+    },
+    {
+      "bytes": 31035999,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/data_batch_3"
+    },
+    {
+      "bytes": 31035696,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/data_batch_4"
+    },
+    {
+      "bytes": 31035623,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/data_batch_5"
+    },
+    {
+      "bytes": 31035526,
+      "path": "/ceph/sagnihot/datasets/cifar-10-batches-py/cifar-10-batches-py/test_batch"
+    },
+    {
+      "bytes": 7840016,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-images-idx3-ubyte"
+    },
+    {
+      "bytes": 1648877,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-images-idx3-ubyte.gz"
+    },
+    {
+      "bytes": 10008,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-labels-idx1-ubyte"
+    },
+    {
+      "bytes": 4542,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/t10k-labels-idx1-ubyte.gz"
+    },
+    {
+      "bytes": 47040016,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-images-idx3-ubyte"
+    },
+    {
+      "bytes": 9912422,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-images-idx3-ubyte.gz"
+    },
+    {
+      "bytes": 60008,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-labels-idx1-ubyte"
+    },
+    {
+      "bytes": 28881,
+      "path": "/ceph/sagnihot/datasets/mnist/MNIST/raw/train-labels-idx1-ubyte.gz"
+    }
+  ],
+  "policy": "One targeted inventory; do not traverse unrelated datasets; workers read manifest only."
+}

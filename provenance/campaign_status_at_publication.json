@@ -1,0 +1,38 @@
+{
+  "blocked": null,
+  "controller": {
+    "heartbeat": 1791464736.7583413,
+    "host": "dws-12.informatik.uni-mannheim.de",
+    "job_id": "361093",
+    "orchestration_source_hash": "fcfbdad09dd2aa67d5e62616a5ed77f19f205b324d0474ad15af15bef15466f7",
+    "orchestration_source_path": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/training_dense_testing_sparse/outputs/orchestration_source/fcfbdad09dd2aa67d5e62616a5ed77f19f205b324d0474ad15af15bef15466f7",
+    "pid": 1395964
+  },
+  "evaluation": {
+    "completed": 612
+  },
+  "latency_workers": {
+    "completed": 984,
+    "pending": 110,
+    "running": 18,
+    "unsubmitted": 1312
+  },
+  "manifest_hash": "7f5681a842c6d47c878bc80e4715268f40082772e0a1cfc05d0295198f49bd66",
+  "parent": {
+    "checked": "2026-10-05T15:29:43.212270+00:00",
+    "coverage_complete": false,
+    "final_verification": "monitoring",
+    "latency_completed": 552,
+    "latency_expected": 552,
+    "phase": "report",
+    "trained_and_evaluated": 156
+  },
+  "phase": "latency",
+  "source_hash": "8cf4d0c1e0ce5443d5080ea397df9a8f085d1bf2c4292912676545d38533a0cb",
+  "study_id": "training_dense_testing_sparse",
+  "updated": "2026-10-08T13:05:42.720692+00:00",
+  "publication_captured_utc": "2026-10-08T13:05:58.816635+00:00",
+  "source_status_sha256": "87fe6062d4f229aeca524b20f289fcd51a9bab5b37f030bc95335126251aed9b",
+  "publication_note": "Snapshot only. Its historical parent release block is not current primary completion; the primary study is verified complete. Follow-up timing remains incomplete.",
+  "repair_monitor_limit": "Job356623 remains under original8-call limit, exhausted8/8; original deadline2026-10-08T21:23:58+02:00. Scheduler controller remains responsible for bounded submission/retries/handoffs."
+}

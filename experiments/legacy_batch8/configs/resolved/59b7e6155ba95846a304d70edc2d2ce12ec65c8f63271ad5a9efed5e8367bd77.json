@@ -1,0 +1,68 @@
+{
+  "architecture": "vit_small",
+  "config_hash": "59b7e6155ba95846a304d70edc2d2ce12ec65c8f63271ad5a9efed5e8367bd77",
+  "data_manifest_sha256": "e806948f8a91af613f1e2c229c04bc5d618cc02bc1c8abef707d0f753af1a141",
+  "dataset": "cifar10",
+  "environment_hash": "5a802a6ff12747d9af58d21b0e4fbd96b1a08a3253f7aa899807c8b60f803198",
+  "execution": "compact",
+  "frontend": {
+    "blur_depth": 1,
+    "blur_kernel": "3x3_uniform_1/9",
+    "channel_names": [
+      "red_contrast",
+      "green_contrast",
+      "blue_contrast"
+    ],
+    "execution_dtype": "float32",
+    "grayscale_input": "replicate_to_RGB_before_transform",
+    "input_range": [
+      0.0,
+      1.0
+    ],
+    "native_channels": 3,
+    "native_output": "before_legacy_channel_adapter_threshold_and_normalization",
+    "padding": "zero_1_each_iteration",
+    "representation": "single_color",
+    "source_commit": "73deca8c15b8d91fee29bac71b6f73c013a47d22",
+    "source_mode": "single_color",
+    "source_sha256": "f7c4420a3ab2bf4036323b9b4842e66d46225a88ce6f4440101c7a190861dff8",
+    "subtraction": "center_minus_mean_of_all_blur_iterations",
+    "version": 1,
+    "weight_arithmetic": "numpy_float64_construction_then_float32"
+  },
+  "normalization_hash": "566fa577f2da3e50d887e890148fb6bd20f667e8139d6a9b04ca4665f0cb39c3",
+  "normalization_min_std": 1e-06,
+  "patch_size": 2,
+  "precision": "fp32",
+  "primary_checkpoint": "final_epoch",
+  "protocol": "heldout_val",
+  "recipe": {
+    "batch_size": 8,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "dropout": 0.0,
+    "effective_batch_size": 8,
+    "epochs": 200,
+    "grad_clip": 1.0,
+    "gradient_accumulation": 1,
+    "histogram_epoch_interval": 10,
+    "label_smoothing": 0.0,
+    "log_step_interval": 50,
+    "lr": 0.0003,
+    "min_lr": 1e-06,
+    "optimizer": "AdamW",
+    "stochastic_depth": 0.1,
+    "warmup_epochs": 10,
+    "weight_decay": 0.05
+  },
+  "registry_id": "cifar10/vit_small/single_color/compact/p60/seed1",
+  "representation": "single_color",
+  "role": "main",
+  "seed": 1,
+  "source_hash": "1e483ff99cb9219478f00c63bd21bd47d8811098046e84b05370f8e0e3cae2cf",
+  "sparsity_percent": 60,
+  "split_seed": 2026,
+  "token_epsilon": 0.0
+}

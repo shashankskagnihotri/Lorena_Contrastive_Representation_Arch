@@ -1,0 +1,18 @@
+{
+  "state": "verified",
+  "timestamp": "2026-10-08T11:45:34.879980+00:00",
+  "slurm_job_id": "361081",
+  "source": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/debugging/checks/plots_pdf_audit_20261008_219252a0476be9ab/audit_published_pdfs_20261008.py",
+  "source_sha256": "219252a0476be9ab30c6c193964242392156072f034b8cfb8c3422d7c239c197",
+  "pdf_count": 1143,
+  "page_count": 1843,
+  "counts": {
+    "diagnostics": 389,
+    "overview": 14,
+    "training_dense_testing_sparse": 108,
+    "training_sparse_testing_sparse": 632
+  },
+  "catalog_sha256": "47d3ec2a04634cad97c7202630bf8a781b50a6ea166f4edbaea092996a60b44f",
+  "method": "Every PDF parsed, every page has positive dimensions; all PDF bytes hashed.",
+  "limitations": "This verifies published PDF artifacts, not completion of ongoing follow-up latency experiments."
+}

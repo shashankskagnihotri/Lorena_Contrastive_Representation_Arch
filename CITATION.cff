@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research code or evidence, cite this repository and the upstream methods and datasets."
+type: software
+title: "Lorena Sparse Contrast Representation Benchmark"
+authors:
+  - family-names: Agnihotri
+    given-names: Shashank
+version: 0.1.0
+date-released: 2026-10-08
+repository-code: "https://github.com/shashankskagnihotri/Lorena_Contrastive_Representation_Arch"
+abstract: >-
+  A from-scratch MNIST and CIFAR-10 study of fixed signed contrast
+  representations, coefficient sparsification, compact ViT and Swin execution,
+  clean classification, corruption robustness, and measured online latency.
+  The repository reports negative results and explicitly incomplete timing coverage.

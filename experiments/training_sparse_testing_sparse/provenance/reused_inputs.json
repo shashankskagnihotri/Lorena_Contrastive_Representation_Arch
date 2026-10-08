@@ -1,0 +1,184 @@
+{
+  "copied_inputs": [
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/requirements.lock.txt",
+      "path": "requirements.lock.txt",
+      "sha256": "5a802a6ff12747d9af58d21b0e4fbd96b1a08a3253f7aa899807c8b60f803198"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/environment.yml",
+      "path": "environment.yml",
+      "sha256": "e7091b37af59ab69b506344c48d031fef564ac5e3de778c808c4fdfd4ccac8f1"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/conda-explicit.txt",
+      "path": "conda-explicit.txt",
+      "sha256": "d4600a5eee746170a3336a99cb97286d5a484527aa9670aadb11bebbd0f18bcd"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/pytest.ini",
+      "path": "pytest.ini",
+      "sha256": "37b7898dd0df68d7bacac4726b4836010200403a1abe9542fe229caebe39b8a3"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/experiment_scope.json",
+      "path": "experiment_scope.json",
+      "sha256": "f596660077fd7dbd9f7107788633f936958133e0a261a30dac2aca8e08908b79"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/source_context.json",
+      "path": "provenance/source_context.json",
+      "sha256": "bb4071ec6a0b1b0877abeb09d9dc04e292e8b587b19a00dc367fb716c2b5e52f"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/original_frontend.py",
+      "path": "provenance/original_frontend.py",
+      "sha256": "f7c4420a3ab2bf4036323b9b4842e66d46225a88ce6f4440101c7a190861dff8"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/USER_TASK.txt",
+      "path": "provenance/USER_TASK.txt",
+      "sha256": "3b0a9895d058494ad2ac41cb2571055917f1fb45d4a212528286a044e75db2da"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/environment_install.sh",
+      "path": "provenance/environment_install.sh",
+      "sha256": "f9fdfd90781c19078f0efdce76db1eccdd0c41d646c8d7b332669dac8a10ce14"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/environment_restore.sh",
+      "path": "provenance/environment_restore.sh",
+      "sha256": "00289fb9d38e59f5962b81abee8a6afa977f13dc5a19b54ff72bbf4bbf6a5c72"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/pip-freeze.txt",
+      "path": "provenance/pip-freeze.txt",
+      "sha256": "bf698b45e15a088fb0fd789e659f23c4584d736741cad06bc8a827b0d07b9cbd"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/pip-torch-install.log",
+      "path": "provenance/pip-torch-install.log",
+      "sha256": "3f179e93848a7c51f02bfa0448ab536209ff309490ee8ea56364c8857cd3d2f6"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/pip-rest-install.log",
+      "path": "provenance/pip-rest-install.log",
+      "sha256": "283759efeacddcd501e701d3bf3350fed386c35caaa969a89a117565202e0f40"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/setuptools-repair.log",
+      "path": "provenance/setuptools-repair.log",
+      "sha256": "bf648d752e1f0fc51efe7701e3bad127b0240266cf68ecdd180f87a9808f9589"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/datasets_download_mnist_c.json",
+      "path": "provenance/datasets_download_mnist_c.json",
+      "sha256": "0a549dfaa8c0e6bb6fa8f673ebb3be475d17be9d7e3b30b571210d380694ebb4"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/datasets_inventory.json",
+      "path": "provenance/datasets_inventory.json",
+      "sha256": "73e2138c7d08a6faeffe5e37b83e4d969d62371e2611f0ab52cb3103f52e1580"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/provenance/datasets_prepare.log",
+      "path": "provenance/datasets_prepare.log",
+      "sha256": "00d2590b7b8772acecef967cf4f659e4bcc89fce70b1c8052296e2e4e61d1ee6"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/mnist_seed2026.json",
+      "path": "outputs/splits/mnist_seed2026.json",
+      "sha256": "751169d21029efacedc4134333d2c17dd09858e311a9beb340aafd0b860e925c"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/mnist_seed2026.npz",
+      "path": "outputs/splits/mnist_seed2026.npz",
+      "sha256": "b81f59895e2ac45c937abc327c937f122a1d65fca0a9a724137466d4f03994d2"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/cifar10_seed2026.json",
+      "path": "outputs/splits/cifar10_seed2026.json",
+      "sha256": "3218df00ff213dd4580c8556113342eefa5ca574bea3bc1957651d4b2604c4bb"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/outputs/splits/cifar10_seed2026.npz",
+      "path": "outputs/splits/cifar10_seed2026.npz",
+      "sha256": "2b134c72ffbe46ac8476d40f1416b0239b1de8a0e1ac10aab9f6269aee75e36c"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/mnist_grayscale_heldout_val.json",
+      "path": "normalization/mnist_grayscale_heldout_val.json",
+      "sha256": "f9f07e9f1272ac32e5e755c4f8840a7912a92a40b02923b34830b7935038d2c9"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/mnist_grayscale_heldout_val.2d92be88fe73f95a.npz",
+      "path": "normalization/mnist_grayscale_heldout_val.2d92be88fe73f95a.npz",
+      "sha256": "748e48ec0c42e1c4ff2edcde96b626e98608d6628df593621afc20c799814dbc"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/mnist_grayscale_heldout_val.2d92be88fe73f95a.json",
+      "path": "normalization/mnist_grayscale_heldout_val.2d92be88fe73f95a.json",
+      "sha256": "f9f07e9f1272ac32e5e755c4f8840a7912a92a40b02923b34830b7935038d2c9"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_single_color_heldout_val.json",
+      "path": "normalization/cifar10_single_color_heldout_val.json",
+      "sha256": "bd89ca7be3ad6706d1ed568df739b9355120986033684701a25e779171f8b2aa"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_single_color_heldout_val.1c894a7b4749854c.npz",
+      "path": "normalization/cifar10_single_color_heldout_val.1c894a7b4749854c.npz",
+      "sha256": "45e4a0dce65eda8b7023374aff0e1d747b79c0b2093deff1970af535e96a0261"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_single_color_heldout_val.1c894a7b4749854c.json",
+      "path": "normalization/cifar10_single_color_heldout_val.1c894a7b4749854c.json",
+      "sha256": "bd89ca7be3ad6706d1ed568df739b9355120986033684701a25e779171f8b2aa"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_grayscale_heldout_val.json",
+      "path": "normalization/cifar10_grayscale_heldout_val.json",
+      "sha256": "3ada7cfa9fb36b093d5dd9ac52ef5cb98c4468c3342588bbce1162efc9c55b17"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_grayscale_heldout_val.90ea0b39776374c8.npz",
+      "path": "normalization/cifar10_grayscale_heldout_val.90ea0b39776374c8.npz",
+      "sha256": "fa839098ceb6803d411445893e59c0c514bd042f3d964721a73a39ac92377862"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_grayscale_heldout_val.90ea0b39776374c8.json",
+      "path": "normalization/cifar10_grayscale_heldout_val.90ea0b39776374c8.json",
+      "sha256": "3ada7cfa9fb36b093d5dd9ac52ef5cb98c4468c3342588bbce1162efc9c55b17"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_color_opponency_heldout_val.json",
+      "path": "normalization/cifar10_color_opponency_heldout_val.json",
+      "sha256": "a9458c8bb51544728040e1bc6bc636f2f0271fd8e4c0e129d3dc91d0e404228e"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_color_opponency_heldout_val.2e6f17a99efa314d.npz",
+      "path": "normalization/cifar10_color_opponency_heldout_val.2e6f17a99efa314d.npz",
+      "sha256": "2da2b18033fd6af2ed5a9e7af9d9af01ad1a1eceb9500bfb7703456184aa2203"
+    },
+    {
+      "origin": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark/normalization/cifar10_color_opponency_heldout_val.2e6f17a99efa314d.json",
+      "path": "normalization/cifar10_color_opponency_heldout_val.2e6f17a99efa314d.json",
+      "sha256": "a9458c8bb51544728040e1bc6bc636f2f0271fd8e4c0e129d3dc91d0e404228e"
+    }
+  ],
+  "created_utc": "2026-10-02T15:53:57.738611+00:00",
+  "dataset_manifest_changes": "Only split JSON/NPZ paths and inventory path were redirected to local byte-identical copies. Official raw paths and split/statistics scientific identities are unchanged.",
+  "destination_campaign_root": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark_large_batch",
+  "excluded_from_copy": [
+    "code",
+    "checkpoints",
+    "run_results",
+    "controller_state",
+    "resolved_configs",
+    "checks_or_completion_receipts",
+    "locks",
+    "old_aggregate_tables"
+  ],
+  "schema_version": 1,
+  "source_campaign_root": "/ceph/sagnihot/projects/Lorena_Contrastive_Representation_Arch/sparse_contrast_benchmark"
+}

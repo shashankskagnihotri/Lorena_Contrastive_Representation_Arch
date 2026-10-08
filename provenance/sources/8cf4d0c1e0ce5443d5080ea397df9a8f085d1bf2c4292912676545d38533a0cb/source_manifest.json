@@ -1,0 +1,20 @@
+{
+  "MONITOR.md": "f3cded9a81f9554a8aca9fe7d275448a032d09a8b42819c6507febd5634fab3d",
+  "PLAN.md": "be4983e9a94b48c460dd7f2176dbc938d082689bffd298289aaf533ad4a81618",
+  "README.md": "42cacdd3c57e1259618aef78537abc908dbd5505131c08c85c3f39e8b0241d0b",
+  "audit_zero_checkpoints.py": "6ce530d371ab9b7d27ac8c7a71a625323b176ac8cd9810277a06427a1801ab30",
+  "dense_sparse/__init__.py": "21c848f0a20b75a38b2c48d58815442d8e07633afa1ee7a6ea245bde71008d52",
+  "dense_sparse/adapter.py": "818f2f3e76338cb897e438fc4e4e3065396c468f54e5b50220bcae282d02ef49",
+  "dense_sparse/common.py": "960637b81c26d160e227a680fb02cb70f8c99c601f70854a873b8e7d375e1b7d",
+  "dense_sparse/controller.py": "58552c3406af61b8f7e5d7fba3224eed6b12d89c445773fde47a33fef24e2ae8",
+  "dense_sparse/monitor.py": "da8279bc1a7a825514ea7f29c1940377a0b9b3109aec5be3d73b6af69a0bab6a",
+  "dense_sparse/report.py": "cb0b8ec2c8c10c786c1878de71b60e9820e784fa907a1137fe2616e9f52f73d6",
+  "dense_sparse/scheduler.py": "eaaf69ae3d69a83afcf122ef71ba3a8f6f6c441be1f9f7eb94af6f157ac8392b",
+  "dense_sparse/setup.py": "f649e7627e6dae022d2397f40bacf80453227539cf2118774e6fb999f0e33c3b",
+  "dense_sparse/validate.py": "0a04027ec8db3b10108486a6afbe3900bf53d4cf2f87bb562ccbfaca082838d1",
+  "dense_sparse/worker.py": "6a350792f2e13b9d1a93a069a727133f9e1ad4b072d9d4118200d12a7d3c3cd5",
+  "tests/test_adapter.py": "b700d40894c2d4c280a52a6c1ff1f097d22686a48272bc276785613eb80e7f13",
+  "tests/test_campaign.py": "a3711c50aee38804e06791904f9c68782cd90f01556ae5fcde79a891b1952b38",
+  "tests/test_report.py": "6ceb7792aaacac27d55eeabe503a0bbf7e93e7778fd5caa23642a9e44f670ac5",
+  "tests/test_worker.py": "6f7fd7bdcad9a55191bb59340301b0c5cb5873cd63a481a61fc46d2677a016f3"
+}

@@ -1,0 +1,23 @@
+{
+  "repository": "/ceph/sagnihot/projects/semseg_using_VLMs_Lorena",
+  "source_commit": "73deca8c15b8d91fee29bac71b6f73c013a47d22",
+  "authoritative_file": "semseg/utils/blur_preprocessing.py",
+  "authoritative_file_sha256": "f7c4420a3ab2bf4036323b9b4842e66d46225a88ce6f4440101c7a190861dff8",
+  "authoritative_file_modified": false,
+  "upstream_license": "No license file or header found; none inferred",
+  "scoped_agents": "No source repository AGENTS.md found",
+  "working_tree_context": {
+    "semseg/models/preprocessing.py": {"git_state": "untracked", "sha256": "388ad7cbfc4863b8fc6a2e7a62080db68d8a2c7a36fb2cce84850231d85a5a2f"},
+    "train.py": {"git_state": "modified", "sha256": "2d39fdf634a217b5081719578411304581f74540d19dc59f32f554119f049fd9"},
+    "README.md": {"git_state": "modified", "sha256": "308ebd0498d02348b5368dc14258f6c691e4ce472dbdc69eef65468bcbd865e2"},
+    "semseg/data/transforms.py": {"git_state": "tracked_unmodified", "sha256": "f9f7c0096dc88d0c0ac95dd3a93ec7dd5b5e759f3c0c892e564dd237c233378c"},
+    "semseg/data/transforms_meta.py": {"git_state": "untracked", "sha256": "f853c32577d00664a10ec85804be3e8b72f01f98fc34c85f04985e2d5b9cd0f2"}
+  },
+  "study_blur_depth": 1,
+  "blur_depth_choice": "Application CLI and module constructor default; README examples use 3",
+  "grayscale_source_actual": "equal RGB average center-surround for positive blur_depth",
+  "native_grayscale_channels": 1,
+  "excluded_adapter": "Original random trainable 1-to-3 convolution with bias, after native custom_layer",
+  "input_range_change": "Original application has ImageNet-normalized inputs; study explicitly requires raw float32 [0,1]",
+  "B_parameter": "Absent from authoritative preprocessing file and inspected preprocessing arguments"
+}
